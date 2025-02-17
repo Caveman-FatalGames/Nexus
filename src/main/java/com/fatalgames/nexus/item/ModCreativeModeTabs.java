@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.RAW_TERRESTRIAL);
+                        pOutput.accept(ModItems.TERRESTRIAL_INGOT);
 
 
                         pOutput.accept(ModItems.RAW_NEXIUM);
@@ -40,9 +41,12 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(ModBlocks.TERRESTRIAL_BLOCK);
+
                         pOutput.accept(ModBlocks.TERRESTRIAL_ORE);
                         pOutput.accept(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE);
+
+                        pOutput.accept(ModBlocks.TERRESTRIAL_BLOCK);
+
 
 
 

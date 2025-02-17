@@ -13,6 +13,9 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_TERRESTRIAL =
             ITEMS.registerItem("raw_terrestrial", Item::new, new Item.Properties());
 
+    public static final DeferredItem<Item> TERRESTRIAL_INGOT =
+            ITEMS.registerItem("terrestrial_ingot", Item::new, new Item.Properties());
+
 
 
 
