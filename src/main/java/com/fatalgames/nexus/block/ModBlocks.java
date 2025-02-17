@@ -18,8 +18,12 @@ public class ModBlocks {
             DeferredRegister.createBlocks(NexusMod.MOD_ID);
 
 
+
     public static final DeferredBlock<Block> TERRESTRIAL_BLOCK = registerBlock("terrestrial_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
@@ -27,7 +31,10 @@ public class ModBlocks {
         registerBlockItem(name, toReturn);
         return toReturn;
 
-    }    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
+    }
+
+
+    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
