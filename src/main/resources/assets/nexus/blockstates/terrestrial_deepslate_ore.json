@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "nexus:block/terrestrial_ore"
+      "model": "nexus:block/terrestrial_deepslate_ore"
     }
   }
 }
