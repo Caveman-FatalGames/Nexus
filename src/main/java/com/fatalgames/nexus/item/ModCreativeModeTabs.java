@@ -41,6 +41,8 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_BLOCK);
+                        pOutput.accept(ModBlocks.TERRESTRIAL_ORE);
+                        pOutput.accept(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE);
 
 
 

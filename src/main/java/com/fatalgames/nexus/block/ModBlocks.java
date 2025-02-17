@@ -2,9 +2,11 @@ package com.fatalgames.nexus.block;
 
 import com.fatalgames.nexus.NexusMod;
 import com.fatalgames.nexus.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -22,11 +24,19 @@ public class ModBlocks {
     public static final DeferredBlock<Block> TERRESTRIAL_BLOCK = registerBlock("terrestrial_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> TERRESTRIAL_ORE = registerBlock("terrestrial_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,5),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_DEEPSLATE_ORE = registerBlock("terrestrial_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4,5),
+                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
 
 
 
     public static final DeferredBlock<Block> NEXIUM_BLOCK = registerBlock("nexium_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
 
 

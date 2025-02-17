@@ -70,7 +70,6 @@ public class NexusMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_TERRESTRIAL);
 
-
             event.accept(ModItems.RAW_NEXIUM);
         }
 
