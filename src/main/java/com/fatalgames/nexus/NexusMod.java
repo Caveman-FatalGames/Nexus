@@ -1,5 +1,6 @@
 package com.fatalgames.nexus;
 
+import com.fatalgames.nexus.item.ModCreativeModeTabs;
 import com.fatalgames.nexus.item.ModItems;
 import com.fatalgames.nexus.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,6 +34,7 @@ public class NexusMod
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public NexusMod(IEventBus modEventBus, ModContainer modContainer) {
 
+        ModCreativeModeTabs.register(modEventBus);
 
 
         ModItems.register(modEventBus);
