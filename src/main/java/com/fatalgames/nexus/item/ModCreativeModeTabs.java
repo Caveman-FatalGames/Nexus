@@ -21,10 +21,13 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> NEXUS_ITEMS_TAB =
             CREATIVE_MODE_TABS.register("nexus_items_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.nexus.nexus_items_tab"))
-                    .icon(() -> new ItemStack(ModItems.RAW_TERRESTRIAL.get()))
+                    .icon(() -> new ItemStack(ModItems.RAW_NEXIUM.get()))
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.RAW_TERRESTRIAL);
+
+
+                        pOutput.accept(ModItems.RAW_NEXIUM);
 
 
 
@@ -33,11 +36,16 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> NEXUS_BLOCKS_TAB =
             CREATIVE_MODE_TABS.register("nexus_blocks_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.nexus.nexus_blocks_tab"))
-                    .icon(() -> new ItemStack(ModBlocks.TERRESTRIAL_BLOCK))
+                    .icon(() -> new ItemStack(ModBlocks.NEXIUM_BLOCK))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_BLOCK);
+
+
+
+                        pOutput.accept(ModBlocks.NEXIUM_BLOCK);
+
 
 
 

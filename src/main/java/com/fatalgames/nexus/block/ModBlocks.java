@@ -25,6 +25,12 @@ public class ModBlocks {
 
 
 
+    public static final DeferredBlock<Block> NEXIUM_BLOCK = registerBlock("nexium_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

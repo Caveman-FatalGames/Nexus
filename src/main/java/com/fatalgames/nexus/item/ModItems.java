@@ -13,6 +13,16 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_TERRESTRIAL =
             ITEMS.registerItem("raw_terrestrial", Item::new, new Item.Properties());
 
+
+
+
+
+    public static final DeferredItem<Item> RAW_NEXIUM =
+            ITEMS.registerItem("raw_nexium", Item::new, new Item.Properties());
+
+
+
+
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
