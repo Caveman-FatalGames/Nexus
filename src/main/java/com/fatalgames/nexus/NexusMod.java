@@ -2,6 +2,7 @@ package com.fatalgames.nexus;
 
 import com.fatalgames.nexus.item.ModItems;
 import com.fatalgames.nexus.block.ModBlocks;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -50,6 +51,9 @@ public class NexusMod
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+
+
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -60,6 +64,14 @@ public class NexusMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_TERRESTRIAL);
+        }
+
+
+
+
 
     }
 
