@@ -1,5 +1,7 @@
 package com.fatalgames.nexus;
 
+import com.fatalgames.nexus.item.ModItems;
+import com.fatalgames.nexus.block.ModBlocks;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -28,8 +30,17 @@ public class NexusMod
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public NexusMod(IEventBus modEventBus, ModContainer modContainer)
-    {
+    public NexusMod(IEventBus modEventBus, ModContainer modContainer) {
+
+
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+
+
+
+
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
