@@ -2,7 +2,8 @@
   "values": [
     "nexus:terrestrial_block",
     "nexus:terrestrial_ore",
-    "nexus:terrestrial_deepslate_ore"
+    "nexus:terrestrial_deepslate_ore",
+    "nexus:terrestrial_transmutation_table"
 
   ]
 }

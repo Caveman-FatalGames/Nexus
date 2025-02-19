@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModItems.TERRESTRIAL_SAW);
 
+                        pOutput.accept(ModItems.TERRESTRIAL_FRUIT);
+
 
 
 

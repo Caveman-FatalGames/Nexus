@@ -19,8 +19,12 @@ public class ModItems {
 
 
 
+
     public static final DeferredItem<Item> TERRESTRIAL_SAW =
             ITEMS.registerItem("terrestrial_saw", TerrestrialSawItem::new, new Item.Properties().durability(64));
+
+    public static final DeferredItem<Item> TERRESTRIAL_FRUIT =
+            ITEMS.registerItem("terrestrial_fruit", Item::new, new Item.Properties().food(ModFoodProperties.TERRESTRIAL_FRUIT));
 
 
 
