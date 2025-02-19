@@ -12,8 +12,8 @@ import net.minecraft.world.level.Level;
 
 import java.util.Objects;
 
-public class TerraSawItem extends Item {
-    public TerraSawItem(Properties properties) {
+public class TerrestrialSawItem extends Item {
+    public TerrestrialSawItem(Properties properties) {
         super(properties);
     }
 
