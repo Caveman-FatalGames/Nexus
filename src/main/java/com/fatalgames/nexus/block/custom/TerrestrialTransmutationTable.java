@@ -25,7 +25,7 @@ public class TerrestrialTransmutationTable extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.is(Items.SAND);
+        return item.getItem() == Items.SAND;
     }
 
 }
