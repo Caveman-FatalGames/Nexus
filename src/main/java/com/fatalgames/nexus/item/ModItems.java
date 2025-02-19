@@ -1,6 +1,7 @@
 package com.fatalgames.nexus.item;
 
 import com.fatalgames.nexus.NexusMod;
+import com.fatalgames.nexus.item.custom.TerraSawItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -15,6 +16,11 @@ public class ModItems {
 
     public static final DeferredItem<Item> TERRESTRIAL_INGOT =
             ITEMS.registerItem("terrestrial_ingot", Item::new, new Item.Properties());
+
+
+
+    public static final DeferredItem<Item> TERRASAW =
+            ITEMS.registerItem("terrasaw", TerraSawItem::new, new Item.Properties().durability(64));
 
 
 
