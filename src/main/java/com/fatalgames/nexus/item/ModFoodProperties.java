@@ -6,7 +6,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties {
     public static final FoodProperties TERRESTRIAL_FRUIT = new FoodProperties.Builder().nutrition(3).saturationModifier(0.8f)
-            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST), 1f).build();
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 600), 1f).build();
 
 
 }
