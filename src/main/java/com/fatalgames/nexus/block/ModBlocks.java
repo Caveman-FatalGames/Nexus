@@ -30,11 +30,11 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_DEEPSLATE_ORE = registerBlock("terrestrial_deepslate_ore",
-            () -> new TerrestrialTransmutationTable(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+            () -> new DropExperienceBlock(UniformInt.of(3, 6),
+                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_TRANSMUTATION_TABLE = registerBlock("terrestrial_transmutation_table",
-            () -> new DropExperienceBlock(UniformInt.of(4,5),
-                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+            () -> new TerrestrialTransmutationTable(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
 
 

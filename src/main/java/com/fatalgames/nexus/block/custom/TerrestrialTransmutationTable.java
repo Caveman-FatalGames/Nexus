@@ -20,8 +20,7 @@ public class TerrestrialTransmutationTable extends Block {
     }
 
     @Override
-    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos,
-                                               Player pPlayer, BlockHitResult pHitResult) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHitResult) {
         pLevel.playSound(pPlayer, pPos, SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.BLOCKS, 1f, 1f);
         return InteractionResult.SUCCESS;
     }
