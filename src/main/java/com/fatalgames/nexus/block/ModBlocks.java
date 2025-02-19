@@ -1,6 +1,7 @@
 package com.fatalgames.nexus.block;
 
 import com.fatalgames.nexus.NexusMod;
+import com.fatalgames.nexus.block.custom.TerrestrialTransmutationTable;
 import com.fatalgames.nexus.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -29,6 +30,9 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_DEEPSLATE_ORE = registerBlock("terrestrial_deepslate_ore",
+            () -> new TerrestrialTransmutationTable(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_TRANSMUTATION_TABLE = registerBlock("terrestrial_transmutation_table",
             () -> new DropExperienceBlock(UniformInt.of(4,5),
                     BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
