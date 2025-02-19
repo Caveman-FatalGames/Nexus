@@ -22,8 +22,6 @@ public class ModItems {
     public static final DeferredItem<Item> TERRESTRIAL_SAW =
             ITEMS.registerItem("terrestrial_saw", TerrestrialSawItem::new, new Item.Properties().durability(64));
 
-    public static final DeferredItem<Item> TERRESTRIAL_PICKAXE =
-            ITEMS.registerItem("terrestrial_pickaxe", TerrestrialSawItem::new, new Item.Properties().durability(64));
 
 
 
