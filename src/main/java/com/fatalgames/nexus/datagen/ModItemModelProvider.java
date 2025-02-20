@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
         basicItem(ModItems.RAW_NEXIUM.get());
+        basicItem(ModItems.NEXIUM_DUST.get());
 
 
         basicItem(ModItems.STEEL_INGOT.get());

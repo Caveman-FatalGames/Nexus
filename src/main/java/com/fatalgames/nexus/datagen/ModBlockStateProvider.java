@@ -18,14 +18,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        stairsBlock(((StairBlock) ModBlocks.STEEL_STAIRS.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
-        slabBlock(((SlabBlock) ModBlocks.STEEL_SLAB.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
 
-        
+        blockWithItem(ModBlocks.STEEL_BLOCK);
         blockItem(ModBlocks.STEEL_SLAB);
         blockItem(ModBlocks.STEEL_STAIRS);
 
-        blockWithItem(ModBlocks.STEEL_BLOCK);
+
+        stairsBlock(((StairBlock) ModBlocks.STEEL_STAIRS.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.STEEL_SLAB.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_BLOCK);
@@ -36,6 +36,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE);
+
+
+
+        blockWithItem(ModBlocks.METEORITE_BLOCK);
 
 
         blockWithItem(ModBlocks.NEXIUM_BLOCK);

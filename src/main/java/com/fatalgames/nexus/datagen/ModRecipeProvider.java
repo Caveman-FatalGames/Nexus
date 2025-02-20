@@ -30,6 +30,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.TERRESTRIAL_INGOT.get())
                 .unlockedBy("has_terrestrial_ingot", has(ModItems.TERRESTRIAL_INGOT.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STEEL_BLOCK.get())
+                .pattern("BBB")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.STEEL_INGOT.get())
+                .unlockedBy("has_steel_ingot", has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 9)
+                .requires(ModBlocks.STEEL_BLOCK.get())
+                .unlockedBy("has_steel_block", has(ModBlocks.STEEL_BLOCK.get())).save(pRecipeOutput);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TERRESTRIAL_INGOT.get(), 9)
                 .requires(ModBlocks.TERRESTRIAL_BLOCK.get())

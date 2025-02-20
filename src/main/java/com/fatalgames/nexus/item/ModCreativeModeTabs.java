@@ -32,6 +32,7 @@ public class ModCreativeModeTabs {
 
 
                         pOutput.accept(ModItems.RAW_NEXIUM);
+                        pOutput.accept(ModItems.NEXIUM_DUST);
 
 
                         pOutput.accept(ModItems.TERRESTRIAL_SAW);
@@ -60,6 +61,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_SLAB);
 
 
+
+
                         pOutput.accept(ModBlocks.TERRESTRIAL_ORE);
                         pOutput.accept(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE);
 
@@ -68,7 +71,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE);
 
 
-
+                        pOutput.accept(ModBlocks.METEORITE_BLOCK);
 
                         pOutput.accept(ModBlocks.NEXIUM_BLOCK);
 

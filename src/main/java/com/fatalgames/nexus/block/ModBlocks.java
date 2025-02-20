@@ -42,6 +42,10 @@ public class ModBlocks {
 
 
 
+    public static final DeferredBlock<Block> METEORITE_BLOCK = registerBlock("meteorite_block",
+            () -> new DropExperienceBlock(UniformInt.of(3,6),
+                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
 
     public static final DeferredBlock<Block> NEXIUM_BLOCK = registerBlock("nexium_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));

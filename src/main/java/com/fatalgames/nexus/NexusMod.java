@@ -72,6 +72,7 @@ public class NexusMod
             event.accept(ModItems.RAW_TERRESTRIAL);
 
             event.accept(ModItems.RAW_NEXIUM);
+            event.accept(ModItems.NEXIUM_DUST);
 
         }
 

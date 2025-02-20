@@ -1,4 +1,8 @@
-// 1.21.1	2025-02-19T18:17:48.9958179	Recipes
+// 1.21.1	2025-02-19T23:10:47.3921233	Recipes
+30e235f8e01b1100c11c649055ebeb93d48925d9 data/nexus/advancement/recipes/building_blocks/steel_slab.json
+31ace895d71d35b7b2a5c69480589ac28c0e647b data/nexus/advancement/recipes/building_blocks/steel_stairs.json
+df658301f516942e197c52a75d5a57f4e75458aa data/nexus/advancement/recipes/misc/steel_block.json
+4c9a686757c5378b714e5332a2fed54056cb31d7 data/nexus/advancement/recipes/misc/steel_ingot.json
 5c5301313fb65a2111eb4ae3d911c2cce2bbd52f data/nexus/advancement/recipes/misc/terrestrial_block.json
 0f73bc7412cdc3a009f370ea33db7845d45c5d1b data/nexus/advancement/recipes/misc/terrestrial_ingot.json
 793f119697d38b16871cbf36adfb5efe4c48fb5a data/nexus/advancement/recipes/misc/terrestrial_ingot_from_blasting_raw_terrestrial.json
@@ -7,6 +11,10 @@
 d1105ac66a6a3612f5368936483ea438e3f88955 data/nexus/advancement/recipes/misc/terrestrial_ingot_from_smelting_raw_terrestrial.json
 1f42799fc03e1de7746db527164ff584884535c6 data/nexus/advancement/recipes/misc/terrestrial_ingot_from_smelting_terrestrial_deepslate_ore.json
 60859c3f11f7499bfc8f2f4b1b3c375954633b84 data/nexus/advancement/recipes/misc/terrestrial_ingot_from_smelting_terrestrial_ore.json
+2f85e041a1447b067ed0040425f599387065e6d6 data/nexus/recipe/steel_block.json
+abf12ee8b13b85ce4df3e74d52af2944af1fde30 data/nexus/recipe/steel_ingot.json
+c59e42d8a84af57653882952d26aedf02e8d794d data/nexus/recipe/steel_slab.json
+56c27cffacce4b65c058e87adfef63cd8a4f6637 data/nexus/recipe/steel_stairs.json
 2fbc020818543a7c96a1eb71312969832d6ee5af data/nexus/recipe/terrestrial_block.json
 6edef1ce4d1c634bbcf7b7479461692e5a36d09f data/nexus/recipe/terrestrial_ingot.json
 8c933635396c1a949d9895219014022c3c31dc9c data/nexus/recipe/terrestrial_ingot_from_blasting_raw_terrestrial.json

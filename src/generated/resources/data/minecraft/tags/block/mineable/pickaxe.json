@@ -5,6 +5,7 @@
     "nexus:terrestrial_deepslate_ore",
     "nexus:terrestrial_transmutation_table",
     "nexus:nexium_block",
-    "nexus:steel_block"
+    "nexus:steel_block",
+    "nexus:meteorite_block"
   ]
 }

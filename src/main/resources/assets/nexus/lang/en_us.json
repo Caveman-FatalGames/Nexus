@@ -5,11 +5,15 @@
   "block.nexus.steel_slab": "Steel Slab",
 
 
+  "block.nexus.meteorite_block": "Block of Meteorite",
+
+
 
   "item.nexus.raw_terrestrial": "Raw Terrestrial",
   "item.nexus.terrestrial_ingot": "Terrestrial Ingot",
 
   "item.nexus.raw_nexium": "Raw Nexium",
+  "item.nexus.nexium_dust": "Nexium Dust",
 
   "item.nexus.terrestrial_saw": "Terrestrial Saw",
 

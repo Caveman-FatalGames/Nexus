@@ -1,5 +1,9 @@
-// 1.21.1	2025-02-19T18:17:48.9948142	Loot Tables
-c19d419e5b3a9cf609849f4359e289ed6d486a9e data/nexus/loot_table/blocks/nexium_block.json
+// 1.21.1	2025-02-19T23:03:31.4505114	Loot Tables
+dd57d0554b68f1d1d1e19154967063d5b8d6b4ff data/nexus/loot_table/blocks/meteorite_block.json
+27324d3df5b4015b3d11fdad10891e50dee0bdd4 data/nexus/loot_table/blocks/nexium_block.json
+29a752201547ef431be19c8e31dd60908a6fcdde data/nexus/loot_table/blocks/steel_block.json
+23c242a04e85b9e2c7d52bdaf69f6737b7fccced data/nexus/loot_table/blocks/steel_slab.json
+0a978ce33e62cdab687ffe985c8532c0931cb010 data/nexus/loot_table/blocks/steel_stairs.json
 6e3a96f1690fd1626db0015919823c6fc198a7cd data/nexus/loot_table/blocks/terrestrial_block.json
 f6f3b246d9499c5915259ea9446ab196100cf773 data/nexus/loot_table/blocks/terrestrial_deepslate_ore.json
 0d8ee61b4511327944a46bdbee9942997e9dc5be data/nexus/loot_table/blocks/terrestrial_ore.json
