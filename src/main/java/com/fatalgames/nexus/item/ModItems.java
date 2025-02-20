@@ -12,6 +12,11 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(NexusMod.MOD_ID);
 
 
+    public static final DeferredItem<Item> STEEL_INGOT =
+            ITEMS.registerItem("steel_ingot", Item::new, new Item.Properties());
+
+
+
     public static final DeferredItem<Item> RAW_TERRESTRIAL =
             ITEMS.registerItem("raw_terrestrial", Item::new, new Item.Properties());
 

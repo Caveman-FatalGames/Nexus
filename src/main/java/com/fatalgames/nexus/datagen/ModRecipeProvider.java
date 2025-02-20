@@ -38,6 +38,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, TERRESTRIAL_SMELTABLES, RecipeCategory.MISC, ModItems.TERRESTRIAL_INGOT.get(), 0.25f, 200, "terrestrial_ingot");
         oreBlasting(pRecipeOutput, TERRESTRIAL_SMELTABLES, RecipeCategory.MISC, ModItems.TERRESTRIAL_INGOT.get(), 0.25f, 100, "terrestrial_ingot");
+
+        stairBuilder(ModBlocks.STEEL_STAIRS.get(), Ingredient.of(ModItems.STEEL_INGOT.get())).group("steel_ingot")
+                        .unlockedBy("has_steel_ingot", has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_SLAB.get(), ModItems.STEEL_INGOT);
+
     }
 
 

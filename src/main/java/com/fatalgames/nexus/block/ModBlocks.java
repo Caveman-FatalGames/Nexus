@@ -8,6 +8,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -21,6 +23,8 @@ public class ModBlocks {
             DeferredRegister.createBlocks(NexusMod.MOD_ID);
 
 
+    public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_BLOCK = registerBlock("terrestrial_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
@@ -30,7 +34,7 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_DEEPSLATE_ORE = registerBlock("terrestrial_deepslate_ore",
-            () -> new DropExperienceBlock(UniformInt.of(3, 6),
+            () -> new DropExperienceBlock(UniformInt.of(3,6),
                     BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_TRANSMUTATION_TABLE = registerBlock("terrestrial_transmutation_table",
@@ -41,6 +45,17 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> NEXIUM_BLOCK = registerBlock("nexium_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
+
+
+
+
+    public static final DeferredBlock<Block> STEEL_STAIRS = registerBlock("steel_stairs",
+            () -> new StairBlock(ModBlocks.STEEL_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> STEEL_SLAB = registerBlock("steel_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
 
 

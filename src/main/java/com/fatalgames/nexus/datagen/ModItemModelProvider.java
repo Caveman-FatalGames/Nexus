@@ -15,10 +15,17 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.RAW_TERRESTRIAL.get());
-        basicItem(ModItems.RAW_NEXIUM.get());
+
         basicItem(ModItems.TERRESTRIAL_COAL.get());
         basicItem(ModItems.TERRESTRIAL_FRUIT.get());
         basicItem(ModItems.TERRESTRIAL_INGOT.get());
         basicItem(ModItems.TERRESTRIAL_SAW.get());
+
+
+        basicItem(ModItems.RAW_NEXIUM.get());
+
+
+        basicItem(ModItems.STEEL_INGOT.get());
+
     }
 }

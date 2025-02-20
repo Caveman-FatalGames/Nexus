@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.NEXIUM_BLOCK.get());
+        dropSelf(ModBlocks.STEEL_BLOCK.get());
         dropSelf(ModBlocks.TERRESTRIAL_BLOCK.get());
         dropSelf(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE.get());
 
@@ -35,6 +36,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.TERRESTRIAL_ORE.get(), ModItems.RAW_TERRESTRIAL.get()));
         this.add(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE.get(), ModItems.RAW_TERRESTRIAL.get(), 2, 3));
+
+        dropSelf(ModBlocks.STEEL_STAIRS.get());
+        this.add(ModBlocks.STEEL_SLAB.get(),
+            block -> createSlabItemTable(ModBlocks.STEEL_SLAB.get()));
+
+
+
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

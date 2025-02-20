@@ -1,4 +1,11 @@
 {
+  "block.nexus.steel_block": "Block of Steel",
+  "item.nexus.steel_ingot": "Steel Ingot",
+  "block.nexus.steel_stairs": "Steel Stair",
+  "block.nexus.steel_slab": "Steel Slab",
+
+
+
   "item.nexus.raw_terrestrial": "Raw Terrestrial",
   "item.nexus.terrestrial_ingot": "Terrestrial Ingot",
 

@@ -24,10 +24,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.TERRESTRIAL_ORE.get())
                 .add(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE.get())
                 .add(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE.get())
-                .add(ModBlocks.NEXIUM_BLOCK.get());
+                .add(ModBlocks.NEXIUM_BLOCK.get())
+                .add(ModBlocks.STEEL_BLOCK.get());
+
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.TERRESTRIAL_ORE.get());
+                .add(ModBlocks.TERRESTRIAL_ORE.get())
+                .add(ModBlocks.STEEL_BLOCK.get());
+
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TERRESTRIAL_BLOCK.get())
