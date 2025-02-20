@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nexus:block/terrestrial_transmutation_table"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_terrestrial_deepslate_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nexus:terrestrial_deepslate_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nexus:terrestrial_ingot_from_blasting_terrestrial_deepslate_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_terrestrial_deepslate_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nexus:terrestrial_ingot_from_blasting_terrestrial_deepslate_ore"
+    ]
+  }
+}

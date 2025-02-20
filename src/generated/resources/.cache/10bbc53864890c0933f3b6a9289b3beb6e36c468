@@ -1,0 +1,4 @@
+// 1.21.1	2025-02-19T18:17:48.9968215	Tags for minecraft:block mod id nexus
+e31552de98959e50bb600378319e6ab14c0721a9 data/minecraft/tags/block/mineable/pickaxe.json
+c4a9f111a7563cb94ba877710f0e31ade32b8199 data/minecraft/tags/block/needs_diamond_tool.json
+fe359ebf086a1fc9612ca43e84434a0ea5f6be4a data/minecraft/tags/block/needs_iron_tool.json

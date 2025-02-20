@@ -1,0 +1,6 @@
+// 1.21.1	2025-02-19T18:17:48.9948142	Loot Tables
+c19d419e5b3a9cf609849f4359e289ed6d486a9e data/nexus/loot_table/blocks/nexium_block.json
+6e3a96f1690fd1626db0015919823c6fc198a7cd data/nexus/loot_table/blocks/terrestrial_block.json
+f6f3b246d9499c5915259ea9446ab196100cf773 data/nexus/loot_table/blocks/terrestrial_deepslate_ore.json
+0d8ee61b4511327944a46bdbee9942997e9dc5be data/nexus/loot_table/blocks/terrestrial_ore.json
+8f5f652612bd2ab020ed2d58586442d0021f7bee data/nexus/loot_table/blocks/terrestrial_transmutation_table.json
