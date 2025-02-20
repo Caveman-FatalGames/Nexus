@@ -1,6 +1,7 @@
 package com.fatalgames.nexus.item;
 
 import com.fatalgames.nexus.NexusMod;
+import com.fatalgames.nexus.item.custom.FuelItem;
 import com.fatalgames.nexus.item.custom.TerrestrialSawItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -25,6 +26,12 @@ public class ModItems {
 
     public static final DeferredItem<Item> TERRESTRIAL_FRUIT =
             ITEMS.registerItem("terrestrial_fruit", Item::new, new Item.Properties().food(ModFoodProperties.TERRESTRIAL_FRUIT));
+
+
+
+
+    public static final DeferredItem<Item> TERRESTRIAL_COAL =
+            ITEMS.registerItem("terrestrial_coal", properties -> new FuelItem(properties, 10000), new Item.Properties().food(ModFoodProperties.TERRESTRIAL_FRUIT));
 
 
 

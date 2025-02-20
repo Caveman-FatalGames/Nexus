@@ -8,6 +8,8 @@
 
   "item.nexus.terrestrial_fruit": "Terrestrial Fruit",
 
+  "item.nexus.terrestrial_coal": "Terrestrial Coal",
+
 
   "block.nexus.terrestrial_ore": "Terrestrial Ore",
   "block.nexus.terrestrial_deepslate_ore": "Terrestrial Deepslate Ore",
@@ -21,6 +23,14 @@
 
 
   "itemGroup.nexus.nexus_items_tab": "Nexus Items",
-  "itemGroup.nexus.nexus_blocks_tab": "Nexus Blocks"
+  "itemGroup.nexus.nexus_blocks_tab": "Nexus Blocks",
+
+
+
+  "tooltip.nexus.terrestrial_saw.shift": "Press Shift for More Information",
+  "tooltip.nexus.terrestrial_saw.tooltip.1": "This will cut down 1 log at a time, but instantly.",
+
+  "tooltip.nexus.terrestrial_transmutation_table.shift": "Press Shift for More Information",
+  "tooltip.nexus.terrestrial_transmutation_table.tooltip.1": "Transforms items thrown on top of it."
 
 }
