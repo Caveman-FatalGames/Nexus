@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "nexus:block/steel_block",
+    "side": "nexus:block/steel_block",
+    "top": "nexus:block/steel_block"
+  }
+}

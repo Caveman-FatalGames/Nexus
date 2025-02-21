@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:apple"
+    },
+    "D": {
+      "item": "nexus:terrestrial_ingot"
+    }
+  },
+  "pattern": [
+    " C ",
+    "CDC",
+    " C "
+  ],
+  "result": {
+    "count": 4,
+    "id": "nexus:terrestrial_fruit"
+  }
+}
