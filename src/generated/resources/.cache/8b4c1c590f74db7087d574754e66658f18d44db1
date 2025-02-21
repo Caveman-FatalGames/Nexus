@@ -1,8 +1,13 @@
-// 1.21.1	2025-02-19T23:03:31.4515148	Item Models: nexus
+// 1.21.1	2025-02-20T22:08:23.0784715	Item Models: nexus
 8bef9a28265f4ac8c1011434d48a274cba9adcb3 assets/nexus/models/item/nexium_dust.json
+74b26df300cf4929a8591b7a4354bd2f46df63cc assets/nexus/models/item/nexium_ingot.json
 5069ebe3c24c60cac64958c71009289423c84cb8 assets/nexus/models/item/raw_nexium.json
 bcd34e293f2504af9313e7212aaf7aaae98e95dd assets/nexus/models/item/raw_terrestrial.json
+d971eafe83ec3f600dfbb19f99744c57a903edb3 assets/nexus/models/item/steel_button.json
+5b4b84bbdcc2a3a01a05b4a4db25498dbbd582ac assets/nexus/models/item/steel_door.json
+562b6fabd4fc4035ad84a5c490c970cc17e68b72 assets/nexus/models/item/steel_fence.json
 93dd7c89ab24c78c8bb119cf319e8467a36423f9 assets/nexus/models/item/steel_ingot.json
+72b1cfe8311ed00cfd03df04b53bf9f4efe0843e assets/nexus/models/item/steel_wall.json
 cb414231a0132972bf0f7f439e1cb103e3f9c946 assets/nexus/models/item/terrestrial_coal.json
 8b23846dbea3061f90a67f723d98fa66048771de assets/nexus/models/item/terrestrial_fruit.json
 38af996f8e80673a892a755c8ba6e56393c172cd assets/nexus/models/item/terrestrial_ingot.json

@@ -49,6 +49,9 @@ public class ModItems {
     public static final DeferredItem<Item> NEXIUM_DUST =
             ITEMS.registerItem("nexium_dust", Item::new, new Item.Properties());
 
+    public static final DeferredItem<Item> NEXIUM_INGOT =
+            ITEMS.registerItem("nexium_ingot", Item::new, new Item.Properties());
+
 
 
 

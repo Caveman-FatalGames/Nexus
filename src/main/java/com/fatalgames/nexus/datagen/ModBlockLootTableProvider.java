@@ -28,8 +28,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.STEEL_BLOCK.get());
+        dropSelf(ModBlocks.STEEL_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.STEEL_BUTTON.get());
+        dropSelf(ModBlocks.STEEL_FENCE.get());
+        dropSelf(ModBlocks.STEEL_FENCE_GATE.get());
+        dropSelf(ModBlocks.STEEL_WALL.get());
+        dropSelf(ModBlocks.STEEL_TRAPDOOR.get());
+        this.add(ModBlocks.STEEL_DOOR.get(),
+                block -> createDoorTable(ModBlocks.STEEL_DOOR.get()));
+
         dropSelf(ModBlocks.TERRESTRIAL_BLOCK.get());
         dropSelf(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE.get());
+
 
 
         this.add(ModBlocks.TERRESTRIAL_ORE.get(),

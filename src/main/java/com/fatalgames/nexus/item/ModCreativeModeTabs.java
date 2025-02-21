@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModItems.RAW_NEXIUM);
                         pOutput.accept(ModItems.NEXIUM_DUST);
+                        pOutput.accept(ModItems.NEXIUM_INGOT);
 
 
                         pOutput.accept(ModItems.TERRESTRIAL_SAW);
@@ -59,6 +60,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_BLOCK);
                         pOutput.accept(ModBlocks.STEEL_STAIRS);
                         pOutput.accept(ModBlocks.STEEL_SLAB);
+                        pOutput.accept(ModBlocks.STEEL_PRESSURE_PLATE);
+                        pOutput.accept(ModBlocks.STEEL_BUTTON);
+                        pOutput.accept(ModBlocks.STEEL_FENCE);
+                        pOutput.accept(ModBlocks.STEEL_FENCE_GATE);
+                        pOutput.accept(ModBlocks.STEEL_WALL);
+                        pOutput.accept(ModBlocks.STEEL_DOOR);
+                        pOutput.accept(ModBlocks.STEEL_TRAPDOOR);
 
 
 

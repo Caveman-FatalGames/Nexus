@@ -3,6 +3,13 @@
   "item.nexus.steel_ingot": "Steel Ingot",
   "block.nexus.steel_stairs": "Steel Stair",
   "block.nexus.steel_slab": "Steel Slab",
+  "block.nexus.steel_pressure_plate": "Steel Pressure Plate",
+  "block.nexus.steel_button": "Steel Button",
+  "block.nexus.steel_fence": "Steel Fence",
+  "block.nexus.steel_fence_gate": "Steel Fence Gate",
+  "block.nexus.steel_wall": "Steel Wall",
+  "block.nexus.steel_door": "Steel Door",
+  "block.nexus.steel_trapdoor": "Steel Trapdoor",
 
 
   "block.nexus.meteorite_block": "Block of Meteorite",
@@ -14,6 +21,7 @@
 
   "item.nexus.raw_nexium": "Raw Nexium",
   "item.nexus.nexium_dust": "Nexium Dust",
+  "item.nexus.nexium_ingot": "Nexium Ingot",
 
   "item.nexus.terrestrial_saw": "Terrestrial Saw",
 

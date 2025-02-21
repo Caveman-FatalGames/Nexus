@@ -41,7 +41,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.NEXIUM_BLOCK.get())
                 .add(ModBlocks.METEORITE_BLOCK.get());
 
-
+        tag(BlockTags.FENCES).add(ModBlocks.STEEL_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.STEEL_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.STEEL_WALL.get());
 
     }
 }
