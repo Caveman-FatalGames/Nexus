@@ -33,6 +33,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.TERRESTRIAL_INGOT.get())
                 .unlockedBy("has_terrestrial_ingot", has(ModItems.TERRESTRIAL_INGOT.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TERRESTRIAL_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.TERRESTRIAL_INGOT.get())
+                .define('B', ModItems.OBSIDIAN_ROD)
+                .unlockedBy("has_terrestrial_ingot", has(ModItems.TERRESTRIAL_INGOT.get())).save(pRecipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STEEL_BLOCK.get())
                 .pattern("BBB")
                 .pattern("BBB")

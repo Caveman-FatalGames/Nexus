@@ -1,14 +1,24 @@
-// 1.21.1	2025-02-20T22:08:23.0784715	Item Models: nexus
+// 1.21.1	2025-02-22T13:57:47.8845564	Item Models: nexus
 8bef9a28265f4ac8c1011434d48a274cba9adcb3 assets/nexus/models/item/nexium_dust.json
+d120b9d7dfa22b5372f3a86ba373d8457441684f assets/nexus/models/item/nexium_eye.json
 74b26df300cf4929a8591b7a4354bd2f46df63cc assets/nexus/models/item/nexium_ingot.json
+31a2133ea70bd7dd65e5d5444346027cea0dd5a6 assets/nexus/models/item/obsidian_rod.json
 5069ebe3c24c60cac64958c71009289423c84cb8 assets/nexus/models/item/raw_nexium.json
 bcd34e293f2504af9313e7212aaf7aaae98e95dd assets/nexus/models/item/raw_terrestrial.json
 d971eafe83ec3f600dfbb19f99744c57a903edb3 assets/nexus/models/item/steel_button.json
 5b4b84bbdcc2a3a01a05b4a4db25498dbbd582ac assets/nexus/models/item/steel_door.json
 562b6fabd4fc4035ad84a5c490c970cc17e68b72 assets/nexus/models/item/steel_fence.json
 93dd7c89ab24c78c8bb119cf319e8467a36423f9 assets/nexus/models/item/steel_ingot.json
+e3bec9af22248371c0319338830ea6cdcd85d667 assets/nexus/models/item/steel_nuts_and_bolts.json
+b01ac4f9557ea30ac0e3edf5521eb399380da694 assets/nexus/models/item/steel_plate.json
 72b1cfe8311ed00cfd03df04b53bf9f4efe0843e assets/nexus/models/item/steel_wall.json
+c41284544ef0f6a12a5a453ef4d427b18b5de9e9 assets/nexus/models/item/terrestrial_axe.json
 cb414231a0132972bf0f7f439e1cb103e3f9c946 assets/nexus/models/item/terrestrial_coal.json
 8b23846dbea3061f90a67f723d98fa66048771de assets/nexus/models/item/terrestrial_fruit.json
+d59404d78fc44f68db34b542bdf7fdda7234f35b assets/nexus/models/item/terrestrial_hoe.json
 38af996f8e80673a892a755c8ba6e56393c172cd assets/nexus/models/item/terrestrial_ingot.json
-6236bf34df3c8c013c775432af546d525dcef880 assets/nexus/models/item/terrestrial_saw.json
+b93cddfb977db986853adf7e3420762374d58382 assets/nexus/models/item/terrestrial_paxel.json
+e73679b9ee4884dafdfbcd555cd37fb78844e787 assets/nexus/models/item/terrestrial_pickaxe.json
+eada27dfe47f7651141c7014ce4652db8eb775a4 assets/nexus/models/item/terrestrial_saw.json
+4553e1b977b722fb349effed39d6042fca8e4165 assets/nexus/models/item/terrestrial_shovel.json
+872b96ead6c52f033d173020f7815d32cc3f9eec assets/nexus/models/item/terrestrial_sword.json

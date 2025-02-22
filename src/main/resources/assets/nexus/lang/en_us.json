@@ -1,5 +1,12 @@
 {
+  "item.nexus.obsidian_rod": "Rod of Obsidian",
+
+
+
+
   "block.nexus.steel_block": "Block of Steel",
+  "item.nexus.steel_nuts_and_bolts": "Steel Nuts and Bolts",
+  "item.nexus.steel_plate": "Steel Plate",
   "item.nexus.steel_ingot": "Steel Ingot",
   "block.nexus.steel_stairs": "Steel Stair",
   "block.nexus.steel_slab": "Steel Slab",
@@ -22,8 +29,18 @@
   "item.nexus.raw_nexium": "Raw Nexium",
   "item.nexus.nexium_dust": "Nexium Dust",
   "item.nexus.nexium_ingot": "Nexium Ingot",
+  "item.nexus.nexium_eye":"Nexium Eye",
+
+
+  "item.nexus.terrestrial_hoe": "Terrestrial Hoe",
+  "item.nexus.terrestrial_shovel": "Terrestrial Shovel",
+  "item.nexus.terrestrial_pickaxe": "Terrestrial Pickaxe",
+  "item.nexus.terrestrial_axe": "Terrestrial Axe",
+
 
   "item.nexus.terrestrial_saw": "Terrestrial Saw",
+  "item.nexus.terrestrial_paxel": "Terrestrial Paxel",
+  "item.nexus.terrestrial_hammer": "Terrestrial Hammer",
 
   "item.nexus.terrestrial_fruit": "Terrestrial Fruit",
 
@@ -35,6 +52,7 @@
 
 
   "block.nexus.terrestrial_block": "Block of Terrestrial",
+  "block.nexus.terrestrial_glass": "Terrestrial Glass",
   "block.nexus.terrestrial_transmutation_table": "Terrestrial Transmutation Table",
 
   "block.nexus.nexium_block": "Block of Nexium",
@@ -43,6 +61,8 @@
 
   "itemGroup.nexus.nexus_items_tab": "Nexus Items",
   "itemGroup.nexus.nexus_blocks_tab": "Nexus Blocks",
+  "itemGroup.nexus.nexus_tools_tab": "Nexus Tools",
+  "itemGroup.nexus.nexus_armor_and_weapons_tab": "Nexus Armor & Weapons",
 
 
 

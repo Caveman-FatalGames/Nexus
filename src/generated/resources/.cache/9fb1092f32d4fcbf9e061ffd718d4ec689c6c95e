@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-20T22:08:23.077468	Recipes
+// 1.21.1	2025-02-22T13:56:15.4418664	Recipes
 30e235f8e01b1100c11c649055ebeb93d48925d9 data/nexus/advancement/recipes/building_blocks/steel_slab.json
 31ace895d71d35b7b2a5c69480589ac28c0e647b data/nexus/advancement/recipes/building_blocks/steel_stairs.json
 545efce68b1a51c779c234d7dec8e63c6861194e data/nexus/advancement/recipes/building_blocks/steel_wall.json
@@ -17,6 +17,7 @@ df658301f516942e197c52a75d5a57f4e75458aa data/nexus/advancement/recipes/misc/ste
 d1105ac66a6a3612f5368936483ea438e3f88955 data/nexus/advancement/recipes/misc/terrestrial_ingot_from_smelting_raw_terrestrial.json
 1f42799fc03e1de7746db527164ff584884535c6 data/nexus/advancement/recipes/misc/terrestrial_ingot_from_smelting_terrestrial_deepslate_ore.json
 60859c3f11f7499bfc8f2f4b1b3c375954633b84 data/nexus/advancement/recipes/misc/terrestrial_ingot_from_smelting_terrestrial_ore.json
+b2eb6612ea8dd7525251c67215933ab29babbd52 data/nexus/advancement/recipes/misc/terrestrial_pickaxe.json
 6cd796606209b429df87691383181580429d9a5c data/nexus/advancement/recipes/redstone/steel_button.json
 fa128c0fd43c317e92457f4d32a8e4cf51fc6d05 data/nexus/advancement/recipes/redstone/steel_door.json
 da8bb5316a3be393cb2452ff158de7cee711a0b2 data/nexus/advancement/recipes/redstone/steel_fence_gate.json
@@ -45,3 +46,4 @@ e06843d143d01da382734914261eef2dfba32985 data/nexus/recipe/terrestrial_ingot_fro
 7ee7fb7647018511d657cf5c1082afa0ebb8e399 data/nexus/recipe/terrestrial_ingot_from_smelting_raw_terrestrial.json
 7924560c3e9dc78798a2fbaf7f527cf940e5c781 data/nexus/recipe/terrestrial_ingot_from_smelting_terrestrial_deepslate_ore.json
 e6095bc8c1d4e05d644b2dcc9d6d9afb3534dd34 data/nexus/recipe/terrestrial_ingot_from_smelting_terrestrial_ore.json
+8f571b24884a333796c8adde800ef8bb32dfd060 data/nexus/recipe/terrestrial_pickaxe.json

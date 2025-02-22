@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -21,9 +22,15 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> NEXUS_ITEMS_TAB =
             CREATIVE_MODE_TABS.register("nexus_items_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.nexus.nexus_items_tab"))
-                    .icon(() -> new ItemStack(ModItems.RAW_NEXIUM.get()))
+                    .icon(() -> new ItemStack(ModItems.NEXIUM_EYE.get()))
                     .displayItems((pParameters, pOutput) -> {
 
+
+                        pOutput.accept(ModItems.OBSIDIAN_ROD);
+
+
+                        pOutput.accept(ModItems.STEEL_NUTS_AND_BOLTS);
+                        pOutput.accept(ModItems.STEEL_PLATE);
                         pOutput.accept(ModItems.STEEL_INGOT);
 
 
@@ -34,9 +41,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_NEXIUM);
                         pOutput.accept(ModItems.NEXIUM_DUST);
                         pOutput.accept(ModItems.NEXIUM_INGOT);
-
-
-                        pOutput.accept(ModItems.TERRESTRIAL_SAW);
+                        pOutput.accept(ModItems.NEXIUM_EYE);
 
 
                         pOutput.accept(ModItems.TERRESTRIAL_FRUIT);
@@ -69,12 +74,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_TRAPDOOR);
 
 
-
-
                         pOutput.accept(ModBlocks.TERRESTRIAL_ORE);
                         pOutput.accept(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE);
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_BLOCK);
+                        pOutput.accept(ModBlocks.TERRESTRIAL_GLASS);
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE);
 
@@ -82,6 +86,48 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.METEORITE_BLOCK);
 
                         pOutput.accept(ModBlocks.NEXIUM_BLOCK);
+
+
+
+
+                    }).build());
+
+
+    public static final Supplier<CreativeModeTab> NEXUS_TOOLS_TAB =
+            CREATIVE_MODE_TABS.register("nexus_tools_tab", () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup.nexus.nexus_tools_tab"))
+                    .icon(() -> new ItemStack(ModItems.TERRESTRIAL_PICKAXE.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_blocks_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+
+                        pOutput.accept(ModItems.TERRESTRIAL_HOE);
+                        pOutput.accept(ModItems.TERRESTRIAL_SHOVEL);
+                        pOutput.accept(ModItems.TERRESTRIAL_AXE);
+                        pOutput.accept(ModItems.TERRESTRIAL_PICKAXE);
+
+
+                        pOutput.accept(ModItems.TERRESTRIAL_SAW);
+                        pOutput.accept(ModItems.TERRESTRIAL_PAXEL);
+                        pOutput.accept(ModItems.TERRESTRIAL_HAMMER);
+
+
+
+
+
+
+                    }).build());
+
+
+    public static final Supplier<CreativeModeTab> NEXUS_ARMOR_AND_WEAPONS_TAB =
+            CREATIVE_MODE_TABS.register("nexus_armor_and_weapons_tab", () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup.nexus.nexus_armor_and_weapons_tab"))
+                    .icon(() -> new ItemStack(ModItems.TERRESTRIAL_SWORD.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_tools_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+
+                        pOutput.accept(ModItems.TERRESTRIAL_SWORD);
 
 
 

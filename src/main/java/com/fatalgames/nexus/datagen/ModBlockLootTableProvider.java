@@ -38,6 +38,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createDoorTable(ModBlocks.STEEL_DOOR.get()));
 
         dropSelf(ModBlocks.TERRESTRIAL_BLOCK.get());
+        dropSelf(ModBlocks.TERRESTRIAL_GLASS.get());
         dropSelf(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE.get());
 
 

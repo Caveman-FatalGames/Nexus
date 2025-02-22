@@ -42,6 +42,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_BLOCK);
+        blockWithItem(ModBlocks.TERRESTRIAL_GLASS);
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_ORE);

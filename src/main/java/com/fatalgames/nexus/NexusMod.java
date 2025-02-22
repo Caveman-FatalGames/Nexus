@@ -69,10 +69,17 @@ public class NexusMod
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
+
+            event.accept(ModItems.STEEL_NUTS_AND_BOLTS);
+            event.accept(ModItems.STEEL_PLATE);
+
+
             event.accept(ModItems.RAW_TERRESTRIAL);
 
             event.accept(ModItems.RAW_NEXIUM);
             event.accept(ModItems.NEXIUM_DUST);
+
+
 
         }
 

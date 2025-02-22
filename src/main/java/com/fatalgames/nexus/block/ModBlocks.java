@@ -22,10 +22,11 @@ public class ModBlocks {
             DeferredRegister.createBlocks(NexusMod.MOD_ID);
 
 
-    public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_BLOCK = registerBlock("terrestrial_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_GLASS = registerBlock("terrestrial_glass",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_ORE = registerBlock("terrestrial_ore",
@@ -41,6 +42,7 @@ public class ModBlocks {
 
 
 
+
     public static final DeferredBlock<Block> METEORITE_BLOCK = registerBlock("meteorite_block",
             () -> new DropExperienceBlock(UniformInt.of(3,6),
                     BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
@@ -51,7 +53,8 @@ public class ModBlocks {
 
 
 
-
+    public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> STEEL_STAIRS = registerBlock("steel_stairs",
             () -> new StairBlock(ModBlocks.STEEL_BLOCK.get().defaultBlockState(),
