@@ -76,6 +76,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_BLOCK);
                         pOutput.accept(ModBlocks.TERRESTRIAL_GLASS);
+                        pOutput.accept(ModBlocks.TERRESTRIAL_LIGHT_BLOCK);
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE);
 

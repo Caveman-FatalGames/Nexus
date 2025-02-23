@@ -1,6 +1,7 @@
 package com.fatalgames.nexus.block;
 
 import com.fatalgames.nexus.NexusMod;
+import com.fatalgames.nexus.block.custom.TerrestrialLightBlock;
 import com.fatalgames.nexus.block.custom.TerrestrialTransmutationTable;
 import com.fatalgames.nexus.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -28,6 +29,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> TERRESTRIAL_GLASS = registerBlock("terrestrial_glass",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_LIGHT_BLOCK = registerBlock("terrestrial_light_block",
+            () -> new TerrestrialLightBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(TerrestrialLightBlock.CLICKED) ? 15 : 0)));
 
     public static final DeferredBlock<Block> TERRESTRIAL_ORE = registerBlock("terrestrial_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,5),
