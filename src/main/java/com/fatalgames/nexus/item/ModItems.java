@@ -2,11 +2,14 @@ package com.fatalgames.nexus.item;
 
 import com.fatalgames.nexus.NexusMod;
 import com.fatalgames.nexus.item.custom.FuelItem;
+import com.fatalgames.nexus.item.custom.ModEffectSwordItem;
 import com.fatalgames.nexus.item.custom.TerrestrialSawItem;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(NexusMod.MOD_ID);
@@ -57,20 +60,31 @@ public class ModItems {
 
     public static final DeferredItem<Item> TERRESTRIAL_HAMMER = ITEMS.register("terrestrial_hammer",
             () -> new HammerItem(ModToolTiers.TERRESTRIAL,
-                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.TERRESTRIAL, 3.5f, -2.2f))));
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.TERRESTRIAL, 3f, -2.7f))));
 
 
     public static final DeferredItem<Item> TERRESTRIAL_SAW =
-            ITEMS.registerItem("terrestrial_saw", TerrestrialSawItem::new, new Item.Properties().durability(64));
+            ITEMS.registerItem("terrestrial_saw", TerrestrialSawItem::new, new Item.Properties().durability(640));
 
 
 
     public static final DeferredItem<Item> TERRESTRIAL_SWORD = ITEMS.register("terrestrial_sword",
-            () -> new SwordItem(ModToolTiers.TERRESTRIAL,
-                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.TERRESTRIAL, 5, -2.2f))));
+            () -> new ModEffectSwordItem(ModToolTiers.TERRESTRIAL,
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.TERRESTRIAL, 5, -2.2f)), MobEffects.POISON));
 
 
-
+    public static final DeferredItem<Item> TERRESTRIAL_HELMET = ITEMS.register("terrestrial_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+    public static final DeferredItem<Item> TERRESTRIAL_CHESTPLATE = ITEMS.register("terrestrial_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(16))));
+    public static final DeferredItem<Item> TERRESTRIAL_LEGGINGS = ITEMS.register("terrestrial_leggings",
+            () -> new ArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(16))));
+    public static final DeferredItem<Item> TERRESTRIAL_BOOTS = ITEMS.register("terrestrial_boots",
+            () -> new ArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(16))));
 
 
 
@@ -79,6 +93,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> TERRESTRIAL_FRUIT =
             ITEMS.registerItem("terrestrial_fruit", Item::new, new Item.Properties().food(ModFoodProperties.TERRESTRIAL_FRUIT));
+
+    public static final DeferredItem<Item> TERRESTRIAL_STEAK =
+            ITEMS.registerItem("terrestrial_steak", Item::new, new Item.Properties().food(ModFoodProperties.TERRESTRIAL_STEAK));
 
 
 
@@ -105,8 +122,11 @@ public class ModItems {
 
 
 
-
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+
+
 }
+

@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-22T13:57:47.8845564	Item Models: nexus
+// 1.21.1	2025-02-22T16:08:51.8801898	Item Models: nexus
 8bef9a28265f4ac8c1011434d48a274cba9adcb3 assets/nexus/models/item/nexium_dust.json
 d120b9d7dfa22b5372f3a86ba373d8457441684f assets/nexus/models/item/nexium_eye.json
 74b26df300cf4929a8591b7a4354bd2f46df63cc assets/nexus/models/item/nexium_ingot.json
@@ -13,12 +13,18 @@ e3bec9af22248371c0319338830ea6cdcd85d667 assets/nexus/models/item/steel_nuts_and
 b01ac4f9557ea30ac0e3edf5521eb399380da694 assets/nexus/models/item/steel_plate.json
 72b1cfe8311ed00cfd03df04b53bf9f4efe0843e assets/nexus/models/item/steel_wall.json
 c41284544ef0f6a12a5a453ef4d427b18b5de9e9 assets/nexus/models/item/terrestrial_axe.json
+d02fac6ac8c210ef005ba3db1015a95d5b112017 assets/nexus/models/item/terrestrial_boots.json
+fdfa7fa0c07c69fb3262ebc050484ba53c6a3bf4 assets/nexus/models/item/terrestrial_chestplate.json
 cb414231a0132972bf0f7f439e1cb103e3f9c946 assets/nexus/models/item/terrestrial_coal.json
 8b23846dbea3061f90a67f723d98fa66048771de assets/nexus/models/item/terrestrial_fruit.json
+c0f1eb6f9f4dbe0b764b507d7cb1383a425ad0f3 assets/nexus/models/item/terrestrial_hammer.json
+5633210e6d358625bfeaeb3e3827f1bf69ebb2df assets/nexus/models/item/terrestrial_helmet.json
 d59404d78fc44f68db34b542bdf7fdda7234f35b assets/nexus/models/item/terrestrial_hoe.json
 38af996f8e80673a892a755c8ba6e56393c172cd assets/nexus/models/item/terrestrial_ingot.json
+ce063476404c059a5cf380fe46fa577ce439f897 assets/nexus/models/item/terrestrial_leggings.json
 b93cddfb977db986853adf7e3420762374d58382 assets/nexus/models/item/terrestrial_paxel.json
 e73679b9ee4884dafdfbcd555cd37fb78844e787 assets/nexus/models/item/terrestrial_pickaxe.json
 eada27dfe47f7651141c7014ce4652db8eb775a4 assets/nexus/models/item/terrestrial_saw.json
 4553e1b977b722fb349effed39d6042fca8e4165 assets/nexus/models/item/terrestrial_shovel.json
+5091a8f6a81f2a69064aceffa66fd70e787df9a9 assets/nexus/models/item/terrestrial_steak.json
 872b96ead6c52f033d173020f7815d32cc3f9eec assets/nexus/models/item/terrestrial_sword.json

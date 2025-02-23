@@ -1,10 +1,12 @@
 package com.fatalgames.nexus.datagen;
 
 import com.fatalgames.nexus.NexusMod;
+import com.fatalgames.nexus.item.ModItems;
 import com.fatalgames.nexus.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -25,5 +27,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(Items.SAND);
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.TERRESTRIAL_HELMET.get())
+                .add(ModItems.TERRESTRIAL_CHESTPLATE.get())
+                .add(ModItems.TERRESTRIAL_LEGGINGS.get())
+                .add(ModItems.TERRESTRIAL_BOOTS.get());
     }
 }

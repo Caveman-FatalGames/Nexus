@@ -1,5 +1,6 @@
 package com.fatalgames.nexus;
 
+import com.fatalgames.nexus.item.ModArmorMaterials;
 import com.fatalgames.nexus.item.ModCreativeModeTabs;
 import com.fatalgames.nexus.item.ModItems;
 import com.fatalgames.nexus.block.ModBlocks;
@@ -40,6 +41,8 @@ public class NexusMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModArmorMaterials.register(modEventBus);
+
 
 
 
@@ -68,16 +71,6 @@ public class NexusMod
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-
-
-            event.accept(ModItems.STEEL_NUTS_AND_BOLTS);
-            event.accept(ModItems.STEEL_PLATE);
-
-
-            event.accept(ModItems.RAW_TERRESTRIAL);
-
-            event.accept(ModItems.RAW_NEXIUM);
-            event.accept(ModItems.NEXIUM_DUST);
 
 
 

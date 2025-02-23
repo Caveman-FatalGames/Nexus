@@ -44,9 +44,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.NEXIUM_EYE);
 
 
-                        pOutput.accept(ModItems.TERRESTRIAL_FRUIT);
-
-
                         pOutput.accept(ModItems.TERRESTRIAL_COAL);
 
 
@@ -84,7 +81,6 @@ public class ModCreativeModeTabs {
 
 
                         pOutput.accept(ModBlocks.METEORITE_BLOCK);
-
                         pOutput.accept(ModBlocks.NEXIUM_BLOCK);
 
 
@@ -128,6 +124,29 @@ public class ModCreativeModeTabs {
 
 
                         pOutput.accept(ModItems.TERRESTRIAL_SWORD);
+
+                        pOutput.accept(ModItems.TERRESTRIAL_HELMET);
+                        pOutput.accept(ModItems.TERRESTRIAL_CHESTPLATE);
+                        pOutput.accept(ModItems.TERRESTRIAL_LEGGINGS);
+                        pOutput.accept(ModItems.TERRESTRIAL_BOOTS);
+
+
+
+
+                    }).build());
+
+
+
+    public static final Supplier<CreativeModeTab> NEXUS_FOOD_AND_FLUIDS =
+            CREATIVE_MODE_TABS.register("nexus_food_and_fluids_tab", () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup.nexus.nexus_food_and_fluids_tab"))
+                    .icon(() -> new ItemStack(ModItems.TERRESTRIAL_FRUIT.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_armor_and_weapons_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+
+                        pOutput.accept(ModItems.TERRESTRIAL_FRUIT);
+                        pOutput.accept(ModItems.TERRESTRIAL_STEAK);
 
 
 

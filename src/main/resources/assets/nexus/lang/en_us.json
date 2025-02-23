@@ -38,11 +38,22 @@
   "item.nexus.terrestrial_axe": "Terrestrial Axe",
 
 
+  "item.nexus.terrestrial_sword": "Terrestrial Sword",
+
+  "item.nexus.terrestrial_helmet":"Terrestrial Helmet",
+  "item.nexus.terrestrial_chestplate": "Terrestrial Chestplate",
+  "item.nexus.terrestrial_leggings": "Terrestrial Leggings",
+  "item.nexus.terrestrial_boots": "Terrestrial Boots",
+
+
+
+
   "item.nexus.terrestrial_saw": "Terrestrial Saw",
   "item.nexus.terrestrial_paxel": "Terrestrial Paxel",
   "item.nexus.terrestrial_hammer": "Terrestrial Hammer",
 
   "item.nexus.terrestrial_fruit": "Terrestrial Fruit",
+  "item.nexus.terrestrial_steak": "Terrestrial Steak",
 
   "item.nexus.terrestrial_coal": "Terrestrial Coal",
 
@@ -63,7 +74,7 @@
   "itemGroup.nexus.nexus_blocks_tab": "Nexus Blocks",
   "itemGroup.nexus.nexus_tools_tab": "Nexus Tools",
   "itemGroup.nexus.nexus_armor_and_weapons_tab": "Nexus Armor & Weapons",
-
+  "itemGroup.nexus.nexus_food_and_fluids_tab": "Nexus Food & Fluids",
 
 
   "tooltip.nexus.terrestrial_saw.shift": "Press Shift for More Information",
