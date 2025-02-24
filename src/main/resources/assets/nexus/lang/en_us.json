@@ -1,5 +1,6 @@
 {
-  "item.nexus.obsidian_rod": "Rod of Obsidian",
+  "item.nexus.obsidian_rod": "Obsidian Rod",
+  "item.nexus.nexium_rod": "Nexium Rod",
 
 
 
@@ -19,18 +20,9 @@
   "block.nexus.steel_trapdoor": "Steel Trapdoor",
 
 
-  "block.nexus.meteorite_block": "Block of Meteorite",
-
-
-
   "item.nexus.raw_terrestrial": "Raw Terrestrial",
+  "item.nexus.terrestrial_dust": "Terrestrial Dust",
   "item.nexus.terrestrial_ingot": "Terrestrial Ingot",
-
-  "item.nexus.raw_nexium": "Raw Nexium",
-  "item.nexus.nexium_dust": "Nexium Dust",
-  "item.nexus.nexium_ingot": "Nexium Ingot",
-  "item.nexus.nexium_eye":"Nexium Eye",
-
 
   "item.nexus.terrestrial_hoe": "Terrestrial Hoe",
   "item.nexus.terrestrial_shovel": "Terrestrial Shovel",
@@ -40,20 +32,21 @@
 
   "item.nexus.terrestrial_sword": "Terrestrial Sword",
 
+
   "item.nexus.terrestrial_helmet":"Terrestrial Helmet",
   "item.nexus.terrestrial_chestplate": "Terrestrial Chestplate",
   "item.nexus.terrestrial_leggings": "Terrestrial Leggings",
   "item.nexus.terrestrial_boots": "Terrestrial Boots",
 
 
-
-
   "item.nexus.terrestrial_saw": "Terrestrial Saw",
   "item.nexus.terrestrial_paxel": "Terrestrial Paxel",
   "item.nexus.terrestrial_hammer": "Terrestrial Hammer",
 
+
   "item.nexus.terrestrial_fruit": "Terrestrial Fruit",
   "item.nexus.terrestrial_steak": "Terrestrial Steak",
+
 
   "item.nexus.terrestrial_coal": "Terrestrial Coal",
 
@@ -67,7 +60,19 @@
   "block.nexus.terrestrial_light_block": "Terrestrial Light Block",
   "block.nexus.terrestrial_transmutation_table": "Terrestrial Transmutation Table",
 
+
+
+
+
+  "item.nexus.raw_nexium": "Raw Nexium",
+  "item.nexus.nexium_dust": "Nexium Dust",
+  "item.nexus.nexium_ingot": "Nexium Ingot",
+  "item.nexus.nexium_eye":"Nexium Eye",
+
+  "block.nexus.meteorite_block": "Block of Meteorite",
   "block.nexus.nexium_block": "Block of Nexium",
+
+  "item.nexus.nexium_hammer": "Nexium Hammer",
 
 
 

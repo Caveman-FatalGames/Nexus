@@ -26,7 +26,6 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
 
-                        pOutput.accept(ModItems.OBSIDIAN_ROD);
 
 
                         pOutput.accept(ModItems.STEEL_NUTS_AND_BOLTS);
@@ -35,7 +34,11 @@ public class ModCreativeModeTabs {
 
 
                         pOutput.accept(ModItems.RAW_TERRESTRIAL);
+                        pOutput.accept(ModItems.TERRESTRIAL_DUST);
                         pOutput.accept(ModItems.TERRESTRIAL_INGOT);
+
+
+                        pOutput.accept(ModItems.TERRESTRIAL_COAL);
 
 
                         pOutput.accept(ModItems.RAW_NEXIUM);
@@ -44,7 +47,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.NEXIUM_EYE);
 
 
-                        pOutput.accept(ModItems.TERRESTRIAL_COAL);
+
+
+
+                        pOutput.accept(ModItems.OBSIDIAN_ROD);
+                        pOutput.accept(ModItems.NEXIUM_ROD);
 
 
 
@@ -107,6 +114,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.TERRESTRIAL_SAW);
                         pOutput.accept(ModItems.TERRESTRIAL_PAXEL);
                         pOutput.accept(ModItems.TERRESTRIAL_HAMMER);
+
+
+
+
+                        pOutput.accept(ModItems.NEXIUM_HAMMER);
 
 
 

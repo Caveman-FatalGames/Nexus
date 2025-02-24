@@ -46,41 +46,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
-        basicItem(ModItems.OBSIDIAN_ROD.get());
-
-
-
-        basicItem(ModItems.RAW_TERRESTRIAL.get());
-        basicItem(ModItems.TERRESTRIAL_COAL.get());
-        basicItem(ModItems.TERRESTRIAL_FRUIT.get());
-        basicItem(ModItems.TERRESTRIAL_STEAK.get());
-        basicItem(ModItems.TERRESTRIAL_INGOT.get());
-
-
-        handheldItem(ModItems.TERRESTRIAL_HOE.get());
-        handheldItem(ModItems.TERRESTRIAL_SHOVEL.get());
-        handheldItem(ModItems.TERRESTRIAL_PICKAXE.get());
-        handheldItem(ModItems.TERRESTRIAL_AXE.get());
-
-        handheldItem(ModItems.TERRESTRIAL_SAW.get());
-        handheldItem(ModItems.TERRESTRIAL_PAXEL.get());
-        handheldItem(ModItems.TERRESTRIAL_HAMMER.get());
-
-
-        handheldItem(ModItems.TERRESTRIAL_SWORD.get());
-
-        basicItem(ModItems.TERRESTRIAL_HELMET.get());
-        basicItem(ModItems.TERRESTRIAL_CHESTPLATE.get());
-        basicItem(ModItems.TERRESTRIAL_LEGGINGS.get());
-        basicItem(ModItems.TERRESTRIAL_BOOTS.get());
-
-
-        basicItem(ModItems.RAW_NEXIUM.get());
-        basicItem(ModItems.NEXIUM_DUST.get());
-        basicItem(ModItems.NEXIUM_INGOT.get());
-        basicItem(ModItems.NEXIUM_EYE.get());
-
-
         basicItem(ModItems.STEEL_INGOT.get());
         basicItem(ModItems.STEEL_NUTS_AND_BOLTS.get());
         basicItem(ModItems.STEEL_PLATE.get());
@@ -89,6 +54,53 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.STEEL_FENCE, ModBlocks.STEEL_BLOCK);
         wallItem(ModBlocks.STEEL_WALL, ModBlocks.STEEL_BLOCK);
         basicItem(ModBlocks.STEEL_DOOR.asItem());
+
+
+        basicItem(ModItems.OBSIDIAN_ROD.get());
+        basicItem(ModItems.NEXIUM_ROD.get());
+
+
+
+        basicItem(ModItems.RAW_TERRESTRIAL.get());
+        basicItem(ModItems.TERRESTRIAL_DUST.get());
+        basicItem(ModItems.TERRESTRIAL_INGOT.get());
+
+
+        handheldItem(ModItems.TERRESTRIAL_HOE.get());
+        handheldItem(ModItems.TERRESTRIAL_SHOVEL.get());
+        handheldItem(ModItems.TERRESTRIAL_PICKAXE.get());
+        handheldItem(ModItems.TERRESTRIAL_AXE.get());
+
+
+        handheldItem(ModItems.TERRESTRIAL_SAW.get());
+        handheldItem(ModItems.TERRESTRIAL_PAXEL.get());
+        handheldItem(ModItems.TERRESTRIAL_HAMMER.get());
+
+
+        handheldItem(ModItems.TERRESTRIAL_SWORD.get());
+
+
+        basicItem(ModItems.TERRESTRIAL_HELMET.get());
+        basicItem(ModItems.TERRESTRIAL_CHESTPLATE.get());
+        basicItem(ModItems.TERRESTRIAL_LEGGINGS.get());
+        basicItem(ModItems.TERRESTRIAL_BOOTS.get());
+
+
+        basicItem(ModItems.TERRESTRIAL_COAL.get());
+
+        basicItem(ModItems.TERRESTRIAL_FRUIT.get());
+        basicItem(ModItems.TERRESTRIAL_STEAK.get());
+
+
+        basicItem(ModItems.RAW_NEXIUM.get());
+        basicItem(ModItems.NEXIUM_DUST.get());
+        basicItem(ModItems.NEXIUM_INGOT.get());
+        basicItem(ModItems.NEXIUM_EYE.get());
+
+        handheldItem(ModItems.NEXIUM_HAMMER.get());
+
+
+
 
     }
 

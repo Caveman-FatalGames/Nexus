@@ -1,7 +1,9 @@
-// 1.21.1	2025-02-22T16:08:51.8801898	Item Models: nexus
+// 1.21.1	2025-02-23T22:35:45.9265572	Item Models: nexus
 8bef9a28265f4ac8c1011434d48a274cba9adcb3 assets/nexus/models/item/nexium_dust.json
 d120b9d7dfa22b5372f3a86ba373d8457441684f assets/nexus/models/item/nexium_eye.json
+61c93135f1b71778b8d1d345f726572345d8ac2d assets/nexus/models/item/nexium_hammer.json
 74b26df300cf4929a8591b7a4354bd2f46df63cc assets/nexus/models/item/nexium_ingot.json
+349300d9c4c9d76789b001480eb164380149a324 assets/nexus/models/item/nexium_rod.json
 31a2133ea70bd7dd65e5d5444346027cea0dd5a6 assets/nexus/models/item/obsidian_rod.json
 5069ebe3c24c60cac64958c71009289423c84cb8 assets/nexus/models/item/raw_nexium.json
 bcd34e293f2504af9313e7212aaf7aaae98e95dd assets/nexus/models/item/raw_terrestrial.json
@@ -16,6 +18,7 @@ c41284544ef0f6a12a5a453ef4d427b18b5de9e9 assets/nexus/models/item/terrestrial_ax
 d02fac6ac8c210ef005ba3db1015a95d5b112017 assets/nexus/models/item/terrestrial_boots.json
 fdfa7fa0c07c69fb3262ebc050484ba53c6a3bf4 assets/nexus/models/item/terrestrial_chestplate.json
 cb414231a0132972bf0f7f439e1cb103e3f9c946 assets/nexus/models/item/terrestrial_coal.json
+eb609abe9f8e6a98bb0cd1404b6d24cef9975a15 assets/nexus/models/item/terrestrial_dust.json
 8b23846dbea3061f90a67f723d98fa66048771de assets/nexus/models/item/terrestrial_fruit.json
 c0f1eb6f9f4dbe0b764b507d7cb1383a425ad0f3 assets/nexus/models/item/terrestrial_hammer.json
 5633210e6d358625bfeaeb3e3827f1bf69ebb2df assets/nexus/models/item/terrestrial_helmet.json

@@ -13,6 +13,9 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_TERRESTRIAL_TOOL = createTag("incorrect_for_terrestrial_tool");
         public static final TagKey<Block> NEEDS_TERRESTRIAL_TOOL = createTag("needs_terrestrial_tool");
 
+        public static final TagKey<Block> INCORRECT_FOR_NEXIUM_TOOL = createTag("incorrect_for_nexium_tool");
+        public static final TagKey<Block> NEEDS_NEXIUM_TOOL = createTag("needs_nexium_tool");
+
         public static final TagKey<Block> PAXEL_MINEABLE = createTag("mineable/paxel");
 
 

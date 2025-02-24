@@ -17,6 +17,9 @@ public class ModItems {
     public static final DeferredItem<Item> OBSIDIAN_ROD =
             ITEMS.registerItem("obsidian_rod", Item::new, new Item.Properties());
 
+    public static final DeferredItem<Item> NEXIUM_ROD =
+            ITEMS.registerItem("nexium_rod", Item::new, new Item.Properties());
+
 
 
     public static final DeferredItem<Item> STEEL_INGOT =
@@ -32,6 +35,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAW_TERRESTRIAL =
             ITEMS.registerItem("raw_terrestrial", Item::new, new Item.Properties());
+
+    public static final DeferredItem<Item> TERRESTRIAL_DUST =
+            ITEMS.registerItem("terrestrial_dust", Item::new, new Item.Properties());
 
     public static final DeferredItem<Item> TERRESTRIAL_INGOT =
             ITEMS.registerItem("terrestrial_ingot", Item::new, new Item.Properties());
@@ -76,12 +82,15 @@ public class ModItems {
     public static final DeferredItem<Item> TERRESTRIAL_HELMET = ITEMS.register("terrestrial_helmet",
             () -> new ModArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+
     public static final DeferredItem<Item> TERRESTRIAL_CHESTPLATE = ITEMS.register("terrestrial_chestplate",
             () -> new ArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(16))));
+
     public static final DeferredItem<Item> TERRESTRIAL_LEGGINGS = ITEMS.register("terrestrial_leggings",
             () -> new ArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(16))));
+
     public static final DeferredItem<Item> TERRESTRIAL_BOOTS = ITEMS.register("terrestrial_boots",
             () -> new ArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(16))));
@@ -116,6 +125,20 @@ public class ModItems {
 
     public static final DeferredItem<Item> NEXIUM_INGOT =
             ITEMS.registerItem("nexium_ingot", Item::new, new Item.Properties());
+
+
+    public static final DeferredItem<Item> NEXIUM_HAMMER = ITEMS.register("nexium_hammer",
+            () -> new HammerItem(ModToolTiers.NEXIUM,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.NEXIUM, 5f, -1.5f))));
+
+
+
+
+
+
+
+
+
 
     public static final DeferredItem<Item> NEXIUM_EYE =
             ITEMS.registerItem("nexium_eye", Item::new, new Item.Properties());
