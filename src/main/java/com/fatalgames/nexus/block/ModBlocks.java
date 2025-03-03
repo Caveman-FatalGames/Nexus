@@ -23,6 +23,15 @@ public class ModBlocks {
             DeferredRegister.createBlocks(NexusMod.MOD_ID);
 
 
+    public static final DeferredBlock<Block> STEEL_ORE = registerBlock("steel_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,5),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> STEEL_DEEPSLATE_ORE = registerBlock("steel_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3,6),
+                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
+
 
     public static final DeferredBlock<Block> TERRESTRIAL_BLOCK = registerBlock("terrestrial_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));

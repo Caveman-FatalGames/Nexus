@@ -4,10 +4,14 @@
 
 
 
+  "block.nexus.steel_ore": "Steel Ore",
+  "block.nexus.steel_deepslate_ore": "Steel Deepslate Ore",
+
 
   "block.nexus.steel_block": "Block of Steel",
   "item.nexus.steel_nuts_and_bolts": "Steel Nuts and Bolts",
   "item.nexus.steel_plate": "Steel Plate",
+  "item.nexus.steel_dust": "Steel Dust",
   "item.nexus.steel_ingot": "Steel Ingot",
   "block.nexus.steel_stairs": "Steel Stair",
   "block.nexus.steel_slab": "Steel Slab",
@@ -51,6 +55,8 @@
   "item.nexus.terrestrial_coal": "Terrestrial Coal",
 
 
+
+
   "block.nexus.terrestrial_ore": "Terrestrial Ore",
   "block.nexus.terrestrial_deepslate_ore": "Terrestrial Deepslate Ore",
 
@@ -87,6 +93,13 @@
   "tooltip.nexus.terrestrial_saw.tooltip.1": "This will cut down 1 log at a time, but instantly.",
 
   "tooltip.nexus.terrestrial_transmutation_table.shift": "Press Shift for More Information",
-  "tooltip.nexus.terrestrial_transmutation_table.tooltip.1": "Transforms items thrown on top of it."
+  "tooltip.nexus.terrestrial_transmutation_table.tooltip.1": "Transforms items thrown on top of it.",
 
+
+  "item.nexus.ore_data_tablet": "Ore Data Tablet",
+  "item.nexus.steel_ore_detector": "Steel Ore Detector",
+
+
+
+  "item.nexus.metal_detector.no_valuables": "No Valuables Found!"
 }

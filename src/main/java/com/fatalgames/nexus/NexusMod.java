@@ -1,5 +1,6 @@
 package com.fatalgames.nexus;
 
+import com.fatalgames.nexus.component.ModDataComponentTypes;
 import com.fatalgames.nexus.item.ModArmorMaterials;
 import com.fatalgames.nexus.item.ModCreativeModeTabs;
 import com.fatalgames.nexus.item.ModItems;
@@ -40,6 +41,8 @@ public class NexusMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         ModArmorMaterials.register(modEventBus);
 

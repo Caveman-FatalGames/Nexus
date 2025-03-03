@@ -1,17 +1,20 @@
-// 1.21.1	2025-02-23T22:35:45.9265572	Item Models: nexus
+// 1.21.1	2025-03-03T00:29:18.1412835	Item Models: nexus
 8bef9a28265f4ac8c1011434d48a274cba9adcb3 assets/nexus/models/item/nexium_dust.json
 d120b9d7dfa22b5372f3a86ba373d8457441684f assets/nexus/models/item/nexium_eye.json
 61c93135f1b71778b8d1d345f726572345d8ac2d assets/nexus/models/item/nexium_hammer.json
 74b26df300cf4929a8591b7a4354bd2f46df63cc assets/nexus/models/item/nexium_ingot.json
 349300d9c4c9d76789b001480eb164380149a324 assets/nexus/models/item/nexium_rod.json
 31a2133ea70bd7dd65e5d5444346027cea0dd5a6 assets/nexus/models/item/obsidian_rod.json
+e3dc02bcfdf25b35094affbbedd415e1bf4838ac assets/nexus/models/item/ore_data_tablet.json
 5069ebe3c24c60cac64958c71009289423c84cb8 assets/nexus/models/item/raw_nexium.json
 bcd34e293f2504af9313e7212aaf7aaae98e95dd assets/nexus/models/item/raw_terrestrial.json
 d971eafe83ec3f600dfbb19f99744c57a903edb3 assets/nexus/models/item/steel_button.json
 5b4b84bbdcc2a3a01a05b4a4db25498dbbd582ac assets/nexus/models/item/steel_door.json
+e6fce953edb14c76874a1798d73dc0931087b6b1 assets/nexus/models/item/steel_dust.json
 562b6fabd4fc4035ad84a5c490c970cc17e68b72 assets/nexus/models/item/steel_fence.json
 93dd7c89ab24c78c8bb119cf319e8467a36423f9 assets/nexus/models/item/steel_ingot.json
 e3bec9af22248371c0319338830ea6cdcd85d667 assets/nexus/models/item/steel_nuts_and_bolts.json
+c635645bad3f091801eae634c41ae63464a6687b assets/nexus/models/item/steel_ore_detector.json
 b01ac4f9557ea30ac0e3edf5521eb399380da694 assets/nexus/models/item/steel_plate.json
 72b1cfe8311ed00cfd03df04b53bf9f4efe0843e assets/nexus/models/item/steel_wall.json
 c41284544ef0f6a12a5a453ef4d427b18b5de9e9 assets/nexus/models/item/terrestrial_axe.json

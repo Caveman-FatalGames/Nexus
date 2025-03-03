@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModItems.STEEL_NUTS_AND_BOLTS);
                         pOutput.accept(ModItems.STEEL_PLATE);
+                        pOutput.accept(ModItems.STEEL_DUST);
                         pOutput.accept(ModItems.STEEL_INGOT);
 
 
@@ -54,6 +55,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.NEXIUM_ROD);
 
 
+                        pOutput.accept(ModItems.ORE_DATA_TABLET);
+                        pOutput.accept(ModItems.STEEL_ORE_DETECTOR);
+
+
+
 
 
                     }).build());
@@ -64,6 +70,10 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModBlocks.NEXIUM_BLOCK))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
+
+
+                        pOutput.accept(ModBlocks.STEEL_ORE);
+                        pOutput.accept(ModBlocks.STEEL_DEEPSLATE_ORE);
 
 
                         pOutput.accept(ModBlocks.STEEL_BLOCK);
@@ -78,6 +88,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_TRAPDOOR);
 
 
+
                         pOutput.accept(ModBlocks.TERRESTRIAL_ORE);
                         pOutput.accept(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE);
 
@@ -86,6 +97,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TERRESTRIAL_LIGHT_BLOCK);
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE);
+
+
+
 
 
                         pOutput.accept(ModBlocks.METEORITE_BLOCK);

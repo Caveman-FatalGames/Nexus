@@ -21,13 +21,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+
+                .add(ModBlocks.STEEL_ORE.get())
+                .add(ModBlocks.STEEL_DEEPSLATE_ORE.get())
+                .add(ModBlocks.STEEL_BLOCK.get())
                 .add(ModBlocks.TERRESTRIAL_BLOCK.get())
                 .add(ModBlocks.TERRESTRIAL_GLASS.get())
                 .add(ModBlocks.TERRESTRIAL_ORE.get())
                 .add(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE.get())
                 .add(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE.get())
+
                 .add(ModBlocks.NEXIUM_BLOCK.get())
-                .add(ModBlocks.STEEL_BLOCK.get())
                 .add(ModBlocks.METEORITE_BLOCK.get());
 
 

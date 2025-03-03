@@ -46,6 +46,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
+
+
+        basicItem(ModItems.STEEL_DUST.get());
         basicItem(ModItems.STEEL_INGOT.get());
         basicItem(ModItems.STEEL_NUTS_AND_BOLTS.get());
         basicItem(ModItems.STEEL_PLATE.get());
@@ -54,6 +57,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.STEEL_FENCE, ModBlocks.STEEL_BLOCK);
         wallItem(ModBlocks.STEEL_WALL, ModBlocks.STEEL_BLOCK);
         basicItem(ModBlocks.STEEL_DOOR.asItem());
+
+
+        basicItem(ModItems.STEEL_ORE_DETECTOR.get());
+        basicItem(ModItems.ORE_DATA_TABLET.get());
 
 
         basicItem(ModItems.OBSIDIAN_ROD.get());
@@ -98,6 +105,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.NEXIUM_EYE.get());
 
         handheldItem(ModItems.NEXIUM_HAMMER.get());
+
+
+
 
 
 

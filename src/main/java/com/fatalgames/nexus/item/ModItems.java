@@ -1,9 +1,9 @@
 package com.fatalgames.nexus.item;
 
+import com.fatalgames.nexus.item.custom.OreDataTabletItem;
+import com.fatalgames.nexus.item.custom.SteelOreDetectorItem;
 import com.fatalgames.nexus.NexusMod;
-import com.fatalgames.nexus.item.custom.FuelItem;
-import com.fatalgames.nexus.item.custom.ModEffectSwordItem;
-import com.fatalgames.nexus.item.custom.TerrestrialSawItem;
+import com.fatalgames.nexus.item.custom.*;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -21,6 +21,8 @@ public class ModItems {
             ITEMS.registerItem("nexium_rod", Item::new, new Item.Properties());
 
 
+    public static final DeferredItem<Item> STEEL_DUST =
+            ITEMS.registerItem("steel_dust", Item::new, new Item.Properties());
 
     public static final DeferredItem<Item> STEEL_INGOT =
             ITEMS.registerItem("steel_ingot", Item::new, new Item.Properties());
@@ -142,6 +144,13 @@ public class ModItems {
 
     public static final DeferredItem<Item> NEXIUM_EYE =
             ITEMS.registerItem("nexium_eye", Item::new, new Item.Properties());
+
+
+
+    public static final DeferredItem<Item> STEEL_ORE_DETECTOR = ITEMS.register("steel_ore_detector",
+            () -> new SteelOreDetectorItem(new Item.Properties().durability(100)));
+    public static final DeferredItem<Item> ORE_DATA_TABLET = ITEMS.register("ore_data_tablet",
+            () -> new OreDataTabletItem(new Item.Properties().stacksTo(1)));
 
 
 

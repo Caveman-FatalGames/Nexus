@@ -27,6 +27,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+
+        this.add(ModBlocks.STEEL_ORE.get(),
+                block -> createOreDrop(ModBlocks.STEEL_ORE.get(), ModItems.STEEL_DUST.get()));
+        this.add(ModBlocks.STEEL_DEEPSLATE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.STEEL_DEEPSLATE_ORE.get(), ModItems.STEEL_DUST.get(), 2, 3));
+
+
         dropSelf(ModBlocks.STEEL_BLOCK.get());
         dropSelf(ModBlocks.STEEL_PRESSURE_PLATE.get());
         dropSelf(ModBlocks.STEEL_BUTTON.get());
@@ -41,6 +48,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.TERRESTRIAL_GLASS.get());
         dropSelf(ModBlocks.TERRESTRIAL_LIGHT_BLOCK.get());
         dropSelf(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE.get());
+
+
 
 
 

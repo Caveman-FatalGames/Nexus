@@ -1,7 +1,7 @@
-// 1.21.1	2025-02-22T12:25:04.1758568	Tags for minecraft:block mod id nexus
+// 1.21.1	2025-03-02T23:07:45.5142884	Tags for minecraft:block mod id nexus
 8df720b3a117457f5f7fcf5ac4cfff4895acd3cf data/minecraft/tags/block/fences.json
 df537dbf5dc6b5bb4308edd5dfa1fd7c5b076435 data/minecraft/tags/block/fence_gates.json
-e78ff4905c860f041ec4d95838e6052fe950a1a2 data/minecraft/tags/block/mineable/pickaxe.json
+c05a9d0bda763383816d447bbb29faf78c415958 data/minecraft/tags/block/mineable/pickaxe.json
 e0bd3457cf2663f84ac529e810d6573a9b890527 data/minecraft/tags/block/needs_diamond_tool.json
 d073baa47316b02f34f23d4cca1f4bff34051332 data/minecraft/tags/block/needs_iron_tool.json
 290a13bc0b0993602255cb7b791eac08bd374a82 data/minecraft/tags/block/walls.json
