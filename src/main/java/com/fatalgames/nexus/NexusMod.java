@@ -5,6 +5,7 @@ import com.fatalgames.nexus.item.ModArmorMaterials;
 import com.fatalgames.nexus.item.ModCreativeModeTabs;
 import com.fatalgames.nexus.item.ModItems;
 import com.fatalgames.nexus.block.ModBlocks;
+import com.fatalgames.nexus.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -97,6 +98,8 @@ public class NexusMod
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
+            ModItemProperties.addCustomItemProperties();
 
         }
     }

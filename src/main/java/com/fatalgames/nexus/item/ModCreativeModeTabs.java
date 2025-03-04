@@ -150,6 +150,11 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
 
+
+                        pOutput.accept(ModItems.STEEL_BOW);
+
+
+
                         pOutput.accept(ModItems.TERRESTRIAL_SWORD);
 
                         pOutput.accept(ModItems.TERRESTRIAL_HELMET);

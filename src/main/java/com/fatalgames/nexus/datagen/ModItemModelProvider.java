@@ -63,6 +63,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ORE_DATA_TABLET.get());
 
 
+
         basicItem(ModItems.OBSIDIAN_ROD.get());
         basicItem(ModItems.NEXIUM_ROD.get());
 

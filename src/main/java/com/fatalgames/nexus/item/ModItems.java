@@ -152,6 +152,9 @@ public class ModItems {
     public static final DeferredItem<Item> ORE_DATA_TABLET = ITEMS.register("ore_data_tablet",
             () -> new OreDataTabletItem(new Item.Properties().stacksTo(1)));
 
+    public static final DeferredItem<Item> STEEL_BOW = ITEMS.register("steel_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
 
 
     public static void register (IEventBus eventBus) {
