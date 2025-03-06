@@ -4,6 +4,13 @@
 
 
 
+  "item.nexus.polyvine_seeds": "Polyvine Seeds",
+  "block.nexus.polyvine_crop": "Polyvine",
+
+  "item.nexus.plastic_ball": "Plastic Ball",
+  "item.nexus.plastic_sheet": "Plastic Sheet",
+
+
   "block.nexus.steel_ore": "Steel Ore",
   "block.nexus.steel_deepslate_ore": "Steel Deepslate Ore",
 
@@ -26,6 +33,14 @@
   "block.nexus.steel_trapdoor": "Steel Trapdoor",
 
 
+  "block.nexus.steel_pedestal": "Steel Pedestal",
+  "blockentity.nexus.steel_pedestal": "Steel Pedestal",
+
+
+
+
+  "block.nexus.terrestrial_flower": "Terrestrial Flower",
+  "block.nexus.potted_terrestrial_flower": "Potted Terrestrial Flower",
   "item.nexus.raw_terrestrial": "Raw Terrestrial",
   "item.nexus.terrestrial_dust": "Terrestrial Dust",
   "item.nexus.terrestrial_ingot": "Terrestrial Ingot",
@@ -84,6 +99,7 @@
 
 
 
+
   "itemGroup.nexus.nexus_items_tab": "Nexus Items",
   "itemGroup.nexus.nexus_blocks_tab": "Nexus Blocks",
   "itemGroup.nexus.nexus_tools_tab": "Nexus Tools",
@@ -103,5 +119,11 @@
 
 
 
-  "item.nexus.metal_detector.no_valuables": "No Valuables Found!"
+  "item.nexus.metal_detector.no_valuables": "No Valuables Found!",
+
+
+
+
+  "sounds.nexus.chainsaw_cut": "Chainsaw Cutting Sound",
+  "sounds.nexus.chainsaw_pull": "Chainsaw Pulling Sound"
 }

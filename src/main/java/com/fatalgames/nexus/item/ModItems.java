@@ -1,5 +1,6 @@
 package com.fatalgames.nexus.item;
 
+import com.fatalgames.nexus.block.ModBlocks;
 import com.fatalgames.nexus.item.custom.OreDataTabletItem;
 import com.fatalgames.nexus.item.custom.SteelOreDetectorItem;
 import com.fatalgames.nexus.NexusMod;
@@ -154,6 +155,18 @@ public class ModItems {
 
     public static final DeferredItem<Item> STEEL_BOW = ITEMS.register("steel_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
+
+
+
+    public static final DeferredItem<Item> POLYVINE_SEEDS = ITEMS.register("polyvine_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.POLYVINE.get(), new Item.Properties()));
+
+
+    public static final DeferredItem<Item> PLASTIC_BALL =
+            ITEMS.registerItem("plastic_ball", Item::new, new Item.Properties());
+
+    public static final DeferredItem<Item> PLASTIC_SHEET =
+            ITEMS.registerItem("plastic_sheet", Item::new, new Item.Properties());
 
 
 

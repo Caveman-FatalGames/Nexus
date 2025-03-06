@@ -1,10 +1,13 @@
 package com.fatalgames.nexus.block;
 
 import com.fatalgames.nexus.NexusMod;
+import com.fatalgames.nexus.block.custom.PolyvineCropBlock;
+import com.fatalgames.nexus.block.custom.SteelPedestalBlock;
 import com.fatalgames.nexus.block.custom.TerrestrialLightBlock;
 import com.fatalgames.nexus.block.custom.TerrestrialTransmutationTable;
 import com.fatalgames.nexus.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -100,6 +103,19 @@ public class ModBlocks {
 
 
 
+    public static final DeferredBlock<Block> STEEL_PEDESTAL = registerBlock("steel_pedestal",
+            () -> new SteelPedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
+
+
+    public static final DeferredBlock<Block> POLYVINE = BLOCKS.register("polyvine",
+            () -> new PolyvineCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+
+    public static final DeferredBlock<Block> TERRESTRIAL_FLOWER = registerBlock("terrestrial_flower",
+            () -> new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.ofFullCopy(Blocks.ALLIUM)));
+    public static final DeferredBlock<Block> POTTED_TERRESTRIAL_FLOWER = BLOCKS.register("potted_terrestrial_flower",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), TERRESTRIAL_FLOWER, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ALLIUM)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

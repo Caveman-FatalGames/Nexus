@@ -28,6 +28,10 @@ public class ModCreativeModeTabs {
 
 
 
+                        pOutput.accept(ModItems.PLASTIC_BALL);
+                        pOutput.accept(ModItems.PLASTIC_SHEET);
+
+
                         pOutput.accept(ModItems.STEEL_NUTS_AND_BOLTS);
                         pOutput.accept(ModItems.STEEL_PLATE);
                         pOutput.accept(ModItems.STEEL_DUST);
@@ -86,6 +90,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_WALL);
                         pOutput.accept(ModBlocks.STEEL_DOOR);
                         pOutput.accept(ModBlocks.STEEL_TRAPDOOR);
+
+                        pOutput.accept(ModBlocks.STEEL_PEDESTAL);
+
+
 
 
 
@@ -176,6 +184,11 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_armor_and_weapons_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
+
+                        pOutput.accept(ModItems.POLYVINE_SEEDS);
+
+                        pOutput.accept(ModBlocks.TERRESTRIAL_FLOWER);
+                        pOutput.accept(ModItems.TERRESTRIAL_FRUIT);
 
                         pOutput.accept(ModItems.TERRESTRIAL_FRUIT);
                         pOutput.accept(ModItems.TERRESTRIAL_STEAK);

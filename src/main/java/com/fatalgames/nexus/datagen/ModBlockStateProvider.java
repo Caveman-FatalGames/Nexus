@@ -2,15 +2,19 @@ package com.fatalgames.nexus.datagen;
 
 import com.fatalgames.nexus.NexusMod;
 import com.fatalgames.nexus.block.ModBlocks;
+import com.fatalgames.nexus.block.custom.PolyvineCropBlock;
 import com.fatalgames.nexus.block.custom.TerrestrialLightBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -65,6 +69,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NEXIUM_BLOCK);
 
         customLamp();
+
+        makeCrop(((PolyvineCropBlock) ModBlocks.POLYVINE.get()), "polyvine_crop_stage","polyvine_crop_stage");
+
+
+        simpleBlock(ModBlocks.TERRESTRIAL_FLOWER.get(),
+                models().cross(blockTexture(ModBlocks.TERRESTRIAL_FLOWER.get()).getPath(), blockTexture(ModBlocks.TERRESTRIAL_FLOWER.get())).renderType("cutout"));
+        simpleBlock(ModBlocks.POTTED_TERRESTRIAL_FLOWER.get(), models().singleTexture("potted_terrestrial_flower", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.TERRESTRIAL_FLOWER.get())).renderType("cutout"));
+
+
+
     }
 
     private void customLamp() {
@@ -80,6 +95,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(ModBlocks.TERRESTRIAL_LIGHT_BLOCK.get(), models().cubeAll("terrestrial_light_block_on",
                 ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "block/" + "terrestrial_light_block_on")));
     }
+
+    public void makeCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((PolyvineCropBlock) block).getAgeProperty()),
+                ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "block/" + textureName +
+                        state.getValue(((PolyvineCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
 
 
 

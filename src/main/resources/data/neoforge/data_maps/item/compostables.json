@@ -1,0 +1,10 @@
+{
+  "values": {
+    "nexus:plastic_ball": {
+      "chance": 0.75
+    },
+    "nexus:polyvine_seeds": {
+      "chance": 0.5
+    }
+  }
+}

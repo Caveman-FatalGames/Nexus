@@ -1,12 +1,21 @@
 package com.fatalgames.nexus;
 
+import com.fatalgames.nexus.block.entity.ModBlockEntities;
+import com.fatalgames.nexus.block.entity.renderer.SteelPedestalBlockEntityRenderer;
 import com.fatalgames.nexus.component.ModDataComponentTypes;
 import com.fatalgames.nexus.item.ModArmorMaterials;
 import com.fatalgames.nexus.item.ModCreativeModeTabs;
 import com.fatalgames.nexus.item.ModItems;
 import com.fatalgames.nexus.block.ModBlocks;
+import com.fatalgames.nexus.screen.ModMenuTypes;
+import com.fatalgames.nexus.screen.custom.SteelPedestalScreen;
+import com.fatalgames.nexus.sound.ModSounds;
 import com.fatalgames.nexus.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -47,6 +56,13 @@ public class NexusMod
 
         ModArmorMaterials.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
+
+
 
 
 
@@ -68,7 +84,9 @@ public class NexusMod
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.TERRESTRIAL_FLOWER.getId(), ModBlocks.POTTED_TERRESTRIAL_FLOWER);
+        });
     }
 
     // Add the example block item to the building blocks tab
@@ -100,7 +118,16 @@ public class NexusMod
         public static void onClientSetup(FMLClientSetupEvent event) {
 
             ModItemProperties.addCustomItemProperties();
+        }
 
+        @SubscribeEvent
+        public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntities.STEEL_PEDESTAL_BE.get(), SteelPedestalBlockEntityRenderer::new);
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.PEDESTAL_MENU.get(), SteelPedestalScreen::new);
         }
     }
 }

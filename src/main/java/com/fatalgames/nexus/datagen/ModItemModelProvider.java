@@ -48,6 +48,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
 
+        basicItem(ModItems.POLYVINE_SEEDS.get());
+        flowerItem(ModBlocks.TERRESTRIAL_FLOWER);
+
+        basicItem(ModItems.PLASTIC_BALL.get());
+        basicItem(ModItems.PLASTIC_SHEET.get());
+
+
+
         basicItem(ModItems.STEEL_DUST.get());
         basicItem(ModItems.STEEL_INGOT.get());
         basicItem(ModItems.STEEL_NUTS_AND_BOLTS.get());
@@ -113,6 +121,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
 
+    }
+
+    public void flowerItem(DeferredBlock<Block> block) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("item/generated"))
+                .texture("layer0", ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID,
+                        "block/" + block.getId().getPath()));
     }
 
 

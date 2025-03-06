@@ -1,7 +1,9 @@
 package com.fatalgames.nexus.datagen;
 
 import com.fatalgames.nexus.block.ModBlocks;
+import com.fatalgames.nexus.block.custom.PolyvineCropBlock;
 import com.fatalgames.nexus.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -15,6 +17,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
@@ -43,6 +47,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STEEL_TRAPDOOR.get());
         this.add(ModBlocks.STEEL_DOOR.get(),
                 block -> createDoorTable(ModBlocks.STEEL_DOOR.get()));
+        dropSelf(ModBlocks.STEEL_STAIRS.get());
+        this.add(ModBlocks.STEEL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.STEEL_SLAB.get()));
+
+
+        dropSelf(ModBlocks.STEEL_PEDESTAL.get());
+
 
         dropSelf(ModBlocks.TERRESTRIAL_BLOCK.get());
         dropSelf(ModBlocks.TERRESTRIAL_GLASS.get());
@@ -59,9 +70,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE.get(), ModItems.RAW_TERRESTRIAL.get(), 2, 3));
 
 
-        dropSelf(ModBlocks.STEEL_STAIRS.get());
-        this.add(ModBlocks.STEEL_SLAB.get(),
-            block -> createSlabItemTable(ModBlocks.STEEL_SLAB.get()));
+
 
 
         this.add(ModBlocks.NEXIUM_BLOCK.get(),
@@ -70,6 +79,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.METEORITE_BLOCK.get(),
                 block -> createMultipleOreDrops(ModBlocks.METEORITE_BLOCK.get(), ModItems.NEXIUM_DUST.get(), 2, 3));
 
+
+
+        LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.POLYVINE.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PolyvineCropBlock.AGE, 5));
+        this.add(ModBlocks.POLYVINE.get(), this.createCropDrops(ModBlocks.POLYVINE.get(),
+                ModItems.PLASTIC_BALL.get(), ModItems.POLYVINE_SEEDS.asItem(), lootItemConditionBuilder));
+
+        this.dropSelf(ModBlocks.TERRESTRIAL_FLOWER.get());
+        this.add(ModBlocks.POTTED_TERRESTRIAL_FLOWER.get(), createPotFlowerItemTable(ModBlocks.TERRESTRIAL_FLOWER));
 
 
 
