@@ -1,6 +1,7 @@
 package com.fatalgames.nexus.screen;
 
 import com.fatalgames.nexus.NexusMod;
+import com.fatalgames.nexus.screen.custom.SteelForgeMenu;
 import com.fatalgames.nexus.screen.custom.SteelPedestalMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -17,6 +18,9 @@ public class ModMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<SteelPedestalMenu>> PEDESTAL_MENU =
             registerMenuType("pedestal_menu", SteelPedestalMenu::new);
+
+    public static final DeferredHolder<MenuType<?>, MenuType<SteelForgeMenu>> STEEL_FORGE_MENU =
+            registerMenuType("steel_forge_menu", SteelForgeMenu::new);
 
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,

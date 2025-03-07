@@ -1,0 +1,9 @@
+{
+  "type": "nexus:forge",
+  "ingredient": {
+    "item": "nexus:terrestrial_dust"
+  },
+  "result": {
+    "id": "nexus:terrestrial_ingot"
+  }
+}

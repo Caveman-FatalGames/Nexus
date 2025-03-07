@@ -35,6 +35,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STEEL_TRAPDOOR, "_bottom");
 
 
+        blockItem(ModBlocks.STEEL_FORGE);
+
+
         stairsBlock(((StairBlock) ModBlocks.STEEL_STAIRS.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.STEEL_SLAB.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
 

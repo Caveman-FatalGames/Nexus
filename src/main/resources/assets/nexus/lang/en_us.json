@@ -6,7 +6,9 @@
 
   "item.nexus.polyvine_seeds": "Polyvine Seeds",
   "block.nexus.polyvine_crop": "Polyvine",
+  "item.nexus.polyvine": "Polyvine",
 
+  "item.nexus.polymer": "Polymer",
   "item.nexus.plastic_ball": "Plastic Ball",
   "item.nexus.plastic_sheet": "Plastic Sheet",
 
@@ -34,7 +36,9 @@
 
 
   "block.nexus.steel_pedestal": "Steel Pedestal",
+  "block.nexus.steel_forge": "Steel Forge",
   "blockentity.nexus.steel_pedestal": "Steel Pedestal",
+  "blockentity.nexus.steel_forge": "Steel Forge",
 
 
 

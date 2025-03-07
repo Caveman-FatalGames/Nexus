@@ -1,0 +1,9 @@
+{
+  "type": "nexus:forge",
+  "ingredient": {
+    "item": "nexus:polymer"
+  },
+  "result": {
+    "id": "nexus:plastic_ball"
+  }
+}

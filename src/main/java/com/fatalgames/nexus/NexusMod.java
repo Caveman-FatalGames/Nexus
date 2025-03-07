@@ -1,11 +1,13 @@
 package com.fatalgames.nexus;
 
 import com.fatalgames.nexus.block.entity.ModBlockEntities;
+import com.fatalgames.nexus.recipe.ModRecipes;
 import com.fatalgames.nexus.block.entity.renderer.SteelPedestalBlockEntityRenderer;
 import com.fatalgames.nexus.component.ModDataComponentTypes;
 import com.fatalgames.nexus.item.ModArmorMaterials;
 import com.fatalgames.nexus.item.ModCreativeModeTabs;
 import com.fatalgames.nexus.item.ModItems;
+import com.fatalgames.nexus.screen.custom.SteelForgeScreen;
 import com.fatalgames.nexus.block.ModBlocks;
 import com.fatalgames.nexus.screen.ModMenuTypes;
 import com.fatalgames.nexus.screen.custom.SteelPedestalScreen;
@@ -61,6 +63,8 @@ public class NexusMod
         ModBlockEntities.register(modEventBus);
 
         ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
 
 
@@ -128,6 +132,7 @@ public class NexusMod
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.PEDESTAL_MENU.get(), SteelPedestalScreen::new);
+            event.register(ModMenuTypes.STEEL_FORGE_MENU.get(), SteelForgeScreen::new);
         }
     }
 }

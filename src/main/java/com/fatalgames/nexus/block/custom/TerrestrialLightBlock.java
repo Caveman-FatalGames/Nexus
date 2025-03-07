@@ -1,6 +1,8 @@
 package com.fatalgames.nexus.block.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
@@ -13,6 +15,7 @@ import net.minecraft.world.phys.BlockHitResult;
 public class TerrestrialLightBlock extends Block {
     public static final BooleanProperty CLICKED = BooleanProperty.create("clicked");
 
+
     public TerrestrialLightBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.defaultBlockState().setValue(CLICKED, false));
@@ -23,6 +26,8 @@ public class TerrestrialLightBlock extends Block {
         if(!pLevel.isClientSide()) {
             boolean currentState = pState.getValue(CLICKED);
             pLevel.setBlock(pPos, pState.setValue(CLICKED, !currentState), 3);
+            pLevel.playSound(null, pPos, SoundEvents.AMETHYST_BLOCK_HIT, SoundSource.BLOCKS, 1f, 1.5f);
+
         }
 
         return InteractionResult.SUCCESS;
@@ -31,5 +36,6 @@ public class TerrestrialLightBlock extends Block {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(CLICKED);
+
     }
 }

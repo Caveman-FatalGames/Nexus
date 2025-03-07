@@ -49,8 +49,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
         basicItem(ModItems.POLYVINE_SEEDS.get());
+        basicItem(ModItems.POLYVINE.get());
         flowerItem(ModBlocks.TERRESTRIAL_FLOWER);
 
+        basicItem(ModItems.POLYMER.get());
         basicItem(ModItems.PLASTIC_BALL.get());
         basicItem(ModItems.PLASTIC_SHEET.get());
 

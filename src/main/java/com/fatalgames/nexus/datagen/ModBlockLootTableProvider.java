@@ -53,6 +53,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
 
         dropSelf(ModBlocks.STEEL_PEDESTAL.get());
+        dropSelf(ModBlocks.STEEL_FORGE.get());
+
 
 
         dropSelf(ModBlocks.TERRESTRIAL_BLOCK.get());

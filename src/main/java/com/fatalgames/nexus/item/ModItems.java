@@ -162,6 +162,12 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.POLYVINE.get(), new Item.Properties()));
 
 
+    public static final DeferredItem<Item> POLYVINE =
+            ITEMS.registerItem("polyvine", Item::new, new Item.Properties());
+
+    public static final DeferredItem<Item> POLYMER =
+            ITEMS.registerItem("polymer", Item::new, new Item.Properties());
+
     public static final DeferredItem<Item> PLASTIC_BALL =
             ITEMS.registerItem("plastic_ball", Item::new, new Item.Properties());
 

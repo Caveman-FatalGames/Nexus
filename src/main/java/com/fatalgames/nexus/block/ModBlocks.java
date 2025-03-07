@@ -1,10 +1,8 @@
 package com.fatalgames.nexus.block;
 
+import com.fatalgames.nexus.block.custom.SteelForge;
 import com.fatalgames.nexus.NexusMod;
-import com.fatalgames.nexus.block.custom.PolyvineCropBlock;
-import com.fatalgames.nexus.block.custom.SteelPedestalBlock;
-import com.fatalgames.nexus.block.custom.TerrestrialLightBlock;
-import com.fatalgames.nexus.block.custom.TerrestrialTransmutationTable;
+import com.fatalgames.nexus.block.custom.*;
 import com.fatalgames.nexus.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -104,7 +102,10 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> STEEL_PEDESTAL = registerBlock("steel_pedestal",
-            () -> new SteelPedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));
+            () -> new SteelPedestalBlock(BlockBehaviour.Properties.of().noOcclusion().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> STEEL_FORGE = registerBlock("steel_forge",
+            () -> new SteelForge(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
 
 

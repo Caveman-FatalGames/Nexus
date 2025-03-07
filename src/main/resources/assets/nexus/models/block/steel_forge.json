@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+      "front": "nexus:block/steel_forge",
+      "side": "nexus:block/steel_forge_sides",
+      "top": "nexus:block/steel_forge_top"
+    }
+}

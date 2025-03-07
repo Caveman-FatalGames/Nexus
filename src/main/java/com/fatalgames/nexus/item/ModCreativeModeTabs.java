@@ -28,6 +28,8 @@ public class ModCreativeModeTabs {
 
 
 
+
+                        pOutput.accept(ModItems.POLYMER);
                         pOutput.accept(ModItems.PLASTIC_BALL);
                         pOutput.accept(ModItems.PLASTIC_SHEET);
 
@@ -92,6 +94,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_TRAPDOOR);
 
                         pOutput.accept(ModBlocks.STEEL_PEDESTAL);
+                        pOutput.accept(ModBlocks.STEEL_FORGE);
 
 
 
@@ -186,6 +189,7 @@ public class ModCreativeModeTabs {
 
 
                         pOutput.accept(ModItems.POLYVINE_SEEDS);
+                        pOutput.accept(ModItems.POLYVINE);
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_FLOWER);
                         pOutput.accept(ModItems.TERRESTRIAL_FRUIT);

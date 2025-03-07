@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-04T23:05:05.3540318	Item Models: nexus
+// 1.21.1	2025-03-06T21:08:49.2513133	Item Models: nexus
 8bef9a28265f4ac8c1011434d48a274cba9adcb3 assets/nexus/models/item/nexium_dust.json
 d120b9d7dfa22b5372f3a86ba373d8457441684f assets/nexus/models/item/nexium_eye.json
 61c93135f1b71778b8d1d345f726572345d8ac2d assets/nexus/models/item/nexium_hammer.json
@@ -8,6 +8,8 @@ d120b9d7dfa22b5372f3a86ba373d8457441684f assets/nexus/models/item/nexium_eye.jso
 e3dc02bcfdf25b35094affbbedd415e1bf4838ac assets/nexus/models/item/ore_data_tablet.json
 5cfa5f0238a002ddd70f2ed0589f2dde99bf84e6 assets/nexus/models/item/plastic_ball.json
 2b2a2fe1ec160ea78bea5ed09291868656082dc4 assets/nexus/models/item/plastic_sheet.json
+c04916a10108e75ed360bf8d18253244c1053ad2 assets/nexus/models/item/polymer.json
+f68e94f09737cc93cb511e7a243f2bf6e4752ab8 assets/nexus/models/item/polyvine.json
 5d79387026c30749626f7cb6aa646c98bd2d12c2 assets/nexus/models/item/polyvine_seeds.json
 5069ebe3c24c60cac64958c71009289423c84cb8 assets/nexus/models/item/raw_nexium.json
 bcd34e293f2504af9313e7212aaf7aaae98e95dd assets/nexus/models/item/raw_terrestrial.json

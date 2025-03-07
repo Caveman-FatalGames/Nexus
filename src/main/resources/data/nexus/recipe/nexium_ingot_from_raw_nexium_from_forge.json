@@ -1,0 +1,9 @@
+{
+  "type": "nexus:forge",
+  "ingredient": {
+    "item": "nexus:raw_nexium"
+  },
+  "result": {
+    "id": "nexus:nexium_ingot"
+  }
+}
