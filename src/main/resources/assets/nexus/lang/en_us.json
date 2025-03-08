@@ -136,11 +136,15 @@
   "itemGroup.nexus.nexus_food_and_fluids_tab": "Nexus Food & Fluids",
 
 
-  "tooltip.nexus.terrestrial_saw.shift": "Press Shift for More Information",
-  "tooltip.nexus.terrestrial_saw.tooltip.1": "This will cut down 1 log at a time, but instantly.",
+  "tooltip.nexus.terrestrial_saw.shift": "Press §2Shift§r for More Information",
+  "tooltip.nexus.terrestrial_saw.tooltip.1": "This will cut down 16 logs at a time.",
 
-  "tooltip.nexus.steel_saw.shift": "Press Shift for More Information",
-  "tooltip.nexus.steel_saw.tooltip.1": "This will cut down 1 log at a time, but instantly.",
+  "tooltip.nexus.steel_saw.shift": "Press §8Shift§r for More Information",
+  "tooltip.nexus.steel_saw.tooltip.1": "This will cut down 8 logs at a time.",
+
+
+
+
 
   "tooltip.nexus.terrestrial_transmutation_table.shift": "Press Shift for More Information",
   "tooltip.nexus.terrestrial_transmutation_table.tooltip.1": "Transforms items thrown on top of it.",
