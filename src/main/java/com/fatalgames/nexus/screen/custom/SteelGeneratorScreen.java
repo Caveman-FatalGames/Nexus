@@ -71,9 +71,9 @@ public class SteelGeneratorScreen extends AbstractContainerScreen<SteelGenerator
 
     private void renderFuelBurning(GuiGraphics guiGraphics, int x, int y) {
         if(this.menu.isBurning()) {
-            int l = Mth.ceil(this.menu.getFuelProgress() * 13.0F) + 1;
-            guiGraphics.blitSprite(LIT_PROGRESS_TEXTURE, 14, 14, 0, 14 - l,
-                    x + 80, y + 18 + 14 - l, 14, l);
+            int burnProgress = (int) (this.menu.getFuelProgress() * 13.0F);
+            guiGraphics.blitSprite(LIT_PROGRESS_TEXTURE, 14, 14, 0, 14 - burnProgress,
+                    x + 80, y + 18 + 14 - burnProgress, 14, burnProgress + 1);
         }
     }
 

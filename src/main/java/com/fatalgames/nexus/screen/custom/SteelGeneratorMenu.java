@@ -38,15 +38,21 @@ public class SteelGeneratorMenu extends AbstractContainerMenu {
     }
 
     public boolean isBurning() {
-        return data.get(0) < 160;
+        return data.get(0) > 0; // Fire should be visible as long as fuel is burning
     }
 
     public float getFuelProgress() {
-        int i = this.data.get(1);
-        if (i == 0) {
-            i = 160;
+        int maxBurnTime = this.data.get(1); // Max burn time (160 for normal, 320 for Terrestrial Coal)
+        int burnTimeRemaining = this.data.get(0); // Current burn progress
+
+        if (maxBurnTime == 0) {
+            return 0.0f; // Prevent division by zero
         }
-        return Mth.clamp((float)this.data.get(0) / (float)i, 0.0f, 1.0f);
+
+        float progress = (float) burnTimeRemaining / (float) maxBurnTime;
+
+        // Ensure progress never exceeds 1.0 and starts showing immediately
+        return Mth.clamp(progress, 0.01f, 1.0f);
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons

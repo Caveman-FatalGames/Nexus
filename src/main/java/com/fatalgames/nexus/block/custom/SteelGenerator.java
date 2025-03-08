@@ -147,8 +147,9 @@ public class SteelGenerator extends BaseEntityBlock {
 
         level.addParticle(ParticleTypes.ELECTRIC_SPARK, xPos + xOffsets, yPos + yOffset, zPos + zOffset, 0.0, 0.0, 0.0);
 
-        if(level.getBlockEntity(pos) instanceof SteelGeneratorEntity steelGeneratorEntity && !steelGeneratorEntity.itemHandler.getStackInSlot(1).isEmpty()) {
-            level.addParticle(new ItemParticleOption(ParticleTypes.ITEM, steelGeneratorEntity.itemHandler.getStackInSlot(1)),
+        if (level.getBlockEntity(pos) instanceof SteelGeneratorEntity steelGeneratorEntity &&
+                !steelGeneratorEntity.itemHandler.getStackInSlot(0).isEmpty()) {  //  Check slot 0, not slot 1
+            level.addParticle(new ItemParticleOption(ParticleTypes.ITEM, steelGeneratorEntity.itemHandler.getStackInSlot(0)),
                     xPos + xOffsets, yPos + yOffset, zPos + zOffset, 0.0, 0.0, 0.0);
         }
     }

@@ -1,5 +1,6 @@
 package com.fatalgames.nexus.block.entity.custom;
 
+import com.fatalgames.nexus.block.custom.SteelGenerator;
 import com.fatalgames.nexus.block.entity.ModBlockEntities;
 import com.fatalgames.nexus.block.entity.energy.ModEnergyStorage;
 import com.fatalgames.nexus.block.entity.energy.ModEnergyUtil;
@@ -22,6 +23,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -115,18 +117,32 @@ public class SteelGeneratorEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos blockPos, BlockState blockState) {
-        if(hasFuelItemInSlot()) {
-            if(!isBurningFuel()) {
+        if (level == null || blockState == null) return; // Prevent crashes
+
+        boolean isEnergyFull = ENERGY_STORAGE.getEnergyStored() >= ENERGY_STORAGE.getMaxEnergyStored();
+        boolean wasBurning = blockState.getValue(SteelGenerator.LIT);
+        boolean isNowBurning = false;
+
+        if (!isEnergyFull && hasFuelItemInSlot()) {
+            if (!isBurningFuel()) {
                 startBurning();
             }
         }
 
-        if(isBurningFuel()) {
+        if (isBurningFuel()) {
             increaseBurnTimer();
-            if(currentFuelDoneBurning()) {
+            if (currentFuelDoneBurning()) {
                 resetBurning();
             }
-            fillUpOnEnergy();
+            if (!isEnergyFull) {
+                fillUpOnEnergy();
+            }
+            isNowBurning = true;
+        }
+
+        //  Only update blockstate if the burning state actually changed
+        if (wasBurning != isNowBurning && level.getBlockState(blockPos).getValue(SteelGenerator.LIT) != isNowBurning) {
+            level.setBlockAndUpdate(blockPos, blockState.setValue(SteelGenerator.LIT, isNowBurning));
         }
 
         pushEnergyToNeighbourAbove();
@@ -156,8 +172,28 @@ public class SteelGeneratorEntity extends BlockEntity implements MenuProvider {
     }
 
     private void startBurning() {
-        this.itemHandler.extractItem(INPUT_SLOT, 1, false);
-        isBurning = true;
+        ItemStack fuelStack = itemHandler.getStackInSlot(INPUT_SLOT);
+        if (fuelStack.isEmpty()) return; // Prevent null issues
+
+        Item fuel = fuelStack.getItem();
+
+        if (ENERGY_STORAGE.getEnergyStored() < ENERGY_STORAGE.getMaxEnergyStored()) {
+            if (fuel == ModItems.TERRESTRIAL_COAL.get()) {
+                this.burnProgress = 320; // Doubled burn time
+                this.ENERGY_STORAGE.receiveEnergy(640, false);
+            } else {
+                this.burnProgress = 160; // Default burn time
+                this.ENERGY_STORAGE.receiveEnergy(320, false);
+            }
+
+            fuelStack.shrink(1); // Consume fuel safely
+            isBurning = true;
+
+            // Ensure block updates LIT state correctly
+            if (level != null && !level.isClientSide) {
+                level.setBlockAndUpdate(worldPosition, getBlockState().setValue(SteelGenerator.LIT, true));
+            }
+        }
     }
 
     private void increaseBurnTimer() {
@@ -171,11 +207,25 @@ public class SteelGeneratorEntity extends BlockEntity implements MenuProvider {
     private void resetBurning() {
         isBurning = false;
         this.burnProgress = 160;
+
+        if (level != null && !level.isClientSide) {
+            level.setBlockAndUpdate(worldPosition, getBlockState().setValue(SteelGenerator.LIT, false));
+        }
     }
 
     private void fillUpOnEnergy() {
-        this.ENERGY_STORAGE.receiveEnergy(320, false);
+        int energyToReceive = (isBurningFuel() && itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.TERRESTRIAL_COAL.get()) ? 640 : 320;
+
+        int currentEnergy = this.ENERGY_STORAGE.getEnergyStored();
+        int maxEnergy = this.ENERGY_STORAGE.getMaxEnergyStored();
+
+        if (currentEnergy + energyToReceive > maxEnergy) {
+            energyToReceive = maxEnergy - currentEnergy; // Prevents overflow
+        }
+
+        this.ENERGY_STORAGE.receiveEnergy(energyToReceive, false);
     }
+
 
 
     @Override
