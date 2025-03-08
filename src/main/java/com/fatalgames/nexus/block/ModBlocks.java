@@ -24,6 +24,19 @@ public class ModBlocks {
             DeferredRegister.createBlocks(NexusMod.MOD_ID);
 
 
+    public static final DeferredBlock<Block> STEEL_LIGHT_BLOCK = registerBlock("steel_light_block",
+            () -> new SteelLightBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(SteelLightBlock.CLICKED) ? 15 : 0)));
+
+    public static final DeferredBlock<Block> STEEL_GLASS = registerBlock("steel_glass",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .noOcclusion() // Makes sure it does not block light
+                    .isViewBlocking((state, world, pos) -> false) // Prevents culling issues
+                    .requiresCorrectToolForDrops()
+            ));
+
+
     public static final DeferredBlock<Block> STEEL_ORE = registerBlock("steel_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,5),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));

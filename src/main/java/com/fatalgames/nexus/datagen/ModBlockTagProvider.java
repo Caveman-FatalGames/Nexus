@@ -38,7 +38,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TERRESTRIAL_ORE.get())
                 .add(ModBlocks.TERRESTRIAL_GLASS.get())
-                .add(ModBlocks.STEEL_BLOCK.get());
+                .add(ModBlocks.STEEL_GLASS.get())
+                .add(ModBlocks.STEEL_BLOCK.get())
+                .add(ModBlocks.STEEL_GENERATOR.get())
+                .add(ModBlocks.STEEL_FORGE.get());
 
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)

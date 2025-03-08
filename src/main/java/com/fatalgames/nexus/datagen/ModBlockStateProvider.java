@@ -3,11 +3,14 @@ package com.fatalgames.nexus.datagen;
 import com.fatalgames.nexus.NexusMod;
 import com.fatalgames.nexus.block.ModBlocks;
 import com.fatalgames.nexus.block.custom.PolyvineCropBlock;
+import com.fatalgames.nexus.block.custom.SteelLightBlock;
 import com.fatalgames.nexus.block.custom.TerrestrialLightBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -26,6 +29,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.STEEL_ORE);
         blockWithItem(ModBlocks.STEEL_DEEPSLATE_ORE);
+
+        blockWithItemWithRenderType(ModBlocks.STEEL_GLASS, "translucent");
+
 
         blockWithItem(ModBlocks.STEEL_BLOCK);
         blockItem(ModBlocks.STEEL_SLAB);
@@ -74,7 +80,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.NEXIUM_BLOCK);
 
-        customLamp();
+        customLamp(ModBlocks.TERRESTRIAL_LIGHT_BLOCK, "terrestrial_light_block_on", "terrestrial_light_block_off", TerrestrialLightBlock.CLICKED);
+        customLamp(ModBlocks.STEEL_LIGHT_BLOCK, "steel_light_block_on", "steel_light_block_off", SteelLightBlock.CLICKED);
 
         makeCrop(((PolyvineCropBlock) ModBlocks.POLYVINE.get()), "polyvine_crop_stage","polyvine_crop_stage");
 
@@ -93,18 +100,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/" + deferredBlock.getId().getPath())).renderType(renderType));
     }
 
-    private void customLamp() {
-        getVariantBuilder(ModBlocks.TERRESTRIAL_LIGHT_BLOCK.get()).forAllStates(state -> {
-            if(state.getValue(TerrestrialLightBlock.CLICKED)) {
-                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("terrestrial_light_block_on",
-                        ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "block/" + "terrestrial_light_block_on")))};
+    private void customLamp(DeferredBlock<Block> block, String onTexture, String offTexture, BooleanProperty property) {
+        getVariantBuilder(block.get()).forAllStates(state -> {
+            if(state.getValue(property)) { // Use the correct property dynamically
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(onTexture,
+                        ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "block/" + onTexture)))};
             } else {
-                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("terrestrial_light_block_off",
-                        ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "block/" + "terrestrial_light_block_off")))};
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(offTexture,
+                        ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "block/" + offTexture)))};
             }
         });
-        simpleBlockItem(ModBlocks.TERRESTRIAL_LIGHT_BLOCK.get(), models().cubeAll("terrestrial_light_block_on",
-                ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "block/" + "terrestrial_light_block_on")));
+
+        simpleBlockItem(block.get(), models().cubeAll(onTexture,
+                ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "block/" + onTexture)));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

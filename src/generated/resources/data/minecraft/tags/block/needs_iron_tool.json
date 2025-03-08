@@ -2,6 +2,9 @@
   "values": [
     "nexus:terrestrial_ore",
     "nexus:terrestrial_glass",
-    "nexus:steel_block"
+    "nexus:steel_glass",
+    "nexus:steel_block",
+    "nexus:steel_generator",
+    "nexus:steel_forge"
   ]
 }

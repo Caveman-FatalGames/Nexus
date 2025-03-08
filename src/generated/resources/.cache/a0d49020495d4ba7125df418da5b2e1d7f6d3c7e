@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-07T23:42:43.4728056	Block States: nexus
+// 1.21.1	2025-03-08T13:37:35.7173308	Block States: nexus
 6d48f426a48ecd654974f6273a25b52157818fb4 assets/nexus/blockstates/meteorite_block.json
 05e2b87f9d483e7996751ebd83e47cf89673874a assets/nexus/blockstates/nexium_block.json
 fc6b89a174586c690bcf6b7518c294bfb5a4350a assets/nexus/blockstates/polyvine.json
@@ -9,6 +9,8 @@ e2f46d62f10cb277d20ce73de8601ce078025706 assets/nexus/blockstates/steel_button.j
 1df88535844a1a768be3f11366554420cf9dbe24 assets/nexus/blockstates/steel_door.json
 6db829ef5f9299f3d6b4c62da53713ec33eacd31 assets/nexus/blockstates/steel_fence.json
 a0dd75ca651ef4cbe51e73620bfeba0774bec6aa assets/nexus/blockstates/steel_fence_gate.json
+3ab99a7f55f4f1107ba54d688e6032b724855fd2 assets/nexus/blockstates/steel_glass.json
+5249e10152136b89664d8c4ed306b258b65ddad2 assets/nexus/blockstates/steel_light_block.json
 b6ce804c9591c4e53ed20a39d95f1410b1b58c3a assets/nexus/blockstates/steel_ore.json
 ad3aa8c22343bc01ede7e062c41369fe99d12a80 assets/nexus/blockstates/steel_pressure_plate.json
 a272450ecf7c16c95bd1cddcba5ef6255c7fdf91 assets/nexus/blockstates/steel_slab.json
@@ -50,6 +52,9 @@ cb6007da7b643126c071feb2dd423f820f8333e8 assets/nexus/models/block/steel_fence_g
 ffa7cb9ddb87598209133d166590d5a949acc816 assets/nexus/models/block/steel_fence_gate_wall_open.json
 c1f487e6af28e1b6aeb0f4eff47b6c330dd4a886 assets/nexus/models/block/steel_fence_post.json
 4a9415270fbc67a2c478307bad1598a57183a5f0 assets/nexus/models/block/steel_fence_side.json
+11da9a33e6763f18a9124364f086433b9d64f081 assets/nexus/models/block/steel_glass.json
+82f59a31747ca31b0c488f89670b7e5d2f0b1b59 assets/nexus/models/block/steel_light_block_off.json
+f96432a1902bc0aaa9797748704cf8dea66ee8f5 assets/nexus/models/block/steel_light_block_on.json
 2068c7e9a91741064032117ca8c98dd83ad0fd83 assets/nexus/models/block/steel_ore.json
 8b5e6dbb51036e11ed1899d65bf283b964d952a6 assets/nexus/models/block/steel_pressure_plate.json
 72655048b7133c215462c0de3d815c7e030b4c99 assets/nexus/models/block/steel_pressure_plate_down.json
@@ -80,6 +85,8 @@ fd00a9bf801a323b9f5acb0d335acd8c0bf37c34 assets/nexus/models/block/terrestrial_l
 f3b47fe50a1904bd9a043419fb115b0597d70ad5 assets/nexus/models/item/steel_fence_gate.json
 3330ab13f498dc0fc7c1d46f5959e57238416217 assets/nexus/models/item/steel_forge.json
 2e0ebf8454d676721a9e6e8caf062b2a5eae17f9 assets/nexus/models/item/steel_generator.json
+cf8929caa37882187f0dcc4fc504f917591bb17a assets/nexus/models/item/steel_glass.json
+b3a53ea7335149c37972325fcbb0e4741acc3455 assets/nexus/models/item/steel_light_block.json
 c9961904e35f5490805680a5bde7f352633759d1 assets/nexus/models/item/steel_ore.json
 6ddf63fe69baa55f7404453e22cf6032dcc2d8e8 assets/nexus/models/item/steel_pressure_plate.json
 5260daac15306c9518ff60bff048c483db983440 assets/nexus/models/item/steel_slab.json

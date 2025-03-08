@@ -82,6 +82,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_DEEPSLATE_ORE);
 
 
+                        pOutput.accept(ModBlocks.STEEL_LIGHT_BLOCK);
+                        pOutput.accept(ModBlocks.STEEL_GLASS);
                         pOutput.accept(ModBlocks.STEEL_BLOCK);
                         pOutput.accept(ModBlocks.STEEL_STAIRS);
                         pOutput.accept(ModBlocks.STEEL_SLAB);
