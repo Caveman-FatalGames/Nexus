@@ -2,6 +2,7 @@ package com.fatalgames.nexus.datagen;
 
 import com.fatalgames.nexus.NexusMod;
 import com.fatalgames.nexus.block.ModBlocks;
+import com.fatalgames.nexus.fluid.ModFluids;
 import com.fatalgames.nexus.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -91,6 +92,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.NEXIUM_ROD.get());
 
 
+
+        basicItem(ModFluids.TERRESTRIAL_GOOP_BUCKET.get());
 
         basicItem(ModItems.RAW_TERRESTRIAL.get());
         basicItem(ModItems.TERRESTRIAL_DUST.get());

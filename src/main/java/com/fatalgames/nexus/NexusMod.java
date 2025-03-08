@@ -1,5 +1,8 @@
 package com.fatalgames.nexus;
 
+import com.fatalgames.nexus.fluid.BaseFluidType;
+import com.fatalgames.nexus.fluid.ModFluidTypes;
+import com.fatalgames.nexus.fluid.ModFluids;
 import com.fatalgames.nexus.screen.custom.SteelTankScreen;
 import com.fatalgames.nexus.block.entity.ModBlockEntities;
 import com.fatalgames.nexus.recipe.ModRecipes;
@@ -16,11 +19,14 @@ import com.fatalgames.nexus.screen.ModMenuTypes;
 import com.fatalgames.nexus.screen.custom.SteelPedestalScreen;
 import com.fatalgames.nexus.sound.ModSounds;
 import com.fatalgames.nexus.util.ModItemProperties;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -69,7 +75,8 @@ public class NexusMod
 
         ModRecipes.register(modEventBus);
 
-
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
 
 
 
@@ -125,6 +132,17 @@ public class NexusMod
         public static void onClientSetup(FMLClientSetupEvent event) {
 
             ModItemProperties.addCustomItemProperties();
+
+            event.enqueueWork(() -> {
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_TERRESTRIAL_GOOP.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_TERRESTRIAL_GOOP.get(), RenderType.translucent());
+            });
+        }
+
+        @SubscribeEvent
+        public static void onClientExtensions(RegisterClientExtensionsEvent event) {
+            event.registerFluidType(((BaseFluidType) ModFluidTypes.TERRESTRIAL_GOOP_FLUID_TYPE.get()).getClientFluidTypeExtensions(),
+                    ModFluidTypes.TERRESTRIAL_GOOP_FLUID_TYPE.get());
         }
 
         @SubscribeEvent

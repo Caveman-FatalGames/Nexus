@@ -2,6 +2,7 @@ package com.fatalgames.nexus.item;
 
 import com.fatalgames.nexus.NexusMod;
 import com.fatalgames.nexus.block.ModBlocks;
+import com.fatalgames.nexus.fluid.ModFluids;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -203,6 +204,9 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.TERRESTRIAL_FRUIT.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_armor_and_weapons_tab"))
                     .displayItems((pParameters, pOutput) -> {
+
+                        pOutput.accept(ModFluids.TERRESTRIAL_GOOP_BUCKET);
+
 
 
                         pOutput.accept(ModItems.POLYVINE_SEEDS);
