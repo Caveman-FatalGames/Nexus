@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "nexus:block/steel_light_block_off"
+    },
+    "clicked=true": {
+      "model": "nexus:block/steel_light_block_on"
+    }
+  }
+}
