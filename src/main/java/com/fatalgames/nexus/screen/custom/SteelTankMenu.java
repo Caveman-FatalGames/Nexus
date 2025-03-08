@@ -19,7 +19,7 @@ public class SteelTankMenu extends AbstractContainerMenu {
     private final Level level;
 
     public SteelTankMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()));
+        this(pContainerId, inv, extraData != null ? inv.player.level().getBlockEntity(extraData.readBlockPos()) : null);
     }
 
     public SteelTankMenu(int pContainerId, Inventory inv, BlockEntity blockEntity) {

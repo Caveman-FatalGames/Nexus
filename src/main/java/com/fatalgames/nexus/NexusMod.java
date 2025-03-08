@@ -1,5 +1,6 @@
 package com.fatalgames.nexus;
 
+import com.fatalgames.nexus.screen.custom.SteelTankScreen;
 import com.fatalgames.nexus.block.entity.ModBlockEntities;
 import com.fatalgames.nexus.recipe.ModRecipes;
 import com.fatalgames.nexus.block.entity.renderer.SteelPedestalBlockEntityRenderer;
@@ -138,6 +139,10 @@ public class NexusMod
             event.register(ModMenuTypes.STEEL_FORGE_MENU.get(), SteelForgeScreen::new);
 
             event.register(ModMenuTypes.STEEL_GENERATOR_MENU.get(), SteelGeneratorScreen::new);
+
+            event.register(ModMenuTypes.STEEL_TANK_MENU.get(), SteelTankScreen::new);
+
+
         }
     }
 }

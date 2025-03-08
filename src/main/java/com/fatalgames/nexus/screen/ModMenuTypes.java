@@ -30,6 +30,7 @@ public class ModMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<SteelTankMenu>> STEEL_TANK_MENU =
             registerMenuType("steel_tank_menu", SteelTankMenu::new);
 
+
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                               IContainerFactory<T> factory) {
         return MENUS.register(name, () -> IMenuTypeExtension.create(factory));
