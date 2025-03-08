@@ -38,7 +38,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> TERRESTRIAL_GLASS = registerBlock("terrestrial_glass",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .noOcclusion() // Makes sure it does not block light
+                    .isViewBlocking((state, world, pos) -> false) // Prevents culling issues
+                    .requiresCorrectToolForDrops()
+            ));
 
     public static final DeferredBlock<Block> TERRESTRIAL_LIGHT_BLOCK = registerBlock("terrestrial_light_block",
             () -> new TerrestrialLightBlock(BlockBehaviour.Properties.of().strength(3f)
@@ -107,6 +112,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STEEL_FORGE = registerBlock("steel_forge",
             () -> new SteelForge(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> STEEL_GENERATOR = registerBlock("steel_generator",
+            () -> new SteelGenerator(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+
 
 
     public static final DeferredBlock<Block> POLYVINE = BLOCKS.register("polyvine",
@@ -115,8 +124,14 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> TERRESTRIAL_FLOWER = registerBlock("terrestrial_flower",
             () -> new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.ofFullCopy(Blocks.ALLIUM)));
+
     public static final DeferredBlock<Block> POTTED_TERRESTRIAL_FLOWER = BLOCKS.register("potted_terrestrial_flower",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), TERRESTRIAL_FLOWER, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ALLIUM)));
+
+
+
+    public static final DeferredBlock<Block> STEEL_TANK = registerBlock("steel_tank",
+            () -> new SteelTank(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

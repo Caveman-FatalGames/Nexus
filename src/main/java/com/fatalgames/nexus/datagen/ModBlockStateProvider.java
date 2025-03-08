@@ -34,8 +34,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STEEL_FENCE_GATE);
         blockItem(ModBlocks.STEEL_TRAPDOOR, "_bottom");
 
+        blockWithItemWithRenderType(ModBlocks.STEEL_TANK, "translucent");
+
 
         blockItem(ModBlocks.STEEL_FORGE);
+        blockItem(ModBlocks.STEEL_GENERATOR);
 
 
         stairsBlock(((StairBlock) ModBlocks.STEEL_STAIRS.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
@@ -55,7 +58,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_BLOCK);
-        blockWithItem(ModBlocks.TERRESTRIAL_GLASS);
+        blockWithItemWithRenderType(ModBlocks.TERRESTRIAL_GLASS, "translucent");
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_ORE);
@@ -83,6 +86,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
 
+    }
+
+    private void blockWithItemWithRenderType(DeferredBlock<Block> deferredBlock, String renderType) {
+        simpleBlockWithItem(deferredBlock.get(), models().cubeAll(deferredBlock.getId().getPath(),
+                modLoc("block/" + deferredBlock.getId().getPath())).renderType(renderType));
     }
 
     private void customLamp() {

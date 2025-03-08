@@ -16,7 +16,20 @@
   "block.nexus.steel_ore": "Steel Ore",
   "block.nexus.steel_deepslate_ore": "Steel Deepslate Ore",
 
+
+  "item.nexus.steel_hoe": "Steel Hoe",
+  "item.nexus.steel_shovel": "Steel Shovel",
+  "item.nexus.steel_pickaxe": "Steel Pickaxe",
+  "item.nexus.steel_axe": "Steel Axe",
+
+  "item.nexus.steel_saw": "Steel Saw",
+  "item.nexus.steel_paxel": "Steel Paxel",
+  "item.nexus.steel_hammer": "Steel Hammer",
+
+  "item.nexus.steel_sword": "Steel Sword",
   "item.nexus.steel_bow": "Steel Bow",
+
+
 
 
   "block.nexus.steel_block": "Block of Steel",
@@ -35,10 +48,20 @@
   "block.nexus.steel_trapdoor": "Steel Trapdoor",
 
 
+
+
+
+
+  "block.nexus.steel_tank": "Steel Tank",
+
   "block.nexus.steel_pedestal": "Steel Pedestal",
   "block.nexus.steel_forge": "Steel Forge",
+  "block.nexus.steel_generator": "Steel Generator",
   "blockentity.nexus.steel_pedestal": "Steel Pedestal",
   "blockentity.nexus.steel_forge": "Steel Forge",
+  "blockentity.nexus.steel_generator": "Steel Generator",
+
+
 
 
 
@@ -57,6 +80,10 @@
 
   "item.nexus.terrestrial_sword": "Terrestrial Sword",
 
+  "item.nexus.terrestrial_saw": "Terrestrial Saw",
+  "item.nexus.terrestrial_paxel": "Terrestrial Paxel",
+  "item.nexus.terrestrial_hammer": "Terrestrial Hammer",
+
 
   "item.nexus.terrestrial_helmet":"Terrestrial Helmet",
   "item.nexus.terrestrial_chestplate": "Terrestrial Chestplate",
@@ -64,9 +91,7 @@
   "item.nexus.terrestrial_boots": "Terrestrial Boots",
 
 
-  "item.nexus.terrestrial_saw": "Terrestrial Saw",
-  "item.nexus.terrestrial_paxel": "Terrestrial Paxel",
-  "item.nexus.terrestrial_hammer": "Terrestrial Hammer",
+
 
 
   "item.nexus.terrestrial_fruit": "Terrestrial Fruit",
@@ -114,6 +139,9 @@
   "tooltip.nexus.terrestrial_saw.shift": "Press Shift for More Information",
   "tooltip.nexus.terrestrial_saw.tooltip.1": "This will cut down 1 log at a time, but instantly.",
 
+  "tooltip.nexus.steel_saw.shift": "Press Shift for More Information",
+  "tooltip.nexus.steel_saw.tooltip.1": "This will cut down 1 log at a time, but instantly.",
+
   "tooltip.nexus.terrestrial_transmutation_table.shift": "Press Shift for More Information",
   "tooltip.nexus.terrestrial_transmutation_table.tooltip.1": "Transforms items thrown on top of it.",
 
@@ -126,8 +154,6 @@
   "item.nexus.metal_detector.no_valuables": "No Valuables Found!",
 
 
+  "nexus.tooltip.liquid.amount.with.capacity": "%s / %s mB"
 
-
-  "sounds.nexus.chainsaw_cut": "Chainsaw Cutting Sound",
-  "sounds.nexus.chainsaw_pull": "Chainsaw Pulling Sound"
 }

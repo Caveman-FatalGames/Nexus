@@ -72,6 +72,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.STEEL_ORE_DETECTOR.get());
         basicItem(ModItems.ORE_DATA_TABLET.get());
 
+        handheldItem(ModItems.STEEL_HOE.get());
+        handheldItem(ModItems.STEEL_SHOVEL.get());
+        handheldItem(ModItems.STEEL_PICKAXE.get());
+        handheldItem(ModItems.STEEL_AXE.get());
+
+
+        handheldItem(ModItems.STEEL_SAW.get());
+        handheldItem(ModItems.STEEL_PAXEL.get());
+        handheldItem(ModItems.STEEL_HAMMER.get());
+
+
+        handheldItem(ModItems.STEEL_SWORD.get());
+
 
 
         basicItem(ModItems.OBSIDIAN_ROD.get());

@@ -93,8 +93,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_DOOR);
                         pOutput.accept(ModBlocks.STEEL_TRAPDOOR);
 
+
+
+                        pOutput.accept(ModBlocks.STEEL_TANK);
                         pOutput.accept(ModBlocks.STEEL_PEDESTAL);
                         pOutput.accept(ModBlocks.STEEL_FORGE);
+                        pOutput.accept(ModBlocks.STEEL_GENERATOR);
 
 
 
@@ -130,6 +134,17 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
 
+                        pOutput.accept(ModItems.STEEL_HOE);
+                        pOutput.accept(ModItems.STEEL_SHOVEL);
+                        pOutput.accept(ModItems.STEEL_AXE);
+                        pOutput.accept(ModItems.STEEL_PICKAXE);
+
+
+                        pOutput.accept(ModItems.STEEL_SAW);
+                        pOutput.accept(ModItems.STEEL_PAXEL);
+                        pOutput.accept(ModItems.STEEL_HAMMER);
+
+
                         pOutput.accept(ModItems.TERRESTRIAL_HOE);
                         pOutput.accept(ModItems.TERRESTRIAL_SHOVEL);
                         pOutput.accept(ModItems.TERRESTRIAL_AXE);
@@ -161,7 +176,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
 
-
+                        pOutput.accept(ModItems.STEEL_SWORD);
                         pOutput.accept(ModItems.STEEL_BOW);
 
 

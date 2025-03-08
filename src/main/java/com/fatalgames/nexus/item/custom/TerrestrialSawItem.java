@@ -34,12 +34,6 @@ public class TerrestrialSawItem extends Item {
 
                 pContext.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), ((ServerPlayer) pContext.getPlayer()),
                         item -> Objects.requireNonNull(pContext.getPlayer()).onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
-
-                pContext.getLevel().playSound(null, pContext.getPlayer().blockPosition(), ModSounds.CHAINSAW_CUT.get(),
-                        SoundSource.PLAYERS,1f, 1f);
-            } else {
-                pContext.getLevel().playSound(null, pContext.getPlayer().blockPosition(), ModSounds.CHAINSAW_PULL.get(),
-                        SoundSource.PLAYERS,1f, 1f);
             }
         }
 

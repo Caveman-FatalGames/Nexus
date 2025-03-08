@@ -130,7 +130,7 @@ public class SteelForge extends BaseEntityBlock {
         double yPos = pos.getY();
         double zPos = (double)pos.getZ() + 0.5;
         if (random.nextDouble() < 0.15) {
-            level.playLocalSound(xPos, yPos, zPos, SoundEvents.LAVA_POP, SoundSource.BLOCKS, 1.0f, 1.0f, false);
+            level.playLocalSound(xPos, yPos, zPos, SoundEvents.BLASTFURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0f, 1.0f, false);
         }
 
         Direction direction = state.getValue(FACING);

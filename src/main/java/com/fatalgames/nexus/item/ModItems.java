@@ -15,12 +15,35 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(NexusMod.MOD_ID);
 
+
+    // RANDOM ITEMS //
+
     public static final DeferredItem<Item> OBSIDIAN_ROD =
             ITEMS.registerItem("obsidian_rod", Item::new, new Item.Properties());
 
-    public static final DeferredItem<Item> NEXIUM_ROD =
-            ITEMS.registerItem("nexium_rod", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> ORE_DATA_TABLET = ITEMS.register("ore_data_tablet",
+            () -> new OreDataTabletItem(new Item.Properties().stacksTo(1)));
 
+
+    // PLASTIC ITEMS //
+
+    public static final DeferredItem<Item> POLYVINE_SEEDS = ITEMS.register("polyvine_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.POLYVINE.get(), new Item.Properties()));
+
+    public static final DeferredItem<Item> POLYVINE =
+            ITEMS.registerItem("polyvine", Item::new, new Item.Properties());
+
+    public static final DeferredItem<Item> POLYMER =
+            ITEMS.registerItem("polymer", Item::new, new Item.Properties());
+
+    public static final DeferredItem<Item> PLASTIC_BALL =
+            ITEMS.registerItem("plastic_ball", Item::new, new Item.Properties());
+
+    public static final DeferredItem<Item> PLASTIC_SHEET =
+            ITEMS.registerItem("plastic_sheet", Item::new, new Item.Properties());
+
+
+    // STEEL ITEMS //
 
     public static final DeferredItem<Item> STEEL_DUST =
             ITEMS.registerItem("steel_dust", Item::new, new Item.Properties());
@@ -35,6 +58,47 @@ public class ModItems {
             ITEMS.registerItem("steel_plate", Item::new, new Item.Properties());
 
 
+    // STEEL TOOLS, WEAPONS AND ARMOR //
+
+    public static final DeferredItem<Item> STEEL_HOE = ITEMS.register("steel_hoe",
+            () -> new HoeItem(ModToolTiers.STEEL,
+                    new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.STEEL, -1.5f, 0f))));
+
+    public static final DeferredItem<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+            () -> new ShovelItem(ModToolTiers.STEEL,
+                    new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.STEEL, 3.5f, -3f))));
+
+    public static final DeferredItem<Item> STEEL_AXE = ITEMS.register("steel_axe",
+            () -> new AxeItem(ModToolTiers.STEEL,
+                    new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.STEEL, 7f, -2.8f))));
+
+    public static final DeferredItem<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.STEEL,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 3f, -2.5f))));
+
+    public static final DeferredItem<Item> STEEL_PAXEL = ITEMS.register("steel_paxel",
+            () -> new PaxelItem(ModToolTiers.STEEL,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 3.5f, -2.2f))));
+
+    public static final DeferredItem<Item> STEEL_HAMMER = ITEMS.register("steel_hammer",
+            () -> new HammerItem(ModToolTiers.STEEL,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 3f, -2.7f))));
+
+    public static final DeferredItem<Item> STEEL_SAW =
+            ITEMS.registerItem("steel_saw", SteelSawItem::new, new Item.Properties().durability(640));
+
+    public static final DeferredItem<Item> STEEL_SWORD = ITEMS.register("steel_sword",
+            () -> new ModEffectSwordItem(ModToolTiers.STEEL,
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.STEEL, 5, -2.2f)), MobEffects.POISON));
+
+    public static final DeferredItem<Item> STEEL_BOW = ITEMS.register("steel_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
+    public static final DeferredItem<Item> STEEL_ORE_DETECTOR = ITEMS.register("steel_ore_detector",
+            () -> new SteelOreDetectorItem(new Item.Properties().durability(100)));
+
+
+    // TERRESTRIAL ITEMS //
 
     public static final DeferredItem<Item> RAW_TERRESTRIAL =
             ITEMS.registerItem("raw_terrestrial", Item::new, new Item.Properties());
@@ -46,6 +110,7 @@ public class ModItems {
             ITEMS.registerItem("terrestrial_ingot", Item::new, new Item.Properties());
 
 
+    // TERRESTRIAL TOOLS, WEAPONS AND ARMOR //
 
     public static final DeferredItem<Item> TERRESTRIAL_HOE = ITEMS.register("terrestrial_hoe",
             () -> new HoeItem(ModToolTiers.TERRESTRIAL,
@@ -71,16 +136,12 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.TERRESTRIAL,
                     new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.TERRESTRIAL, 3f, -2.7f))));
 
-
     public static final DeferredItem<Item> TERRESTRIAL_SAW =
             ITEMS.registerItem("terrestrial_saw", TerrestrialSawItem::new, new Item.Properties().durability(640));
-
-
 
     public static final DeferredItem<Item> TERRESTRIAL_SWORD = ITEMS.register("terrestrial_sword",
             () -> new ModEffectSwordItem(ModToolTiers.TERRESTRIAL,
                     new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.TERRESTRIAL, 5, -2.2f)), MobEffects.POISON));
-
 
     public static final DeferredItem<Item> TERRESTRIAL_HELMET = ITEMS.register("terrestrial_helmet",
             () -> new ModArmorItem(ModArmorMaterials.TERRESTRIAL_INGOT, ArmorItem.Type.HELMET,
@@ -118,7 +179,13 @@ public class ModItems {
 
 
 
+    // NEXIUM ITEMS //
 
+    public static final DeferredItem<Item> NEXIUM_ROD =
+            ITEMS.registerItem("nexium_rod", Item::new, new Item.Properties());
+
+    public static final DeferredItem<Item> NEXIUM_EYE =
+            ITEMS.registerItem("nexium_eye", Item::new, new Item.Properties());
 
     public static final DeferredItem<Item> RAW_NEXIUM =
             ITEMS.registerItem("raw_nexium", Item::new, new Item.Properties());
@@ -137,42 +204,6 @@ public class ModItems {
 
 
 
-
-
-
-
-
-
-    public static final DeferredItem<Item> NEXIUM_EYE =
-            ITEMS.registerItem("nexium_eye", Item::new, new Item.Properties());
-
-
-
-    public static final DeferredItem<Item> STEEL_ORE_DETECTOR = ITEMS.register("steel_ore_detector",
-            () -> new SteelOreDetectorItem(new Item.Properties().durability(100)));
-    public static final DeferredItem<Item> ORE_DATA_TABLET = ITEMS.register("ore_data_tablet",
-            () -> new OreDataTabletItem(new Item.Properties().stacksTo(1)));
-
-    public static final DeferredItem<Item> STEEL_BOW = ITEMS.register("steel_bow",
-            () -> new BowItem(new Item.Properties().durability(500)));
-
-
-
-    public static final DeferredItem<Item> POLYVINE_SEEDS = ITEMS.register("polyvine_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.POLYVINE.get(), new Item.Properties()));
-
-
-    public static final DeferredItem<Item> POLYVINE =
-            ITEMS.registerItem("polyvine", Item::new, new Item.Properties());
-
-    public static final DeferredItem<Item> POLYMER =
-            ITEMS.registerItem("polymer", Item::new, new Item.Properties());
-
-    public static final DeferredItem<Item> PLASTIC_BALL =
-            ITEMS.registerItem("plastic_ball", Item::new, new Item.Properties());
-
-    public static final DeferredItem<Item> PLASTIC_SHEET =
-            ITEMS.registerItem("plastic_sheet", Item::new, new Item.Properties());
 
 
 

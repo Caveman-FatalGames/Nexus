@@ -3,11 +3,13 @@ package com.fatalgames.nexus;
 import com.fatalgames.nexus.block.entity.ModBlockEntities;
 import com.fatalgames.nexus.recipe.ModRecipes;
 import com.fatalgames.nexus.block.entity.renderer.SteelPedestalBlockEntityRenderer;
+import com.fatalgames.nexus.block.entity.renderer.SteelTankEntityRenderer;
 import com.fatalgames.nexus.component.ModDataComponentTypes;
 import com.fatalgames.nexus.item.ModArmorMaterials;
 import com.fatalgames.nexus.item.ModCreativeModeTabs;
 import com.fatalgames.nexus.item.ModItems;
 import com.fatalgames.nexus.screen.custom.SteelForgeScreen;
+import com.fatalgames.nexus.screen.custom.SteelGeneratorScreen;
 import com.fatalgames.nexus.block.ModBlocks;
 import com.fatalgames.nexus.screen.ModMenuTypes;
 import com.fatalgames.nexus.screen.custom.SteelPedestalScreen;
@@ -42,7 +44,7 @@ public class NexusMod
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "nexus";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -127,12 +129,15 @@ public class NexusMod
         @SubscribeEvent
         public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
             event.registerBlockEntityRenderer(ModBlockEntities.STEEL_PEDESTAL_BE.get(), SteelPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.STEEL_TANK_BE.get(), SteelTankEntityRenderer::new);
         }
 
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.PEDESTAL_MENU.get(), SteelPedestalScreen::new);
             event.register(ModMenuTypes.STEEL_FORGE_MENU.get(), SteelForgeScreen::new);
+
+            event.register(ModMenuTypes.STEEL_GENERATOR_MENU.get(), SteelGeneratorScreen::new);
         }
     }
 }

@@ -18,7 +18,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.TERRESTRIAL_INGOT,
-                            List.of(new MobEffectInstance(MobEffects.ABSORPTION, 72000, 0, false, false)))
+                            List.of(new MobEffectInstance(MobEffects.WATER_BREATHING, 72000, 0, false, false)))
                     .build();
 
     public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {

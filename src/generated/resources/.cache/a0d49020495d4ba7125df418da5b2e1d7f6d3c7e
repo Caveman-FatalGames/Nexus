@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-06T22:40:30.474628	Block States: nexus
+// 1.21.1	2025-03-07T23:42:43.4728056	Block States: nexus
 6d48f426a48ecd654974f6273a25b52157818fb4 assets/nexus/blockstates/meteorite_block.json
 05e2b87f9d483e7996751ebd83e47cf89673874a assets/nexus/blockstates/nexium_block.json
 fc6b89a174586c690bcf6b7518c294bfb5a4350a assets/nexus/blockstates/polyvine.json
@@ -13,6 +13,7 @@ b6ce804c9591c4e53ed20a39d95f1410b1b58c3a assets/nexus/blockstates/steel_ore.json
 ad3aa8c22343bc01ede7e062c41369fe99d12a80 assets/nexus/blockstates/steel_pressure_plate.json
 a272450ecf7c16c95bd1cddcba5ef6255c7fdf91 assets/nexus/blockstates/steel_slab.json
 58e4ba9bff0454387ab4c68e4b87e76d46deb6be assets/nexus/blockstates/steel_stairs.json
+254fb67a63791084b138b7728b534120c0aad8ab assets/nexus/blockstates/steel_tank.json
 47c626d7a179252c335d263041389940cac22ac8 assets/nexus/blockstates/steel_trapdoor.json
 6ff6176f5b7086e778a2eaada62c69832983cd35 assets/nexus/blockstates/steel_wall.json
 b23bf734cf470e6d1e6049c8c918715358d3f3d0 assets/nexus/blockstates/terrestrial_block.json
@@ -57,6 +58,7 @@ cc735825e49f9387a029cd95d18b7474859c9c88 assets/nexus/models/block/steel_slab.js
 9295e5eac36f90ae5a64652581f348c22b51c704 assets/nexus/models/block/steel_stairs.json
 aa82da0a2a2dbb77094e516a425cd6e7a1496a74 assets/nexus/models/block/steel_stairs_inner.json
 40ee9a99fbc14b535c3df349ca920c6ae4266239 assets/nexus/models/block/steel_stairs_outer.json
+334a41b946dc28952eb90bb8626fde45897a2955 assets/nexus/models/block/steel_tank.json
 31a5d08984c38780debfdea97b5cb8d3a65fb288 assets/nexus/models/block/steel_trapdoor_bottom.json
 48e1356be54f4910aa0c43a15f792e4b3436f696 assets/nexus/models/block/steel_trapdoor_open.json
 ae3c7317ebaaac99adf1fec6fd11f71ee15b2be2 assets/nexus/models/block/steel_trapdoor_top.json
@@ -66,7 +68,7 @@ ae3c7317ebaaac99adf1fec6fd11f71ee15b2be2 assets/nexus/models/block/steel_trapdoo
 72d65925d8e7bcbeb6a4ad1e6e9fbe2a2d24a18b assets/nexus/models/block/terrestrial_block.json
 2b0dd8640ad6e7f931efd0a7cd7e1d4e86d2867c assets/nexus/models/block/terrestrial_deepslate_ore.json
 028d67b5191fcaacb9f088fda7bca93d8561df63 assets/nexus/models/block/terrestrial_flower.json
-8528cc385a6ee9602cd2a39e0e82e9389041e895 assets/nexus/models/block/terrestrial_glass.json
+1e1aa5d27523d8563132af448e9b71198e25c496 assets/nexus/models/block/terrestrial_glass.json
 27b646d8851221d667eaa682fa1cacb65e2fc88d assets/nexus/models/block/terrestrial_light_block_off.json
 fd00a9bf801a323b9f5acb0d335acd8c0bf37c34 assets/nexus/models/block/terrestrial_light_block_on.json
 45a098a457924497737f37cdb738e0784b1f8b29 assets/nexus/models/block/terrestrial_ore.json
@@ -77,10 +79,12 @@ fd00a9bf801a323b9f5acb0d335acd8c0bf37c34 assets/nexus/models/block/terrestrial_l
 43cc94d6b486f3b03cdc91494637263e82a0bd14 assets/nexus/models/item/steel_deepslate_ore.json
 f3b47fe50a1904bd9a043419fb115b0597d70ad5 assets/nexus/models/item/steel_fence_gate.json
 3330ab13f498dc0fc7c1d46f5959e57238416217 assets/nexus/models/item/steel_forge.json
+2e0ebf8454d676721a9e6e8caf062b2a5eae17f9 assets/nexus/models/item/steel_generator.json
 c9961904e35f5490805680a5bde7f352633759d1 assets/nexus/models/item/steel_ore.json
 6ddf63fe69baa55f7404453e22cf6032dcc2d8e8 assets/nexus/models/item/steel_pressure_plate.json
 5260daac15306c9518ff60bff048c483db983440 assets/nexus/models/item/steel_slab.json
 f98e2d355dab073a78c42b9684829bb8fdf4ee37 assets/nexus/models/item/steel_stairs.json
+e6a34b8decaf361da2eb7e461c392743987dee5c assets/nexus/models/item/steel_tank.json
 d0474c98092e4f1e9959258921d7f12b432f78bd assets/nexus/models/item/steel_trapdoor.json
 09cab2eda12849540d08b779f55fb521828785ed assets/nexus/models/item/terrestrial_block.json
 8787c28b7198d78e1cfdb3bfb37896b5f8c5d64e assets/nexus/models/item/terrestrial_deepslate_ore.json

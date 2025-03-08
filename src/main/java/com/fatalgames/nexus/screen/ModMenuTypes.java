@@ -2,7 +2,9 @@ package com.fatalgames.nexus.screen;
 
 import com.fatalgames.nexus.NexusMod;
 import com.fatalgames.nexus.screen.custom.SteelForgeMenu;
+import com.fatalgames.nexus.screen.custom.SteelGeneratorMenu;
 import com.fatalgames.nexus.screen.custom.SteelPedestalMenu;
+import com.fatalgames.nexus.screen.custom.SteelTankMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -22,6 +24,11 @@ public class ModMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<SteelForgeMenu>> STEEL_FORGE_MENU =
             registerMenuType("steel_forge_menu", SteelForgeMenu::new);
 
+    public static final DeferredHolder<MenuType<?>, MenuType<SteelGeneratorMenu>> STEEL_GENERATOR_MENU =
+            registerMenuType("steel_generator_menu", SteelGeneratorMenu::new);
+
+    public static final DeferredHolder<MenuType<?>, MenuType<SteelTankMenu>> STEEL_TANK_MENU =
+            registerMenuType("steel_tank_menu", SteelTankMenu::new);
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                               IContainerFactory<T> factory) {

@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-06T21:08:49.2513133	Item Models: nexus
+// 1.21.1	2025-03-08T10:18:10.5936539	Item Models: nexus
 8bef9a28265f4ac8c1011434d48a274cba9adcb3 assets/nexus/models/item/nexium_dust.json
 d120b9d7dfa22b5372f3a86ba373d8457441684f assets/nexus/models/item/nexium_eye.json
 61c93135f1b71778b8d1d345f726572345d8ac2d assets/nexus/models/item/nexium_hammer.json
@@ -13,14 +13,22 @@ f68e94f09737cc93cb511e7a243f2bf6e4752ab8 assets/nexus/models/item/polyvine.json
 5d79387026c30749626f7cb6aa646c98bd2d12c2 assets/nexus/models/item/polyvine_seeds.json
 5069ebe3c24c60cac64958c71009289423c84cb8 assets/nexus/models/item/raw_nexium.json
 bcd34e293f2504af9313e7212aaf7aaae98e95dd assets/nexus/models/item/raw_terrestrial.json
+cd6ba97fecf4f8b277745bc72db789bf7e1c20d5 assets/nexus/models/item/steel_axe.json
 d971eafe83ec3f600dfbb19f99744c57a903edb3 assets/nexus/models/item/steel_button.json
 5b4b84bbdcc2a3a01a05b4a4db25498dbbd582ac assets/nexus/models/item/steel_door.json
 e6fce953edb14c76874a1798d73dc0931087b6b1 assets/nexus/models/item/steel_dust.json
 562b6fabd4fc4035ad84a5c490c970cc17e68b72 assets/nexus/models/item/steel_fence.json
+b6f83ad61bf79e6808082ff0284fc7e3f8d4fd44 assets/nexus/models/item/steel_hammer.json
+69272d248b6840e3f0a1bbd9550e9502880da2f6 assets/nexus/models/item/steel_hoe.json
 93dd7c89ab24c78c8bb119cf319e8467a36423f9 assets/nexus/models/item/steel_ingot.json
 e3bec9af22248371c0319338830ea6cdcd85d667 assets/nexus/models/item/steel_nuts_and_bolts.json
 c635645bad3f091801eae634c41ae63464a6687b assets/nexus/models/item/steel_ore_detector.json
+fa61224100f48a38eae61fecdb0383641d2a8e47 assets/nexus/models/item/steel_paxel.json
+467ae313bc041da8937cc82726b6c231c2dd9aa0 assets/nexus/models/item/steel_pickaxe.json
 b01ac4f9557ea30ac0e3edf5521eb399380da694 assets/nexus/models/item/steel_plate.json
+7c26c09ab154a8ec7d3bdb182ba0c95631fe4816 assets/nexus/models/item/steel_saw.json
+39073799dbd841e2a4b1f311453cab032d90a62c assets/nexus/models/item/steel_shovel.json
+73bd7a1630728033bdcbd7b66f8916068c086b24 assets/nexus/models/item/steel_sword.json
 72b1cfe8311ed00cfd03df04b53bf9f4efe0843e assets/nexus/models/item/steel_wall.json
 c41284544ef0f6a12a5a453ef4d427b18b5de9e9 assets/nexus/models/item/terrestrial_axe.json
 d02fac6ac8c210ef005ba3db1015a95d5b112017 assets/nexus/models/item/terrestrial_boots.json
