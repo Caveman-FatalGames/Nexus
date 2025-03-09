@@ -19,6 +19,7 @@ import com.fatalgames.nexus.screen.ModMenuTypes;
 import com.fatalgames.nexus.screen.custom.SteelPedestalScreen;
 import com.fatalgames.nexus.sound.ModSounds;
 import com.fatalgames.nexus.util.ModItemProperties;
+import com.fatalgames.nexus.villager.ModVillagers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -77,6 +78,8 @@ public class NexusMod
 
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
+
+        ModVillagers.register(modEventBus);
 
 
 

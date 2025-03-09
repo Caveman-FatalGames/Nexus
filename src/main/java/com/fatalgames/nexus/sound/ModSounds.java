@@ -13,8 +13,7 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(BuiltInRegistries.SOUND_EVENT, NexusMod.MOD_ID);
 
-    public static final Supplier<SoundEvent> CHAINSAW_CUT = registerSoundEvent("chainsaw_cut");
-    public static final Supplier<SoundEvent> CHAINSAW_PULL = registerSoundEvent("chainsaw_pull");
+    public static final Supplier<SoundEvent> FORGE_PLACED = registerSoundEvent("forge_placed");
 
 
     private static Supplier<SoundEvent> registerSoundEvent(String name) {

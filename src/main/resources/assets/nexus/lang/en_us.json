@@ -160,6 +160,8 @@
   "item.nexus.metal_detector.no_valuables": "No Valuables Found!",
 
 
-  "nexus.tooltip.liquid.amount.with.capacity": "%s / %s mB"
+  "nexus.tooltip.liquid.amount.with.capacity": "%s / %s mB",
 
+
+  "entity.minecraft.villager.nexus.blacksmith": "Blacksmith"
 }

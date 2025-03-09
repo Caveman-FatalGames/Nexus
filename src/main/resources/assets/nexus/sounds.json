@@ -1,0 +1,8 @@
+{
+  "forge_placed": {
+    "subtitle": "sounds.nexus.forge_placed",
+    "sounds": [
+      "nexus:forge_placed"
+    ]
+  }
+}
