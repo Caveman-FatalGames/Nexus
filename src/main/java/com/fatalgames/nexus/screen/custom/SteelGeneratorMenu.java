@@ -32,6 +32,8 @@ public class SteelGeneratorMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
+
+
         this.addSlot(new SlotItemHandler(this.blockEntity.itemHandler, 0, 80, 35));
 
         addDataSlots(data);

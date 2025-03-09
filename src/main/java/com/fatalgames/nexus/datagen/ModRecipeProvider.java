@@ -131,18 +131,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         List<ItemLike> STEEL_SMELTABLES = List.of(ModItems.STEEL_DUST, ModBlocks.STEEL_ORE, ModBlocks.STEEL_DEEPSLATE_ORE);
-        //List<ItemLike> TERRESTRIAL_SMELTABLES = List.of(ModItems.RAW_TERRESTRIAL, ModBlocks.TERRESTRIAL_ORE, ModBlocks.TERRESTRIAL_DEEPSLATE_ORE);
-        //List<ItemLike> NEXIUM_INGOT_SMELTABLES = List.of(ModItems.RAW_NEXIUM);
 
         oreSmelting(pRecipeOutput, STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.15f, 200, "steel_ingot");
         oreBlasting(pRecipeOutput, STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.15f, 100, "steel_ingot");
 
-        //oreSmelting(pRecipeOutput, TERRESTRIAL_SMELTABLES, RecipeCategory.MISC, ModItems.TERRESTRIAL_INGOT.get(), 0.25f, 200, "terrestrial_ingot");
-        //oreBlasting(pRecipeOutput, TERRESTRIAL_SMELTABLES, RecipeCategory.MISC, ModItems.TERRESTRIAL_INGOT.get(), 0.25f, 100, "terrestrial_ingot");
-
-
-        //oreSmelting(pRecipeOutput, NEXIUM_INGOT_SMELTABLES, RecipeCategory.MISC, ModItems.NEXIUM_INGOT.get(), 0.25f, 200, "nexium_ingot");
-        //oreBlasting(pRecipeOutput, NEXIUM_INGOT_SMELTABLES , RecipeCategory.MISC, ModItems.NEXIUM_INGOT.get(), 0.25f, 100, "nexium_ingot");
 
 
 

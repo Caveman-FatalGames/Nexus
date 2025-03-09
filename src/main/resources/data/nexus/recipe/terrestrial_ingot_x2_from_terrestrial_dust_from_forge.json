@@ -4,6 +4,7 @@
     "item": "nexus:terrestrial_dust"
   },
   "result": {
-    "id": "nexus:terrestrial_ingot"
+    "id": "nexus:terrestrial_ingot",
+    "count": 2
   }
 }

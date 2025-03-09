@@ -1,0 +1,10 @@
+{
+  "type": "nexus:forge",
+  "ingredient": {
+    "item": "nexus:steel_dust"
+  },
+  "result": {
+    "id": "nexus:steel_ingot",
+    "count": 2
+  }
+}

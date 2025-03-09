@@ -1,6 +1,5 @@
 package com.fatalgames.nexus.block.custom;
 
-import com.fatalgames.nexus.block.entity.custom.SteelForgeEntity;
 import com.mojang.serialization.MapCodec;
 import com.fatalgames.nexus.block.entity.ModBlockEntities;
 import com.fatalgames.nexus.block.entity.custom.SteelGeneratorEntity;

@@ -14,8 +14,14 @@ import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 public class ModBiomeModifiers {
+
+
+    public static final ResourceKey<BiomeModifier> ADD_TERRESTRIAL_FLOWER = registerKey("add_terrestrial_flower");
+
     public static final ResourceKey<BiomeModifier> ADD_TREE_EBONY = registerKey("add_tree_ebony");
 
+
+    // ORE //
 
     public static final ResourceKey<BiomeModifier> ADD_STEEL_ORE = registerKey("add_steel_ore");
     public static final ResourceKey<BiomeModifier> ADD_STEEL_DEEPSLATE_ORE = registerKey("add_steel_deepslate_ore");
@@ -23,9 +29,23 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_TERRESTRIAL_DEEPSLATE_ORE = registerKey("add_terrestrial_deepslate_ore");
 
 
+    // GEODE //
+
+    public static final ResourceKey<BiomeModifier> ADD_NEXIUM_BLOCK_GEODE = registerKey("add_nexium_block_geode");
+
+
+
+
+
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
+
+
+        context.register(ADD_TERRESTRIAL_FLOWER, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.DARK_FOREST), biomes.getOrThrow(Biomes.FLOWER_FOREST)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.TERRESTRIAL_FLOWER_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(ADD_TREE_EBONY, new BiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.BIRCH_FOREST)),
@@ -53,6 +73,15 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.TERRESTRIAL_DEEPSLATE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
+
+
+        // GEODE //
+
+
+        context.register(ADD_NEXIUM_BLOCK_GEODE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NEXIUM_BLOCK_GEODE_PLACED_KEY)),
+                GenerationStep.Decoration.LOCAL_MODIFICATIONS));
 
 
 

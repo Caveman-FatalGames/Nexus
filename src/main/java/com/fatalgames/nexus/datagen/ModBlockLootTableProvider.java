@@ -61,9 +61,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
 
         this.add(ModBlocks.STEEL_ORE.get(),
-                block -> createOreDrop(ModBlocks.STEEL_ORE.get(), ModItems.STEEL_DUST.get()));
+                block -> createOreDrop(ModBlocks.STEEL_ORE.get(), ModItems.RAW_STEEL.get()));
         this.add(ModBlocks.STEEL_DEEPSLATE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.STEEL_DEEPSLATE_ORE.get(), ModItems.STEEL_DUST.get(), 2, 3));
+                block -> createMultipleOreDrops(ModBlocks.STEEL_DEEPSLATE_ORE.get(), ModItems.RAW_STEEL.get(), 2, 3));
 
 
         dropSelf(ModBlocks.STEEL_LIGHT_BLOCK.get());

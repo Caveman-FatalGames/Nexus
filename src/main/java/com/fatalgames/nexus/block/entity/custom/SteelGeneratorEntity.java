@@ -98,7 +98,7 @@ public class SteelGeneratorEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.literal("Coal Generator");
+        return Component.literal("Steel Generator");
     }
 
     @Nullable

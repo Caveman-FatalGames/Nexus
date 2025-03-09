@@ -51,6 +51,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.OBSIDIAN_ROD.get());
 
+        saplingItem(ModBlocks.TERRESTRIAL_FLOWER);
+
         flowerItem(ModBlocks.TERRESTRIAL_FLOWER);
 
 
@@ -76,7 +78,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // STEEL  //
 
-
+        basicItem(ModItems.RAW_STEEL.get());
         basicItem(ModItems.STEEL_DUST.get());
         basicItem(ModItems.STEEL_INGOT.get());
         basicItem(ModItems.STEEL_NUTS_AND_BOLTS.get());

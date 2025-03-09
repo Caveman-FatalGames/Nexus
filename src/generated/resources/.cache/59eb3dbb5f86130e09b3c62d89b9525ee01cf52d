@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-09T10:14:15.4327413	Loot Tables
+// 1.21.1	2025-03-09T13:50:51.9929028	Loot Tables
 b13a5537274c0cacfb1f367b3d6c36bb529557fb data/nexus/loot_table/blocks/ebony_button.json
 5b402e0d6b8db9b1db3c44e9c896b8c41ff677a3 data/nexus/loot_table/blocks/ebony_door.json
 d7d19d9ef551e7009eb7a0edb4fbb649558e78a9 data/nexus/loot_table/blocks/ebony_fence.json
@@ -19,7 +19,7 @@ b54e143292cb7b53c6b44971032c84d703064c0c data/nexus/loot_table/blocks/polyvine.j
 2e0b144b7cde686c51e1796e9888b1552d642998 data/nexus/loot_table/blocks/potted_terrestrial_flower.json
 29a752201547ef431be19c8e31dd60908a6fcdde data/nexus/loot_table/blocks/steel_block.json
 757077d9ac91178d7a5e16ac260987519479ebbf data/nexus/loot_table/blocks/steel_button.json
-9c84943f72fcb5a1f32b128bdd7b27537276a115 data/nexus/loot_table/blocks/steel_deepslate_ore.json
+ce21fd53cc555435f1b904d122d38a7d9960746f data/nexus/loot_table/blocks/steel_deepslate_ore.json
 09180f6f6ff0739ecd478fb687f1afa2668df684 data/nexus/loot_table/blocks/steel_door.json
 236e8c5b2188840ff7574094a1f182548f431246 data/nexus/loot_table/blocks/steel_fence.json
 1a694e8ccdc6c0c2c0b8e15501b1638a80f37c81 data/nexus/loot_table/blocks/steel_fence_gate.json
@@ -27,7 +27,7 @@ f93d7d95614555a18739fd57a6bb1e161923a366 data/nexus/loot_table/blocks/steel_forg
 15f5b8bae2dc358905b558e7386bd4a24e624dea data/nexus/loot_table/blocks/steel_generator.json
 e814b08d5d13d171352199a8ef132595cd9ebb25 data/nexus/loot_table/blocks/steel_glass.json
 da2d93c0c118e7e502cde6209dda2e0031aa5887 data/nexus/loot_table/blocks/steel_light_block.json
-622d3f482976ece12d4dc53d73a389cad6da6689 data/nexus/loot_table/blocks/steel_ore.json
+2308634cf492309813d39bf4c8e7ce125a9589c7 data/nexus/loot_table/blocks/steel_ore.json
 68020f58b5f25a7daa6daef717d216c85e577ba3 data/nexus/loot_table/blocks/steel_pedestal.json
 513c2fc099b5b5bf814c24bfb21c6acd0b875bf7 data/nexus/loot_table/blocks/steel_pressure_plate.json
 23c242a04e85b9e2c7d52bdaf69f6737b7fccced data/nexus/loot_table/blocks/steel_slab.json

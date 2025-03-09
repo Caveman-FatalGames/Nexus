@@ -45,6 +45,9 @@ public class ModItems {
 
     // STEEL ITEMS //
 
+    public static final DeferredItem<Item> RAW_STEEL =
+            ITEMS.registerItem("raw_steel", Item::new, new Item.Properties());
+
     public static final DeferredItem<Item> STEEL_DUST =
             ITEMS.registerItem("steel_dust", Item::new, new Item.Properties());
 
@@ -62,37 +65,37 @@ public class ModItems {
 
     public static final DeferredItem<Item> STEEL_HOE = ITEMS.register("steel_hoe",
             () -> new HoeItem(ModToolTiers.STEEL,
-                    new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.STEEL, -1.5f, 0f))));
+                    new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.STEEL, -1.2f, 0f))));
 
     public static final DeferredItem<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
             () -> new ShovelItem(ModToolTiers.STEEL,
-                    new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.STEEL, 3.5f, -3f))));
+                    new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.STEEL, 3.3f, -3.1f))));
 
     public static final DeferredItem<Item> STEEL_AXE = ITEMS.register("steel_axe",
             () -> new AxeItem(ModToolTiers.STEEL,
-                    new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.STEEL, 7f, -2.8f))));
+                    new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.STEEL, 6.8f, -3f))));
 
     public static final DeferredItem<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
             () -> new PickaxeItem(ModToolTiers.STEEL,
-                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 3f, -2.5f))));
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 2.8f, -2.8f))));
 
     public static final DeferredItem<Item> STEEL_PAXEL = ITEMS.register("steel_paxel",
             () -> new PaxelItem(ModToolTiers.STEEL,
-                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 3.5f, -2.2f))));
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 3.2f, -2.5f))));
 
     public static final DeferredItem<Item> STEEL_HAMMER = ITEMS.register("steel_hammer",
             () -> new HammerItem(ModToolTiers.STEEL,
-                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 3f, -2.7f))));
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 2.8f, -2.9f))));
 
     public static final DeferredItem<Item> STEEL_SAW =
-            ITEMS.registerItem("steel_saw", SteelSawItem::new, new Item.Properties().durability(640));
+            ITEMS.registerItem("steel_saw", SteelSawItem::new, new Item.Properties().durability(320));
 
     public static final DeferredItem<Item> STEEL_SWORD = ITEMS.register("steel_sword",
             () -> new ModEffectSwordItem(ModToolTiers.STEEL,
-                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.STEEL, 5, -2.2f)), MobEffects.POISON));
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.STEEL, 4.7f, -2.4f)), MobEffects.MOVEMENT_SLOWDOWN));
 
     public static final DeferredItem<Item> STEEL_BOW = ITEMS.register("steel_bow",
-            () -> new BowItem(new Item.Properties().durability(500)));
+            () -> new BowItem(new Item.Properties().durability(400)));
 
     public static final DeferredItem<Item> STEEL_ORE_DETECTOR = ITEMS.register("steel_ore_detector",
             () -> new SteelOreDetectorItem(new Item.Properties().durability(100)));

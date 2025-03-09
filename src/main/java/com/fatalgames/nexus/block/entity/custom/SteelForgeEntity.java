@@ -62,9 +62,9 @@ public class SteelForgeEntity extends BlockEntity implements MenuProvider {
     private final int DEFAULT_MAX_PROGRESS = 72;
 
 
-    private static final int ENERGY_CRAFT_AMOUNT = 5; // amount of energy per tick to craft
+    private static final int ENERGY_CRAFT_AMOUNT = 50; // amount of energy per tick to craft
 
-    private static final int FLUID_CRAFT_AMOUNT = 1000; // amount of fluid per crafting that is consumed
+    private static final int FLUID_CRAFT_AMOUNT = 100; // amount of fluid per crafting that is consumed
 
     private final FluidTank FLUID_TANK = createFluidTank();
     private FluidTank createFluidTank() {

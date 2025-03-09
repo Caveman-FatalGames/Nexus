@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-09T10:09:51.4287698	Item Models: nexus
+// 1.21.1	2025-03-09T13:47:19.0685778	Item Models: nexus
 c5ccc3eaab68351ef7fde8e8c430784d31487d76 assets/nexus/models/item/ebony_button.json
 36e0164ba692966cb3d6134c2d8868e5edbf9872 assets/nexus/models/item/ebony_door.json
 0732f02b834e1e622b57e2b9561b9e63b1361777 assets/nexus/models/item/ebony_fence.json
@@ -17,6 +17,7 @@ c04916a10108e75ed360bf8d18253244c1053ad2 assets/nexus/models/item/polymer.json
 f68e94f09737cc93cb511e7a243f2bf6e4752ab8 assets/nexus/models/item/polyvine.json
 5d79387026c30749626f7cb6aa646c98bd2d12c2 assets/nexus/models/item/polyvine_seeds.json
 5069ebe3c24c60cac64958c71009289423c84cb8 assets/nexus/models/item/raw_nexium.json
+9828f2f87d34fab7e0f5ed2bd97687cebed6bedb assets/nexus/models/item/raw_steel.json
 bcd34e293f2504af9313e7212aaf7aaae98e95dd assets/nexus/models/item/raw_terrestrial.json
 cd6ba97fecf4f8b277745bc72db789bf7e1c20d5 assets/nexus/models/item/steel_axe.json
 d971eafe83ec3f600dfbb19f99744c57a903edb3 assets/nexus/models/item/steel_button.json

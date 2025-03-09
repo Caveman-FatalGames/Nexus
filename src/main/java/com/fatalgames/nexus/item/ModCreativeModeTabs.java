@@ -28,23 +28,23 @@ public class ModCreativeModeTabs {
 
 
 
-
-
                         pOutput.accept(ModItems.POLYMER);
                         pOutput.accept(ModItems.PLASTIC_BALL);
                         pOutput.accept(ModItems.PLASTIC_SHEET);
 
 
-                        pOutput.accept(ModItems.STEEL_NUTS_AND_BOLTS);
-                        pOutput.accept(ModItems.STEEL_PLATE);
+
+                        pOutput.accept(ModItems.RAW_STEEL);
                         pOutput.accept(ModItems.STEEL_DUST);
                         pOutput.accept(ModItems.STEEL_INGOT);
+
+                        pOutput.accept(ModItems.STEEL_NUTS_AND_BOLTS);
+                        pOutput.accept(ModItems.STEEL_PLATE);
 
 
                         pOutput.accept(ModItems.RAW_TERRESTRIAL);
                         pOutput.accept(ModItems.TERRESTRIAL_DUST);
                         pOutput.accept(ModItems.TERRESTRIAL_INGOT);
-
 
                         pOutput.accept(ModItems.TERRESTRIAL_COAL);
 
@@ -53,9 +53,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.NEXIUM_DUST);
                         pOutput.accept(ModItems.NEXIUM_INGOT);
                         pOutput.accept(ModItems.NEXIUM_EYE);
-
-
-
 
 
                         pOutput.accept(ModItems.OBSIDIAN_ROD);
