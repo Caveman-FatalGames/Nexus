@@ -1,5 +1,9 @@
-// 1.21.1	2025-03-08T20:58:16.4198888	Item Models: nexus
+// 1.21.1	2025-03-09T10:09:51.4287698	Item Models: nexus
+c5ccc3eaab68351ef7fde8e8c430784d31487d76 assets/nexus/models/item/ebony_button.json
+36e0164ba692966cb3d6134c2d8868e5edbf9872 assets/nexus/models/item/ebony_door.json
+0732f02b834e1e622b57e2b9561b9e63b1361777 assets/nexus/models/item/ebony_fence.json
 9ec964d22c988a99a23d68f232b02987e08d5a48 assets/nexus/models/item/ebony_sapling.json
+942d0bb619fe4134f148f98369b5f71fc7d8b893 assets/nexus/models/item/ebony_wall.json
 8bef9a28265f4ac8c1011434d48a274cba9adcb3 assets/nexus/models/item/nexium_dust.json
 d120b9d7dfa22b5372f3a86ba373d8457441684f assets/nexus/models/item/nexium_eye.json
 61c93135f1b71778b8d1d345f726572345d8ac2d assets/nexus/models/item/nexium_hammer.json

@@ -47,19 +47,35 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
+        // RANDOM //
+
+        basicItem(ModItems.OBSIDIAN_ROD.get());
+
+        flowerItem(ModBlocks.TERRESTRIAL_FLOWER);
+
+
+        // EBONY //
+
 
         saplingItem(ModBlocks.EBONY_SAPLING);
 
+        buttonItem(ModBlocks.EBONY_BUTTON, ModBlocks.EBONY_PLANKS);
+        fenceItem(ModBlocks.EBONY_FENCE, ModBlocks.EBONY_PLANKS);
+        wallItem(ModBlocks.EBONY_WALL, ModBlocks.EBONY_PLANKS);
+        basicItem(ModBlocks.EBONY_DOOR.asItem());
 
+
+        // PLASTIC //
 
         basicItem(ModItems.POLYVINE_SEEDS.get());
         basicItem(ModItems.POLYVINE.get());
-        flowerItem(ModBlocks.TERRESTRIAL_FLOWER);
+
 
         basicItem(ModItems.POLYMER.get());
         basicItem(ModItems.PLASTIC_BALL.get());
         basicItem(ModItems.PLASTIC_SHEET.get());
 
+        // STEEL  //
 
 
         basicItem(ModItems.STEEL_DUST.get());
@@ -72,29 +88,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.STEEL_WALL, ModBlocks.STEEL_BLOCK);
         basicItem(ModBlocks.STEEL_DOOR.asItem());
 
-
-        basicItem(ModItems.STEEL_ORE_DETECTOR.get());
-        basicItem(ModItems.ORE_DATA_TABLET.get());
-
         handheldItem(ModItems.STEEL_HOE.get());
         handheldItem(ModItems.STEEL_SHOVEL.get());
         handheldItem(ModItems.STEEL_PICKAXE.get());
         handheldItem(ModItems.STEEL_AXE.get());
-
-
+        handheldItem(ModItems.STEEL_SWORD.get());
         handheldItem(ModItems.STEEL_SAW.get());
         handheldItem(ModItems.STEEL_PAXEL.get());
         handheldItem(ModItems.STEEL_HAMMER.get());
 
 
-        handheldItem(ModItems.STEEL_SWORD.get());
+
+        basicItem(ModItems.STEEL_ORE_DETECTOR.get());
+        basicItem(ModItems.ORE_DATA_TABLET.get());
 
 
-
-        basicItem(ModItems.OBSIDIAN_ROD.get());
-        basicItem(ModItems.NEXIUM_ROD.get());
-
-
+        // TERRESTRIAL //
 
         basicItem(ModFluids.TERRESTRIAL_GOOP_BUCKET.get());
 
@@ -107,14 +116,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.TERRESTRIAL_SHOVEL.get());
         handheldItem(ModItems.TERRESTRIAL_PICKAXE.get());
         handheldItem(ModItems.TERRESTRIAL_AXE.get());
-
-
+        handheldItem(ModItems.TERRESTRIAL_SWORD.get());
         handheldItem(ModItems.TERRESTRIAL_SAW.get());
         handheldItem(ModItems.TERRESTRIAL_PAXEL.get());
         handheldItem(ModItems.TERRESTRIAL_HAMMER.get());
-
-
-        handheldItem(ModItems.TERRESTRIAL_SWORD.get());
 
 
         basicItem(ModItems.TERRESTRIAL_HELMET.get());
@@ -129,14 +134,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TERRESTRIAL_STEAK.get());
 
 
+
+        // NEXUIM //
+
         basicItem(ModItems.RAW_NEXIUM.get());
         basicItem(ModItems.NEXIUM_DUST.get());
         basicItem(ModItems.NEXIUM_INGOT.get());
         basicItem(ModItems.NEXIUM_EYE.get());
 
+
         handheldItem(ModItems.NEXIUM_HAMMER.get());
 
 
+        basicItem(ModItems.NEXIUM_ROD.get());
 
     }
 

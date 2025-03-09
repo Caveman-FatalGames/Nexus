@@ -13,12 +13,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
@@ -115,8 +117,29 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.POLYVINE.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(PolyvineCropBlock.AGE, 5));
-        this.add(ModBlocks.POLYVINE.get(), this.createCropDrops(ModBlocks.POLYVINE.get(),
-                ModItems.PLASTIC_BALL.get(), ModItems.POLYVINE_SEEDS.asItem(), lootItemConditionBuilder));
+
+        this.add(ModBlocks.POLYVINE.get(), block ->
+                applyExplosionDecay(block, LootTable.lootTable()
+                        .withPool(
+                                LootPool.lootPool()
+                                        .setRolls(ConstantValue.exactly(1))
+                                        .add(LootItem.lootTableItem(ModItems.POLYVINE.get())
+                                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))) // 1-4 Polyvine
+                                                .when(lootItemConditionBuilder))
+                                        .add(LootItem.lootTableItem(ModItems.POLYMER.get())
+                                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))) // 1-2 Polymer
+                                                .when(lootItemConditionBuilder))
+                        )
+                        .withPool(
+                                LootPool.lootPool()
+                                        .setRolls(ConstantValue.exactly(1))
+                                        .add(LootItem.lootTableItem(ModItems.POLYVINE_SEEDS.get())
+                                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2))) // Always 2 Seeds
+                                                .when(lootItemConditionBuilder))
+                        )
+                )
+        );
+
 
         this.dropSelf(ModBlocks.TERRESTRIAL_FLOWER.get());
         this.add(ModBlocks.POTTED_TERRESTRIAL_FLOWER.get(), createPotFlowerItemTable(ModBlocks.TERRESTRIAL_FLOWER));
