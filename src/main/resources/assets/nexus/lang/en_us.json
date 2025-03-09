@@ -1,4 +1,30 @@
 {
+
+  "block.nexus.ebony_sapling": "Ebony Sapling",
+
+
+  "block.nexus.ebony_log": "Ebony Log",
+  "block.nexus.ebony_planks": "Ebony Planks",
+  "block.nexus.ebony_wood": "Ebony Wood",
+  "block.nexus.stripped_ebony_log": "Stripped Ebony Log",
+  "block.nexus.stripped_ebony_wood": "Stripped Ebony Wood",
+  "block.nexus.ebony_leaves": "Ebony Leaves",
+
+
+  "block.nexus.ebony_stairs": "Ebony Stair",
+  "block.nexus.ebony_slab": "Ebony Slab",
+  "block.nexus.ebony_pressure_plate": "Ebony Pressure Plate",
+  "block.nexus.ebony_button": "Ebony Button",
+  "block.nexus.ebony_fence": "Ebony Fence",
+  "block.nexus.ebony_fence_gate": "Ebony Fence Gate",
+  "block.nexus.ebony_wall": "Ebony Wall",
+  "block.nexus.ebony_door": "Ebony Door",
+  "block.nexus.ebony_trapdoor": "Ebony Trapdoor",
+
+
+  
+  
+  
   "item.nexus.obsidian_rod": "Obsidian Rod",
   "item.nexus.nexium_rod": "Nexium Rod",
 

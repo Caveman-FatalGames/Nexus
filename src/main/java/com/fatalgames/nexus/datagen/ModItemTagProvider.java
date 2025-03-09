@@ -1,6 +1,7 @@
 package com.fatalgames.nexus.datagen;
 
 import com.fatalgames.nexus.NexusMod;
+import com.fatalgames.nexus.block.ModBlocks;
 import com.fatalgames.nexus.item.ModItems;
 import com.fatalgames.nexus.util.ModTags;
 import net.minecraft.core.HolderLookup;
@@ -33,5 +34,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.TERRESTRIAL_CHESTPLATE.get())
                 .add(ModItems.TERRESTRIAL_LEGGINGS.get())
                 .add(ModItems.TERRESTRIAL_BOOTS.get());
+
+
+
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.EBONY_LOG.get().asItem())
+                .add(ModBlocks.EBONY_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_EBONY_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_EBONY_WOOD.get().asItem());
+
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.EBONY_PLANKS.get().asItem());
     }
 }

@@ -75,11 +75,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.TERRESTRIAL_BLOCK.get())
                 .unlockedBy("has_terrestrial_block", has(ModBlocks.TERRESTRIAL_BLOCK.get())).save(pRecipeOutput);
 
+        // Ebony //
+
+        stairBuilder(ModBlocks.EBONY_STAIRS.get(), Ingredient.of(ModBlocks.EBONY_PLANKS.get())).group("ebony_planks")
+                .unlockedBy("has_ebony_planks", has(ModBlocks.EBONY_PLANKS.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONY_SLAB.get(), ModBlocks.EBONY_PLANKS);
+
+        pressurePlate(pRecipeOutput, ModBlocks.EBONY_PRESSURE_PLATE.get(), ModBlocks.EBONY_PLANKS.get());
+
+        buttonBuilder(ModBlocks.EBONY_BUTTON.get(), Ingredient.of(ModBlocks.EBONY_PLANKS.get())).group("ebony_planks")
+                .unlockedBy("has_ebony_planks", has(ModBlocks.EBONY_PLANKS.get())).save(pRecipeOutput);
+
+        fenceBuilder(ModBlocks.EBONY_FENCE.get(), Ingredient.of(ModBlocks.EBONY_PLANKS.get())).group("ebony_planks")
+                .unlockedBy("has_ebony_planks", has(ModBlocks.EBONY_PLANKS.get())).save(pRecipeOutput);
+
+        fenceGateBuilder(ModBlocks.EBONY_FENCE_GATE.get(), Ingredient.of(ModBlocks.EBONY_PLANKS.get())).group("ebony_planks")
+                .unlockedBy("has_ebony_planks", has(ModBlocks.EBONY_PLANKS.get())).save(pRecipeOutput);
+
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONY_WALL.get(), ModBlocks.EBONY_PLANKS.get());
+
+        doorBuilder(ModBlocks.EBONY_DOOR.get(), Ingredient.of(ModBlocks.EBONY_PLANKS.get())).group("ebony_planks")
+                .unlockedBy("has_ebony_planks", has(ModBlocks.EBONY_PLANKS.get())).save(pRecipeOutput);
+
+        trapdoorBuilder(ModBlocks.EBONY_TRAPDOOR.get(), Ingredient.of(ModBlocks.EBONY_PLANKS.get())).group("ebony_planks")
+                .unlockedBy("has_ebony_planks", has(ModBlocks.EBONY_PLANKS.get())).save(pRecipeOutput);
 
 
+        // Steel //
 
         stairBuilder(ModBlocks.STEEL_STAIRS.get(), Ingredient.of(ModItems.STEEL_INGOT.get())).group("steel_ingot")
                         .unlockedBy("has_steel_ingot", has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+
         slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_SLAB.get(), ModItems.STEEL_INGOT);
 
         pressurePlate(pRecipeOutput, ModBlocks.STEEL_PRESSURE_PLATE.get(), ModItems.STEEL_INGOT.get());

@@ -32,6 +32,32 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
 
+        this.dropSelf(ModBlocks.EBONY_LOG.get());
+        this.dropSelf(ModBlocks.EBONY_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_EBONY_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_EBONY_WOOD.get());
+
+        this.dropSelf(ModBlocks.EBONY_PLANKS.get());
+        this.dropSelf(ModBlocks.EBONY_SAPLING.get());
+
+        this.add(ModBlocks.EBONY_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.EBONY_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+
+        dropSelf(ModBlocks.EBONY_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.EBONY_BUTTON.get());
+        dropSelf(ModBlocks.EBONY_FENCE.get());
+        dropSelf(ModBlocks.EBONY_FENCE_GATE.get());
+        dropSelf(ModBlocks.EBONY_WALL.get());
+        dropSelf(ModBlocks.EBONY_TRAPDOOR.get());
+        this.add(ModBlocks.EBONY_DOOR.get(),
+                block -> createDoorTable(ModBlocks.EBONY_DOOR.get()));
+        dropSelf(ModBlocks.EBONY_STAIRS.get());
+        this.add(ModBlocks.EBONY_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.EBONY_SLAB.get()));
+
+
+
         this.add(ModBlocks.STEEL_ORE.get(),
                 block -> createOreDrop(ModBlocks.STEEL_ORE.get(), ModItems.STEEL_DUST.get()));
         this.add(ModBlocks.STEEL_DEEPSLATE_ORE.get(),

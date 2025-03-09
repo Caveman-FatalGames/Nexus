@@ -1,3 +1,5 @@
-// 1.21.1	2025-02-22T22:26:53.9412216	Tags for minecraft:item mod id nexus
+// 1.21.1	2025-03-08T20:58:16.4198888	Tags for minecraft:item mod id nexus
+11f7d7726eedd5b14c55b39df12745e8153202b5 data/minecraft/tags/item/logs_that_burn.json
+baff48d132190fcae48daa1670e38fb77ced2db8 data/minecraft/tags/item/planks.json
 3ce4ae517fd51b293fe3ab16c6407581001416c3 data/minecraft/tags/item/trimmable_armor.json
 82aeade700265a023adf13ac5e3866b479208176 data/nexus/tags/item/transformable_items.json

@@ -77,6 +77,7 @@ public class NexusMod
         ModRecipes.register(modEventBus);
 
         ModFluidTypes.register(modEventBus);
+
         ModFluids.register(modEventBus);
 
         ModVillagers.register(modEventBus);

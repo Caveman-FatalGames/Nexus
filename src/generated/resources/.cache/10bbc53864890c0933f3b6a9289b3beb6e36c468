@@ -1,8 +1,10 @@
-// 1.21.1	2025-03-08T13:22:29.2832147	Tags for minecraft:block mod id nexus
-8df720b3a117457f5f7fcf5ac4cfff4895acd3cf data/minecraft/tags/block/fences.json
-df537dbf5dc6b5bb4308edd5dfa1fd7c5b076435 data/minecraft/tags/block/fence_gates.json
+// 1.21.1	2025-03-08T22:37:33.8093982	Tags for minecraft:block mod id nexus
+a297e7459c2b7a4febaf66f1e6fe8191d6c2f011 data/minecraft/tags/block/fences.json
+f00cc605d645aa3eb84b6cf229c4fb547a8483f7 data/minecraft/tags/block/fence_gates.json
+11f7d7726eedd5b14c55b39df12745e8153202b5 data/minecraft/tags/block/logs_that_burn.json
+5e6f80d5c651d44bdb4730d5466bb80ca6685080 data/minecraft/tags/block/mineable/axe.json
 c05a9d0bda763383816d447bbb29faf78c415958 data/minecraft/tags/block/mineable/pickaxe.json
 e0bd3457cf2663f84ac529e810d6573a9b890527 data/minecraft/tags/block/needs_diamond_tool.json
-00f620746734bdcf61f6f5145aebc95eb8a815d2 data/minecraft/tags/block/needs_iron_tool.json
-290a13bc0b0993602255cb7b791eac08bd374a82 data/minecraft/tags/block/walls.json
+d9a79b2db41ed75a7df0dee6598ea8f8de76dc99 data/minecraft/tags/block/needs_iron_tool.json
+658d47732a23f2744c90777d9bdb4fed39e985e6 data/minecraft/tags/block/walls.json
 82362cfbd1836db13c7e9d36c8712821e795ac55 data/nexus/tags/block/mineable/paxel.json

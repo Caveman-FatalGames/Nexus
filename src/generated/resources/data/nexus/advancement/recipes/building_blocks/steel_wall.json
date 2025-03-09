@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_steel_ingot": {
+    "has_ebony_planks": {
       "conditions": {
         "items": [
           {
-            "items": "nexus:steel_ingot"
+            "items": "nexus:ebony_planks"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_steel_ingot"
+      "has_ebony_planks"
     ]
   ],
   "rewards": {

@@ -5,11 +5,11 @@ import com.fatalgames.nexus.block.ModBlocks;
 import com.fatalgames.nexus.block.custom.PolyvineCropBlock;
 import com.fatalgames.nexus.block.custom.SteelLightBlock;
 import com.fatalgames.nexus.block.custom.TerrestrialLightBlock;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
@@ -26,6 +26,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        logBlock(((RotatedPillarBlock) ModBlocks.EBONY_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.EBONY_WOOD.get()), blockTexture(ModBlocks.EBONY_LOG.get()), blockTexture(ModBlocks.EBONY_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_EBONY_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_EBONY_WOOD.get()), blockTexture(ModBlocks.STRIPPED_EBONY_LOG.get()), blockTexture(ModBlocks.STRIPPED_EBONY_LOG.get()));
+
+        blockItem(ModBlocks.EBONY_LOG);
+        blockItem(ModBlocks.EBONY_WOOD);
+        blockItem(ModBlocks.STRIPPED_EBONY_LOG);
+        blockItem(ModBlocks.STRIPPED_EBONY_WOOD);
+
+        blockWithItem(ModBlocks.EBONY_PLANKS);
+
+        leavesBlock(ModBlocks.EBONY_LEAVES);
+        saplingBlock(ModBlocks.EBONY_SAPLING);
+
+
+        stairsBlock(((StairBlock) ModBlocks.EBONY_STAIRS.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.EBONY_SLAB.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.EBONY_PRESSURE_PLATE.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.EBONY_BUTTON.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.EBONY_FENCE.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.EBONY_FENCE_GATE.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()));
+        wallBlock(((WallBlock) ModBlocks.EBONY_WALL.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.EBONY_DOOR.get()), modLoc("block/ebony_door_bottom"), modLoc("block/ebony_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.EBONY_TRAPDOOR.get()), modLoc("block/ebony_trapdoor"), true, "cutout");
+
+
+
+
 
         blockWithItem(ModBlocks.STEEL_ORE);
         blockWithItem(ModBlocks.STEEL_DEEPSLATE_ORE);
@@ -49,17 +78,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         stairsBlock(((StairBlock) ModBlocks.STEEL_STAIRS.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.STEEL_SLAB.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
-
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.STEEL_PRESSURE_PLATE.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
         buttonBlock(((ButtonBlock) ModBlocks.STEEL_BUTTON.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
-
         fenceBlock(((FenceBlock) ModBlocks.STEEL_FENCE.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.STEEL_FENCE_GATE.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
-
         wallBlock(((WallBlock) ModBlocks.STEEL_WALL.get()), blockTexture(ModBlocks.STEEL_BLOCK.get()));
-
         doorBlockWithRenderType(((DoorBlock) ModBlocks.STEEL_DOOR.get()), modLoc("block/steel_door_bottom"), modLoc("block/steel_door_top"), "cutout");
-
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.STEEL_TRAPDOOR.get()), modLoc("block/steel_trapdoor"), true, "cutout");
 
 
@@ -93,6 +117,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
 
+    }
+
+
+    private void saplingBlock(DeferredBlock<Block> deferredBlock) {
+        simpleBlock(deferredBlock.get(), models().cross(BuiltInRegistries.BLOCK.getKey(deferredBlock.get()).getPath(), blockTexture(deferredBlock.get())).renderType("cutout"));
+
+    }
+
+        private void leavesBlock(DeferredBlock<Block> deferredBlock) {
+        simpleBlockWithItem(deferredBlock.get(),
+                models().singleTexture(BuiltInRegistries.BLOCK.getKey(deferredBlock.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(deferredBlock.get())).renderType("cutout"));
     }
 
     private void blockWithItemWithRenderType(DeferredBlock<Block> deferredBlock, String renderType) {

@@ -79,6 +79,22 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
 
+                        pOutput.accept(ModBlocks.EBONY_LOG);
+                        pOutput.accept(ModBlocks.STRIPPED_EBONY_LOG);
+                        pOutput.accept(ModBlocks.STRIPPED_EBONY_WOOD);
+                        pOutput.accept(ModBlocks.EBONY_PLANKS);
+                        pOutput.accept(ModBlocks.EBONY_STAIRS);
+                        pOutput.accept(ModBlocks.EBONY_SLAB);
+                        pOutput.accept(ModBlocks.EBONY_PRESSURE_PLATE);
+                        pOutput.accept(ModBlocks.EBONY_BUTTON);
+                        pOutput.accept(ModBlocks.EBONY_FENCE);
+                        pOutput.accept(ModBlocks.EBONY_FENCE_GATE);
+                        pOutput.accept(ModBlocks.EBONY_WALL);
+                        pOutput.accept(ModBlocks.EBONY_DOOR);
+                        pOutput.accept(ModBlocks.EBONY_TRAPDOOR);
+
+
+
                         pOutput.accept(ModBlocks.STEEL_ORE);
                         pOutput.accept(ModBlocks.STEEL_DEEPSLATE_ORE);
 
@@ -207,7 +223,8 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModFluids.TERRESTRIAL_GOOP_BUCKET);
 
-
+                        pOutput.accept(ModBlocks.EBONY_SAPLING);
+                        pOutput.accept(ModBlocks.EBONY_LEAVES);
 
                         pOutput.accept(ModItems.POLYVINE_SEEDS);
                         pOutput.accept(ModItems.POLYVINE);

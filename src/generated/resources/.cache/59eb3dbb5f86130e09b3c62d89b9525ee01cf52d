@@ -1,4 +1,18 @@
-// 1.21.1	2025-03-08T13:22:29.2822113	Loot Tables
+// 1.21.1	2025-03-08T21:28:42.2437467	Loot Tables
+b13a5537274c0cacfb1f367b3d6c36bb529557fb data/nexus/loot_table/blocks/ebony_button.json
+5b402e0d6b8db9b1db3c44e9c896b8c41ff677a3 data/nexus/loot_table/blocks/ebony_door.json
+d7d19d9ef551e7009eb7a0edb4fbb649558e78a9 data/nexus/loot_table/blocks/ebony_fence.json
+0360b47320a75051e813f8b2a80efd7b7ab4be30 data/nexus/loot_table/blocks/ebony_fence_gate.json
+b4d9e7253c018d91bac4c652ab0a8e88982cb725 data/nexus/loot_table/blocks/ebony_leaves.json
+980c8f669eeecf72a75db945b08b07aa9393bb41 data/nexus/loot_table/blocks/ebony_log.json
+aba7b5462690b9ed6c2316ab8ae96f73bff3bab7 data/nexus/loot_table/blocks/ebony_planks.json
+822e1a24eb65070931b4f4cf01e4dc64c9fea6b5 data/nexus/loot_table/blocks/ebony_pressure_plate.json
+5e8dd712f368f49f08432e4fd1659d4c32881928 data/nexus/loot_table/blocks/ebony_sapling.json
+2d7e74a4ea79a4b13eb5aaa3ae0316c533d12a33 data/nexus/loot_table/blocks/ebony_slab.json
+bbc52b8f98f7d9d657c058bca676ba6458858945 data/nexus/loot_table/blocks/ebony_stairs.json
+080b94eeaf7f44f1c62cc3bd62c2905e373b7ebd data/nexus/loot_table/blocks/ebony_trapdoor.json
+9d6f7c31335dfd27f1ef8e51e01e54965e5805fd data/nexus/loot_table/blocks/ebony_wall.json
+9bd99875b0ba44d3b592cbfd241e9ffa87cf4e8a data/nexus/loot_table/blocks/ebony_wood.json
 dd57d0554b68f1d1d1e19154967063d5b8d6b4ff data/nexus/loot_table/blocks/meteorite_block.json
 27324d3df5b4015b3d11fdad10891e50dee0bdd4 data/nexus/loot_table/blocks/nexium_block.json
 304334f5e5f2c00bd4821b98aed4da9ad067c77b data/nexus/loot_table/blocks/polyvine.json
@@ -21,6 +35,8 @@ da2d93c0c118e7e502cde6209dda2e0031aa5887 data/nexus/loot_table/blocks/steel_ligh
 142329811356727b3a9277d1b59c1cd2eabf9f99 data/nexus/loot_table/blocks/steel_tank.json
 dc6e75899be083f980e6a0bec656c7a61943ee2c data/nexus/loot_table/blocks/steel_trapdoor.json
 82c197e90ec599e71eb8be6f036f3933fa1744a1 data/nexus/loot_table/blocks/steel_wall.json
+3b11e3a51bb3cd60036628062b48e3a68a705ef6 data/nexus/loot_table/blocks/stripped_ebony_log.json
+9f18210cce329168eebb58a897cfcaecb9b9ab59 data/nexus/loot_table/blocks/stripped_ebony_wood.json
 6e3a96f1690fd1626db0015919823c6fc198a7cd data/nexus/loot_table/blocks/terrestrial_block.json
 f6f3b246d9499c5915259ea9446ab196100cf773 data/nexus/loot_table/blocks/terrestrial_deepslate_ore.json
 59c39d8a3c19b9e035ff8f1c2c2d863ec761413d data/nexus/loot_table/blocks/terrestrial_flower.json

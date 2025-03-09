@@ -48,6 +48,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
 
 
+        saplingItem(ModBlocks.EBONY_SAPLING);
+
+
 
         basicItem(ModItems.POLYVINE_SEEDS.get());
         basicItem(ModItems.POLYVINE.get());
@@ -135,11 +138,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
 
+    }
 
 
-
+    private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID,"block/" + item.getId().getPath()));
 
     }
+
+
 
     public void flowerItem(DeferredBlock<Block> block) {
         this.withExistingParent(block.getId().getPath(), mcLoc("item/generated"))

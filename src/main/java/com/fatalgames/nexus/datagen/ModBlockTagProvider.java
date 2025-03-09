@@ -35,7 +35,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.METEORITE_BLOCK.get());
 
 
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+
+                .add(ModBlocks.EBONY_LOG.get());
+
+
         this.tag(BlockTags.NEEDS_IRON_TOOL)
+
+                .add(ModBlocks.EBONY_LOG.get())
                 .add(ModBlocks.TERRESTRIAL_ORE.get())
                 .add(ModBlocks.TERRESTRIAL_GLASS.get())
                 .add(ModBlocks.STEEL_GLASS.get())
@@ -45,6 +52,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+
                 .add(ModBlocks.TERRESTRIAL_BLOCK.get())
                 .add(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE.get())
                 .add(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE.get())
@@ -55,7 +63,20 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCE_GATES).add(ModBlocks.STEEL_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.STEEL_WALL.get());
 
+        tag(BlockTags.FENCES).add(ModBlocks.EBONY_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.EBONY_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.EBONY_WALL.get());
+
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+
+                .add(ModBlocks.EBONY_LOG.get())
+                .add(ModBlocks.EBONY_WOOD.get())
+                .add(ModBlocks.STRIPPED_EBONY_LOG.get())
+                .add(ModBlocks.STRIPPED_EBONY_WOOD.get());
+
         this.tag(ModTags.Blocks.PAXEL_MINEABLE)
+
                 .addTags(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTags(BlockTags.MINEABLE_WITH_AXE)
                 .addTags(BlockTags.MINEABLE_WITH_SHOVEL);
