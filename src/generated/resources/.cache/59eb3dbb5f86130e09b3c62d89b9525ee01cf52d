@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-09T10:09:51.4267633	Loot Tables
+// 1.21.1	2025-03-09T10:14:15.4327413	Loot Tables
 b13a5537274c0cacfb1f367b3d6c36bb529557fb data/nexus/loot_table/blocks/ebony_button.json
 5b402e0d6b8db9b1db3c44e9c896b8c41ff677a3 data/nexus/loot_table/blocks/ebony_door.json
 d7d19d9ef551e7009eb7a0edb4fbb649558e78a9 data/nexus/loot_table/blocks/ebony_fence.json
@@ -15,7 +15,7 @@ bbc52b8f98f7d9d657c058bca676ba6458858945 data/nexus/loot_table/blocks/ebony_stai
 9bd99875b0ba44d3b592cbfd241e9ffa87cf4e8a data/nexus/loot_table/blocks/ebony_wood.json
 dd57d0554b68f1d1d1e19154967063d5b8d6b4ff data/nexus/loot_table/blocks/meteorite_block.json
 27324d3df5b4015b3d11fdad10891e50dee0bdd4 data/nexus/loot_table/blocks/nexium_block.json
-0ad0b8efc98fdda292ba7fba650ed86e128b563b data/nexus/loot_table/blocks/polyvine.json
+b54e143292cb7b53c6b44971032c84d703064c0c data/nexus/loot_table/blocks/polyvine.json
 2e0b144b7cde686c51e1796e9888b1552d642998 data/nexus/loot_table/blocks/potted_terrestrial_flower.json
 29a752201547ef431be19c8e31dd60908a6fcdde data/nexus/loot_table/blocks/steel_block.json
 757077d9ac91178d7a5e16ac260987519479ebbf data/nexus/loot_table/blocks/steel_button.json
