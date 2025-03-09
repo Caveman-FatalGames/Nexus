@@ -24,6 +24,8 @@ public class ModFluids {
     public static final DeferredRegister<Fluid> FLUIDS =
             DeferredRegister.create(BuiltInRegistries.FLUID, NexusMod.MOD_ID);
 
+    // TERRESTRIAL GOOP //
+
     public static final Supplier<FlowingFluid> SOURCE_TERRESTRIAL_GOOP= FLUIDS.register("source_terrestrial_goop",
             () -> new BaseFlowingFluid.Source(ModFluids.TERRESTRIAL_GOOP_PROPERTIES));
     public static final Supplier<FlowingFluid> FLOWING_TERRESTRIAL_GOOP= FLUIDS.register("flowing_terrestrial_goop",
@@ -38,6 +40,10 @@ public class ModFluids {
             ModFluidTypes.TERRESTRIAL_GOOP_FLUID_TYPE, SOURCE_TERRESTRIAL_GOOP, FLOWING_TERRESTRIAL_GOOP)
             .slopeFindDistance(2).levelDecreasePerBlock(1)
             .block(ModFluids.TERRESTRIAL_GOOP_BLOCK).bucket(ModFluids.TERRESTRIAL_GOOP_BUCKET);
+
+
+
+
 
 
     public static void register(IEventBus eventBus) {

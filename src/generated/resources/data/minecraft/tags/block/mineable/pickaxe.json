@@ -3,10 +3,10 @@
     "nexus:steel_ore",
     "nexus:steel_deepslate_ore",
     "nexus:steel_block",
-    "nexus:terrestrial_block",
-    "nexus:terrestrial_glass",
     "nexus:terrestrial_ore",
     "nexus:terrestrial_deepslate_ore",
+    "nexus:terrestrial_block",
+    "nexus:terrestrial_glass",
     "nexus:terrestrial_transmutation_table",
     "nexus:nexium_block",
     "nexus:meteorite_block"

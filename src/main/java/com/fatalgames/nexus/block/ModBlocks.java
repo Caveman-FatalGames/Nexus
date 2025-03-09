@@ -29,65 +29,22 @@ public class ModBlocks {
             DeferredRegister.createBlocks(NexusMod.MOD_ID);
 
 
-    public static final DeferredBlock<Block> STEEL_LIGHT_BLOCK = registerBlock("steel_light_block",
-            () -> new SteelLightBlock(BlockBehaviour.Properties.of().strength(3f)
-                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(SteelLightBlock.CLICKED) ? 15 : 0)));
-
-    public static final DeferredBlock<Block> STEEL_GLASS = registerBlock("steel_glass",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.3f)
-                    .noOcclusion() // Makes sure it does not block light
-                    .isViewBlocking((state, world, pos) -> false) // Prevents culling issues
-                    .requiresCorrectToolForDrops()
-            ));
+    // RANDOM //
 
 
-    public static final DeferredBlock<Block> STEEL_ORE = registerBlock("steel_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2,5),
-                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> POLYVINE = BLOCKS.register("polyvine",
+            () -> new PolyvineCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
-    public static final DeferredBlock<Block> STEEL_DEEPSLATE_ORE = registerBlock("steel_deepslate_ore",
-            () -> new DropExperienceBlock(UniformInt.of(3,6),
-                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_FLOWER = registerBlock("terrestrial_flower",
+            () -> new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.ofFullCopy(Blocks.ALLIUM)));
+
+    public static final DeferredBlock<Block> POTTED_TERRESTRIAL_FLOWER = BLOCKS.register("potted_terrestrial_flower",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), TERRESTRIAL_FLOWER, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ALLIUM)));
 
 
 
-    public static final DeferredBlock<Block> TERRESTRIAL_BLOCK = registerBlock("terrestrial_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> TERRESTRIAL_GLASS = registerBlock("terrestrial_glass",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.3f)
-                    .noOcclusion() // Makes sure it does not block light
-                    .isViewBlocking((state, world, pos) -> false) // Prevents culling issues
-                    .requiresCorrectToolForDrops()
-            ));
-
-    public static final DeferredBlock<Block> TERRESTRIAL_LIGHT_BLOCK = registerBlock("terrestrial_light_block",
-            () -> new TerrestrialLightBlock(BlockBehaviour.Properties.of().strength(3f)
-                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(TerrestrialLightBlock.CLICKED) ? 15 : 0)));
-
-    public static final DeferredBlock<Block> TERRESTRIAL_ORE = registerBlock("terrestrial_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2,5),
-                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> TERRESTRIAL_DEEPSLATE_ORE = registerBlock("terrestrial_deepslate_ore",
-            () -> new DropExperienceBlock(UniformInt.of(3,6),
-                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> TERRESTRIAL_TRANSMUTATION_TABLE = registerBlock("terrestrial_transmutation_table",
-            () -> new TerrestrialTransmutationTable(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
-
-
-
-
-    public static final DeferredBlock<Block> METEORITE_BLOCK = registerBlock("meteorite_block",
-            () -> new DropExperienceBlock(UniformInt.of(3,6),
-                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
-
-
-    public static final DeferredBlock<Block> NEXIUM_BLOCK = registerBlock("nexium_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+    // EBONY //
 
 
     public static final DeferredBlock<Block> EBONY_LOG = registerBlock("ebony_log",
@@ -168,6 +125,16 @@ public class ModBlocks {
 
 
 
+    // STEEL //
+
+
+    public static final DeferredBlock<Block> STEEL_ORE = registerBlock("steel_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,5),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> STEEL_DEEPSLATE_ORE = registerBlock("steel_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3,6),
+                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
@@ -200,7 +167,20 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STEEL_TRAPDOOR = registerBlock("steel_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final DeferredBlock<Block> STEEL_LIGHT_BLOCK = registerBlock("steel_light_block",
+            () -> new SteelLightBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(SteelLightBlock.CLICKED) ? 15 : 0)));
 
+    public static final DeferredBlock<Block> STEEL_GLASS = registerBlock("steel_glass",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .noOcclusion() // Makes sure it does not block light
+                    .isViewBlocking((state, world, pos) -> false) // Prevents culling issues
+                    .requiresCorrectToolForDrops()
+            ));
+
+    public static final DeferredBlock<Block> STEEL_TANK = registerBlock("steel_tank",
+            () -> new SteelTank(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
 
     public static final DeferredBlock<Block> STEEL_PEDESTAL = registerBlock("steel_pedestal",
             () -> new SteelPedestalBlock(BlockBehaviour.Properties.of().noOcclusion().strength(4f).requiresCorrectToolForDrops()));
@@ -212,22 +192,53 @@ public class ModBlocks {
             () -> new SteelGenerator(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
 
+    // TERRESTRIAL //
 
 
-    public static final DeferredBlock<Block> POLYVINE = BLOCKS.register("polyvine",
-            () -> new PolyvineCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+    public static final DeferredBlock<Block> TERRESTRIAL_LIGHT_BLOCK = registerBlock("terrestrial_light_block",
+            () -> new TerrestrialLightBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(TerrestrialLightBlock.CLICKED) ? 15 : 0)));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_ORE = registerBlock("terrestrial_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,5),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_DEEPSLATE_ORE = registerBlock("terrestrial_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3,6),
+                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_BLOCK = registerBlock("terrestrial_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_GLASS = registerBlock("terrestrial_glass",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .noOcclusion() // Makes sure it does not block light
+                    .isViewBlocking((state, world, pos) -> false) // Prevents culling issues
+                    .requiresCorrectToolForDrops()
+            ));
+
+    public static final DeferredBlock<Block> TERRESTRIAL_TRANSMUTATION_TABLE = registerBlock("terrestrial_transmutation_table",
+            () -> new TerrestrialTransmutationTable(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
 
-    public static final DeferredBlock<Block> TERRESTRIAL_FLOWER = registerBlock("terrestrial_flower",
-            () -> new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.ofFullCopy(Blocks.ALLIUM)));
 
-    public static final DeferredBlock<Block> POTTED_TERRESTRIAL_FLOWER = BLOCKS.register("potted_terrestrial_flower",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), TERRESTRIAL_FLOWER, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ALLIUM)));
+   // NEXIUM //
 
 
+    public static final DeferredBlock<Block> METEORITE_BLOCK = registerBlock("meteorite_block",
+            () -> new DropExperienceBlock(UniformInt.of(3,6),
+                    BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
 
-    public static final DeferredBlock<Block> STEEL_TANK = registerBlock("steel_tank",
-            () -> new SteelTank(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final DeferredBlock<Block> NEXIUM_BLOCK = registerBlock("nexium_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()));
+
+
+
+
+
+
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

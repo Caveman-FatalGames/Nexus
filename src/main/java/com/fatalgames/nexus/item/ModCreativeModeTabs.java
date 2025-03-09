@@ -79,6 +79,8 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
 
+                        // EBONY //
+
                         pOutput.accept(ModBlocks.EBONY_LOG);
                         pOutput.accept(ModBlocks.STRIPPED_EBONY_LOG);
                         pOutput.accept(ModBlocks.STRIPPED_EBONY_WOOD);
@@ -94,13 +96,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.EBONY_TRAPDOOR);
 
 
+                        // STEEL //
 
                         pOutput.accept(ModBlocks.STEEL_ORE);
                         pOutput.accept(ModBlocks.STEEL_DEEPSLATE_ORE);
-
-
-                        pOutput.accept(ModBlocks.STEEL_LIGHT_BLOCK);
-                        pOutput.accept(ModBlocks.STEEL_GLASS);
                         pOutput.accept(ModBlocks.STEEL_BLOCK);
                         pOutput.accept(ModBlocks.STEEL_STAIRS);
                         pOutput.accept(ModBlocks.STEEL_SLAB);
@@ -112,15 +111,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STEEL_DOOR);
                         pOutput.accept(ModBlocks.STEEL_TRAPDOOR);
 
-
-
+                        pOutput.accept(ModBlocks.STEEL_LIGHT_BLOCK);
+                        pOutput.accept(ModBlocks.STEEL_GLASS);
                         pOutput.accept(ModBlocks.STEEL_TANK);
                         pOutput.accept(ModBlocks.STEEL_PEDESTAL);
                         pOutput.accept(ModBlocks.STEEL_FORGE);
                         pOutput.accept(ModBlocks.STEEL_GENERATOR);
 
 
-
+                        // TERRESTRIAL //
 
 
                         pOutput.accept(ModBlocks.TERRESTRIAL_ORE);
@@ -133,7 +132,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE);
 
 
-
+                        // NEXIUM //
 
 
                         pOutput.accept(ModBlocks.METEORITE_BLOCK);
@@ -153,16 +152,19 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
 
+                        // STEEL //
+
                         pOutput.accept(ModItems.STEEL_HOE);
                         pOutput.accept(ModItems.STEEL_SHOVEL);
                         pOutput.accept(ModItems.STEEL_AXE);
                         pOutput.accept(ModItems.STEEL_PICKAXE);
 
-
                         pOutput.accept(ModItems.STEEL_SAW);
                         pOutput.accept(ModItems.STEEL_PAXEL);
                         pOutput.accept(ModItems.STEEL_HAMMER);
 
+
+                        // TERRESTRIAL //
 
                         pOutput.accept(ModItems.TERRESTRIAL_HOE);
                         pOutput.accept(ModItems.TERRESTRIAL_SHOVEL);
@@ -175,7 +177,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.TERRESTRIAL_HAMMER);
 
 
-
+                        // NEXIUM //
 
                         pOutput.accept(ModItems.NEXIUM_HAMMER);
 
@@ -194,11 +196,13 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(NexusMod.MOD_ID, "nexus_tools_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
+                        // STEEL //
 
                         pOutput.accept(ModItems.STEEL_SWORD);
                         pOutput.accept(ModItems.STEEL_BOW);
 
 
+                        // TERRESTRIAL //
 
                         pOutput.accept(ModItems.TERRESTRIAL_SWORD);
 

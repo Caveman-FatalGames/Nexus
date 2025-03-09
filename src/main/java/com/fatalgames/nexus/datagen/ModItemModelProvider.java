@@ -58,7 +58,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
         saplingItem(ModBlocks.EBONY_SAPLING);
-
         buttonItem(ModBlocks.EBONY_BUTTON, ModBlocks.EBONY_PLANKS);
         fenceItem(ModBlocks.EBONY_FENCE, ModBlocks.EBONY_PLANKS);
         wallItem(ModBlocks.EBONY_WALL, ModBlocks.EBONY_PLANKS);
@@ -96,7 +95,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.STEEL_SAW.get());
         handheldItem(ModItems.STEEL_PAXEL.get());
         handheldItem(ModItems.STEEL_HAMMER.get());
-
 
 
         basicItem(ModItems.STEEL_ORE_DETECTOR.get());

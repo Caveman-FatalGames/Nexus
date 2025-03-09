@@ -18,10 +18,15 @@ public class ModFluidTypes {
     public static final DeferredRegister<FluidType> FLUID_TYPES =
             DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES, NexusMod.MOD_ID);
 
+
+    // TERRESTRIAL GOOP //
+
     public static final Supplier<FluidType> TERRESTRIAL_GOOP_FLUID_TYPE = registerFluidType("terrestrial_goop_fluid",
             new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xFF0C7D05,
                     new Vector3f(12f / 255f, 125f / 255f, 5f / 255f),
                     FluidType.Properties.create()));
+
+
 
 
 

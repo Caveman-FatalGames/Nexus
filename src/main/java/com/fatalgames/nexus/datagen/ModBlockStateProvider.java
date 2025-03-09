@@ -26,20 +26,29 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
+
         logBlock(((RotatedPillarBlock) ModBlocks.EBONY_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.EBONY_WOOD.get()), blockTexture(ModBlocks.EBONY_LOG.get()), blockTexture(ModBlocks.EBONY_LOG.get()));
         logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_EBONY_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_EBONY_WOOD.get()), blockTexture(ModBlocks.STRIPPED_EBONY_LOG.get()), blockTexture(ModBlocks.STRIPPED_EBONY_LOG.get()));
 
+
+        leavesBlock(ModBlocks.EBONY_LEAVES);
+        saplingBlock(ModBlocks.EBONY_SAPLING);
         blockItem(ModBlocks.EBONY_LOG);
         blockItem(ModBlocks.EBONY_WOOD);
         blockItem(ModBlocks.STRIPPED_EBONY_LOG);
         blockItem(ModBlocks.STRIPPED_EBONY_WOOD);
 
         blockWithItem(ModBlocks.EBONY_PLANKS);
+        blockItem(ModBlocks.EBONY_SLAB);
+        blockItem(ModBlocks.EBONY_STAIRS);
+        blockItem(ModBlocks.EBONY_PRESSURE_PLATE);
+        blockItem(ModBlocks.EBONY_FENCE_GATE);
+        blockItem(ModBlocks.EBONY_TRAPDOOR, "_bottom");
 
-        leavesBlock(ModBlocks.EBONY_LEAVES);
-        saplingBlock(ModBlocks.EBONY_SAPLING);
+
 
 
         stairsBlock(((StairBlock) ModBlocks.EBONY_STAIRS.get()), blockTexture(ModBlocks.EBONY_PLANKS.get()));
@@ -53,13 +62,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.EBONY_TRAPDOOR.get()), modLoc("block/ebony_trapdoor"), true, "cutout");
 
 
-
-
-
         blockWithItem(ModBlocks.STEEL_ORE);
         blockWithItem(ModBlocks.STEEL_DEEPSLATE_ORE);
-
-        blockWithItemWithRenderType(ModBlocks.STEEL_GLASS, "translucent");
 
 
         blockWithItem(ModBlocks.STEEL_BLOCK);
@@ -69,6 +73,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STEEL_FENCE_GATE);
         blockItem(ModBlocks.STEEL_TRAPDOOR, "_bottom");
 
+
+        blockWithItemWithRenderType(ModBlocks.STEEL_GLASS, "translucent");
         blockWithItemWithRenderType(ModBlocks.STEEL_TANK, "translucent");
 
 
@@ -88,11 +94,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_BLOCK);
-        blockWithItemWithRenderType(ModBlocks.TERRESTRIAL_GLASS, "translucent");
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_ORE);
         blockWithItem(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE);
+
+
+        blockWithItemWithRenderType(ModBlocks.TERRESTRIAL_GLASS, "translucent");
 
 
         blockWithItem(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE);

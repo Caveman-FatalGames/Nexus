@@ -72,6 +72,8 @@ public class ModEvents {
         }
     }
 
+    // TRADES //
+
     @SubscribeEvent
     public static void addWanderingTrades(WandererTradesEvent event) {
         List<VillagerTrades.ItemListing> genericTrades = event.getGenericTrades();

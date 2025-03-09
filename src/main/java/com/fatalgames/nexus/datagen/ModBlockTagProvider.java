@@ -25,10 +25,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.STEEL_ORE.get())
                 .add(ModBlocks.STEEL_DEEPSLATE_ORE.get())
                 .add(ModBlocks.STEEL_BLOCK.get())
-                .add(ModBlocks.TERRESTRIAL_BLOCK.get())
-                .add(ModBlocks.TERRESTRIAL_GLASS.get())
+
+
                 .add(ModBlocks.TERRESTRIAL_ORE.get())
                 .add(ModBlocks.TERRESTRIAL_DEEPSLATE_ORE.get())
+                .add(ModBlocks.TERRESTRIAL_BLOCK.get())
+                .add(ModBlocks.TERRESTRIAL_GLASS.get())
                 .add(ModBlocks.TERRESTRIAL_TRANSMUTATION_TABLE.get())
 
                 .add(ModBlocks.NEXIUM_BLOCK.get())

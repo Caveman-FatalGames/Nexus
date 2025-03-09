@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-08T21:28:42.24475	Block States: nexus
+// 1.21.1	2025-03-09T11:15:57.2245942	Block States: nexus
 5cdccdda3075458a116578fa813906eec97cf354 assets/nexus/blockstates/ebony_button.json
 6f6fc45f871360898ecc195ab5c59721e0e00a14 assets/nexus/blockstates/ebony_door.json
 36750ef5c7d0016ba9dcc5ccb776dab6c99460be assets/nexus/blockstates/ebony_fence.json
@@ -134,9 +134,14 @@ ff78b33391ebf22c1be244cff4f29cdd8669a6b8 assets/nexus/models/block/stripped_ebon
 fd00a9bf801a323b9f5acb0d335acd8c0bf37c34 assets/nexus/models/block/terrestrial_light_block_on.json
 45a098a457924497737f37cdb738e0784b1f8b29 assets/nexus/models/block/terrestrial_ore.json
 2b53f62673a00e32e6f41963f14b41b054866291 assets/nexus/models/block/terrestrial_transmutation_table.json
+1a39934277697c29db2f20ec611a52444141de1b assets/nexus/models/item/ebony_fence_gate.json
 64ca36b5337d254afa68360b14fea5f9e5bf39ea assets/nexus/models/item/ebony_leaves.json
 2e7bad5da776cd6f84a66286b6f7db5bbe67edd7 assets/nexus/models/item/ebony_log.json
 c021efd628f04d03bbd776d05bbb58957a3c288f assets/nexus/models/item/ebony_planks.json
+639f052d03a78e9fb7b4612837fcedbc76c29fd5 assets/nexus/models/item/ebony_pressure_plate.json
+04a4c5e919ada295f452821148cd230f8ceed18f assets/nexus/models/item/ebony_slab.json
+bc3e1e561fb81a8add0527f05cdf236837d43d11 assets/nexus/models/item/ebony_stairs.json
+476c48a4ae09cffcc5b8d9bc966452d8a533abfb assets/nexus/models/item/ebony_trapdoor.json
 cd3acb0db83f2073f703bf790bded29e50f7cd0b assets/nexus/models/item/ebony_wood.json
 085af5bb18de86bc1dbc88d231eb6f8140c9701e assets/nexus/models/item/meteorite_block.json
 3de6acd407a3f79a71fb459ac8e79c730c0f2e03 assets/nexus/models/item/nexium_block.json
